@@ -1,0 +1,16 @@
+{
+  "theme": "Atom One",
+  "selectedAuthType": "oauth-personal",
+  "autoAccept": true,
+  "checkpointing": {
+    "enabled": true
+  },
+  "telemetry": {
+    "enabled": true,
+    "target": "gcp"
+  },
+  "sandbox": false,
+  "coreTools": [
+    "code_analyzer(file_path, analysis_type, entity_name)"
+  ]
+}

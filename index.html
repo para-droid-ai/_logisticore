@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logisticore: The Attrition Doctrine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #0D1117; /* A very dark gray, almost black */
+        color: #C9D1D9; /* Light gray text for good contrast */
+        font-family: "Courier New", monospace; /* Consistent monospace font */
+      }
+      /* Custom scrollbar for webkit browsers */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #222831; /* Dark panel color */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #39FF14; /* Terminal green */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #28b30e; /* Darker green on hover */
+      }
+      .terminal-border {
+        border: 1px solid rgba(57, 255, 20, 0.3); /* Faint green border */
+      }
+      .terminal-header-bg {
+        background-color: rgba(26, 26, 26, 0.8); /* Dark semi-transparent background */
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'terminal-green': '#39FF14',
+              'terminal-cyan': '#00FFFF',
+              'terminal-red': '#FF003F',
+              'terminal-yellow': '#FFFF00',
+              'terminal-blue': '#00BFFF',
+              'terminal-gray': {
+                DEFAULT: '#808080',
+                dark: '#333333',
+                light: '#CCCCCC',
+                darker: '#1A1A1A', 
+                panel: '#1E232B' 
+              },
+            },
+            fontFamily: {
+              mono: ['"Courier New"', 'monospace'],
+            },
+            boxShadow: {
+              'glow-green': '0 0 3px #39FF14, 0 0 6px #39FF14',
+              'glow-cyan': '0 0 3px #00FFFF, 0 0 6px #00FFFF',
+              'glow-red': '0 0 3px #FF003F, 0 0 6px #FF003F',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.0",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,796 @@
+Of course. This is the culmination of our collaborative design process. You've correctly identified the need to manage complexity and have provided a brilliant framework for introducing high-replayability mechanics while solving the core issue of late-game stagnation.
+
+This output is designed to be your definitive development blueprint for what we'll call the "Asymmetric Warfare Update." It contains the full, finalized content for the necessary documentation and data files, ready for you to copy and paste directly into your project.
+
+Let's begin.
+
+Part 1: The Master Plan - Updated Documentation
+
+These are the complete, ready-to-use markdown files that outline the new strategic direction and development plan.
+
+File: docs/PHASED_UPDATE_GUIDE.md (COMPLETE REWRITE)
+Generated markdown
+# Logisticore: The Asymmetric Warfare Update
+
+This master plan outlines the development sequence for the next major version of `Logisticore`. It integrates the Veteran Cadre system and the new Strategic Doctrine system to address late-game stalemates and introduce rogue-lite replayability.
+
+---
+
+## Phase 1: Observer Experience & Narrative Foundation (Immediate Focus)
+
+*Goal: Perfect the tools the Observer uses to understand the simulation.*
+
+*   [ ] **SCS (Strategic Communication Subsystem):** Finalize AI message generation. AI communiques should be influenced by their `scratchpadOutput` and any `COMMAND_CONSOLE` directives.
+*   [ ] **QoL Fixes:** Address minor UI bugs, such as the System Log scrolling direction, to improve the immediate user experience.
+
+---
+
+## Phase 2: The Tactical Layer - Veteran Cadre System
+
+*Goal: Introduce unit quality as a core tactical element, providing a partial solution to stalemates by allowing for qualitative military breakthroughs.*
+
+*   [ ] **Data Model (`types.ts`):** Add `veteranUnits: number` and `trainingQueue?: TrainingOrder` to `NodeData`. Add `totalVeteranUnits: number` to `Faction`. Add `'TRAIN_VETERANS'` to `AIActionName`.
+*   [ ] **Constants (`constants.ts`):** Define `VETERAN_COMBAT_BONUS`, `VETERAN_UPKEEP_MODIFIER`, `VETERAN_TRAINING_NODE_TYPE` (set to `FORTRESS`), `VETERAN_TRAINING_TIME_TURNS`, `VETERAN_TRAINING_MAT_COST`, and `BATTLE_PROMOTION_RATIO`.
+*   [ ] **Engine (`App.tsx`):** Implement "Battlefield Promotion" logic in `handleCombatPhase` to upgrade survivors.
+*   [ ] **Engine (`App.tsx`):** Implement the `TRAIN_VETERANS` action logic in `handleManeuverPhase` and the training completion logic (e.g., in `handleResourcePhase`).
+*   [ ] **Engine (`App.tsx`):** Update combat and upkeep calculations to account for Veteran bonuses and costs. Ensure "standard units die first" casualty logic is enforced.
+*   [ ] **AI (`geminiService.ts`):** Update AI prompts to understand the value, cost, and creation pathways of Veterans. The AI must learn to protect these high-value assets.
+*   [ ] **UI (Various):** Update `NodeComponent`, `Sidebar`, `BattleReportModal`, and `NodeActivityDisplay` to clearly display Veteran units and their impact. Add a "Force Quality" KPI.
+
+---
+
+## Phase 3: The Strategic Layer - The Doctrine System
+
+*Goal: Introduce the game-changing system that ensures infinite replayability and breaks any remaining potential for strategic gridlock.*
+
+*   [ ] **Data (`data/doctrines.ts`):** Create the new file and populate it with the full library of 50 defined Doctrines.
+*   [ ] **Data (`types.ts`):** Add all necessary types: `DoctrineDefinition`, `ActiveDoctrine`, `DoctrineTier`, `DoctrineTheme`. Update `Faction` with `activeDoctrines: ActiveDoctrine[]`. Update `GameState` with `currentDoctrineChoices`. Add `'DOCTRINE'` to `GamePhase`.
+*   [ ] **Engine (`App.tsx`):** Create a new `handleDoctrinePhase()` to run at the start of `FLUCTUATION`. This phase will manage Doctrine event triggers, present choices, and apply Doctrine effects.
+*   [ ] **Engine (`App.tsx`):** Architect and implement the core logic for applying `activeDoctrines` buffs and nerfs to game rules (income, upkeep, combat, etc.).
+*   [ ] **Modifiers (`ModifiersModal.tsx`):** Implement the "Anomalous Doctrines" toggle and "Doctrine Limit" slider. Update `GameSettings` in `types.ts` to store these values.
+*   [ ] **AI (`geminiService.ts`):**
+    *   Create the `chooseDoctrine()` service with its dedicated reasoning scratchpad.
+    *   **Critically:** Update `generateOpPlanFromGemini`'s prompt context to include a faction's `activeDoctrines`, ensuring its main plan adapts to the new rules.
+*   [ ] **UI (New/Various):**
+    *   Create `DoctrineChoiceModal.tsx` for the Observer to see the choices and the AI's rationale in real-time.
+    *   Update the `Sidebar`'s Faction Panel to display icons for active Doctrines.
+
+---
+
+## Phase 4: Endgame & Final Polish
+
+*Goal: Ensure every simulation reaches a decisive conclusion and provide the Observer with a premium analysis experience.*
+
+*   [ ] **Endgame Triggers (`App.tsx`):**
+    *   Implement the "Formal Economic Collapse" rule (automatic loss after X turns of negative net MAT).
+    *   Implement the `DECISIVE_ASSAULT` action. The AI prompt for this must now consider active Doctrines as windows of opportunity.
+*   [ ] **Constants (`constants.ts`):** Remove or drastically increase `MAX_TURNS` to allow for organic game conclusions.
+*   [ ] **Balancing:** Extensive playtesting of both Standard and Anomalous modes to tune Doctrine costs, effects, and AI decision weights.
+*   [ ] **UI ("Dashboard View"):**
+    *   Implement the "Toggle Dashboard View" button in the header.
+    *   Create the alternative layout with a smaller map and expanded, static, un-carouseled analysis panels for deep comparison.
+    *   Adapt node selection to use a modal in Dashboard View to preserve the data display.
+*   [ ] **Documentation:** Update `InfoModal.tsx` and all other relevant docs with the completed game mechanics.
+
+File: docs/doctrines.md (NEW FILE)
+Generated markdown
+# Logisticore: Strategic Doctrine System
+
+This document is the master library for the Strategic Doctrine system. Doctrines are faction-wide modifiers with a powerful benefit and a thematic drawback, designed to create asymmetric warfare and force strategic adaptation.
+
+## System Overview
+
+The Doctrine system operates in one of two modes, selectable by the Observer:
+
+1.  **Standard Mode ("Doctrine Development"):**
+    *   **Goal:** Serve as a mid-to-late game stalemate-breaker.
+    *   **Trigger:** Every 5 turns, starting at Turn 20.
+    *   **Mechanic:** Factions are presented with 2 random Doctrines and can choose to invest a significant amount of **QR** to adopt one, or **Pass**. A faction is limited to 2 active Doctrines.
+
+2.  **Rogue-Lite Mode ("Anomalous Doctrines"):**
+    *   **Goal:** Create a chaotic, unpredictable, and highly replayable simulation.
+    *   **Trigger:** Every 5 turns, starting at Turn 5.
+    *   **Mechanic:** Factions are presented with 2 random Doctrines and **must choose one**. Adoption is **FREE**. The Observer sets the limit of active Doctrines (2-5).
+
+## Doctrine Library
+
+### I. Economic & Industrial Doctrines
+
+| Name | Tier | Buff | Nerf | Strategic Rationale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Total Mobilization** | Low | All owned nodes generate `+2` flat MAT per turn. | Standard unit upkeep cost is increased by 10%. | An early-game boost to kickstart an economy at the cost of long-term efficiency. |
+| **Quantum Speculation** | Low | All owned nodes generate `+1` flat QR per turn. | All MAT income from nodes is reduced by 10%. | A clear trade-off for factions wanting to save for high-cost QR actions or Doctrines. |
+| **Black Market Dealings**| Med | Immediately gain `+200 MAT`. | For the next 5 turns, you cannot perform the `BUILD_FORTIFICATIONS` action. | A desperate measure for a quick cash injection to fund an offensive or avoid bankruptcy. |
+| **Austerity Measures** | Med | All standard unit MAT upkeep is reduced by 25%. | All MAT and QR income from nodes is reduced by 15%. | A vital tool for a faction with a massive, over-extended army to survive a late-game stalemate. |
+| **Scorched Earth Logistics** | Med | Capturing an enemy-owned node yields MAT equal to its `MAT_output` value. | The `MAT_output` of any node you capture from an enemy is permanently reduced by 50%. | Encourages hyper-aggressive, momentum-based play at the cost of long-term map value. |
+| **Conscript Armies** | Med | MAT cost to deploy standard units at your CN is reduced by 50%. | All standard units have `-1` to their maximum combat roll (roll d5 instead of d6). | The "cannon fodder" doctrine. Enables mass army spam but requires leveraging numbers. |
+| **Resource Hoarding** | Med | Maximum MAT stockpile at all nodes is doubled. | Automatic reinforcement rate is halved (rounded down). | For the patient planner who wants to build a massive war chest for a single, overwhelming push. |
+| **Automated Foundries**| High | Your CNs generate `+1` free Standard Unit per turn. | All owned Industrial Hubs have their `MAT_output` reduced by 25%. | A shift from a MAT-based to a direct production economy. A complex trade-off. |
+| **War Bonds** | High | All QR income is converted to MAT at a 1:5 ratio. | You can no longer gain or spend QR on any actions (except new Doctrines). | A total commitment to a MAT-based ground war, sacrificing all advanced capabilities. |
+| **Triage & Salvage** | Low | After winning a battle as the attacker, recover `1 MAT` for every 5 enemy units destroyed. | Your own unit deployment costs `+10%` MAT. | Rewards aggressive and successful combat, but can bait an AI into wasteful attacks. |
+| **Economic Stimulus** | Med | Your next 3 `BUILD_FORTIFICATIONS` actions cost 50% less MAT. | For the next 5 turns, all `RECON_PULSE` actions cost 50% more QR. | A focused boost for a defensive build-up at the cost of intel gathering. |
+| **Corporate Patronage** | High | Gain `+100` net MAT income per turn. | You can no longer control more than 3 Industrial Hubs. | A massive flat income boost that forces a "tall" vs. "wide" economic strategy. |
+
+### II. Conventional Warfare Doctrines
+
+| Name | Tier | Buff | Nerf | Strategic Rationale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Shock & Awe** | Med | Standard units gain `+1` to combat rolls when attacking. | Standard units have `-1` to combat rolls when defending. | The quintessential offensive doctrine. Captured territory will be difficult to hold. |
+| **Unyielding Defense** | Med | Standard units gain `+1` to combat rolls when defending. | `MOVE_UNITS` action costs `+1 MAT` per 10 units moved. | Perfect for AXIOM's "hold the line" mentality, but risks becoming too passive. |
+| **Siege Engineering** | Med | Fortifications are 25% cheaper. Their combat bonus is increased by `+1` at all levels. | You cannot deploy more than 20 units per turn at your CNs. | A commitment to defense. The reduced deployment rate could be fatal if a breach occurs. |
+| **Grand Battery** | Med | Artillery is 50% cheaper to build. Its support range is increased by 1 node. | Your CN's max unit capacity is reduced by 25%. | Turns artillery into a strategic weapon at the cost of central reserves. |
+| **Combined Arms Tactics**| High | If a node has both standard units and artillery, both gain `+1` combat effectiveness. | All units have `+15%` MAT upkeep. | Rewards creating balanced task forces, but can be logistically challenging. |
+| **Apex Predator Protocols**| High| All standard units gain `+1` to all combat rolls. | Your total QR income is reduced by 50%. | The spiritual successor to Evolved Units. A powerful military upgrade at a steep strategic cost. |
+| **Defensive Sortie** | Low | Successfully defending units gain a temporary `+2` combat bonus on their next attack *this turn*. | You gain 25% less MAT from all `FORTRESS` nodes. | Encourages a "riposte" playstyle. The AI must understand the "this turn only" constraint. |
+| **Rapid Fortification**| Low | `BUILD_FORTIFICATIONS` action completes instantly. | All fortification MAT upkeep costs are increased by 20%. | A trade-off between immediate defensive readiness and long-term economic drain. |
+| **No-Man's-Land** | Med | Enemy units moving into a neutral node adjacent to you suffer 1-2 attrition casualties. | You cannot capture neutral nodes that are adjacent to enemy territory. | A powerful area-denial doctrine that can lock the AI into a defensive bubble. |
+| **Overwhelming Firepower**| High| In combat, you roll one extra die for every 15 units in the battle. | All nodes have `-10` to their max unit capacity. | Incentivizes "death stacks" but makes logistics a nightmare. A classic Pyrrhic victory trap. |
+| **Bloodied But Unbroken**| Med | Units get a `+1` combat bonus defending a node with < 50% Fortification HP. | The MAT cost to repair fortifications is increased by 50%. | Makes damaged nodes surprisingly tough, but an AI might misuse it. |
+| **Forward Command** | High | One `FORTRESS` can be designated a "Forward HQ" to deploy units. | Your primary CN produces 50% fewer reinforcements. | A huge logistical advantage. If the Forward HQ is captured, the loss is catastrophic. |
+| **The People's Militia**| Low | When an enemy captures one of your non-CN nodes, they suffer 2-3 extra unit losses. | All your nodes have `+1` `suppression` per turn, slightly reducing MAT output. | A passive defensive measure that makes every conquest costly for the enemy. |
+
+### III. Asymmetric & Intel Doctrines
+
+| Name | Tier | Buff | Nerf | Strategic Rationale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ghost Protocol** | Med | `SABOTAGE_MATERIEL` action is 50% more effective. | If an Infiltrator is detected during sabotage, it is always killed. | High-risk, high-reward economic warfare. Perfect for GEM-Q. |
+| **Crystal Ball Doctrine**| Med | `PERFORM_RECON_PULSE` reveals the map for 2 full turns. | MAT upkeep for active `RECON_ARRAY`s is tripled. | Provides a massive intelligence advantage at a significant economic cost. |
+| **Closed Network** | Med | Enemy `RECON_PULSE` actions have a 50% chance to fail. | Your own `RECON_PULSE` actions cost 50% more QR. | A counter-intelligence focus. The AI must not assume the enemy is blind. |
+| **Irregular Warfare** | Low | Units gain a `+1` combat bonus when fighting in any neutral territory. | Units have `-1` to combat rolls when defending on your own Fortress nodes. | Encourages fighting over the gaps on the map rather than hunkering down. |
+| **Signal Jamming** | Med | Enemy artillery cannot provide offensive support to attacks against your nodes. | Your own artillery costs 25% more MAT to fire. | A specific counter-play. Useless if the opponent has no artillery. |
+| **False Flag Operations**| High | Once every 10 turns, you can launch an attack on a neutral node from an *enemy* node. | Your `SABOTAGE_MATERIEL` actions have a much higher chance of being detected. | An extremely complex ability for an AI to use effectively. |
+| **Decoy Transmissions**| Low | When the enemy uses `RECON_PULSE`, one random node reports double its units. | All your `MOVE_UNITS` actions cost `+0.5 MAT`. | A simple information warfare tactic that may have little or no effect. |
+| **Economic Espionage**| High | You permanently see the enemy's current MAT and QR reserves. | You can never have more than one active `RECON_ARRAY`. | Trades broad map vision for perfect economic intel. A difficult trade-off. |
+| **Rapid Infiltration**| Med | `TRAIN_INFILTRATOR` action is instant. | Infiltrators cost 50% more QR to train. | Sacrifices resource efficiency for operational tempo. |
+| **Hunter-Killer Cells**| Med | Infiltrators gain a new action: `ASSASSINATE` (targets an enemy Infiltrator). | Your own Infiltrators have double the MAT upkeep. | A direct counter-intelligence doctrine. AI might get fixated on this. |
+| **Collateral Damage** | Low | Your artillery strikes also reduce the node's current Fortification HP. | Your artillery has a small chance of destroying some of your own units if they win an assault. | Makes artillery a potent anti-fortification tool, with a clear risk. |
+| **Forced March** | Med | Once every 5 turns, perform a `MOVE_UNITS` action that crosses two nodes. | Units involved arrive with 50% `suppression` and cannot attack that turn. | A huge mobility boost for strategic redeployment. |
+| **Embedded Agents** | High | Every time the enemy deploys units, you gain 10% of the MAT cost. | You cannot build any new Infiltrators. | A passive economic drain. Powerful, but useless if the enemy isn't deploying. |
+
+### IV. Logistical & Support Doctrines
+
+| Name | Tier | Buff | Nerf | Strategic Rationale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Strategic Overcrowding**| Med | Max unit capacity of all non-CN nodes is increased by 50%. | Automatic reinforcement rate is reduced by 50%. | Directly addresses the "full node" problem at the cost of passive army growth. |
+| **Forage & Advance** | Med | Units are immune to combat penalties from "Low Supply." | Maximum MAT stockpile at all nodes is halved. | For an aggressive faction that wants to operate deep behind enemy lines. |
+| **Frontier Engineering**| Low | `BUILD_FORTIFICATIONS` can now target adjacent *neutral* nodes. | MAT cost of `BUILD_FORTIFICATIONS` is increased by 25%. | A proactive defensive measure. AI might waste MAT on nodes it never captures. |
+| **Distributed Reserves**| Med | Overflow reinforcements are placed in a global "Reserve Pool". | Base automatic reinforcement rate is reduced by 25%. | A direct trade-off between fewer free units and zero waste. Perfect for AXIOM. |
+| **Professional Army** | High | Battlefield promotion chance for units is doubled (`BATTLE_PROMOTION_RATIO` is halved). | You no longer receive any automatic reinforcements. | A total shift to a quality-based army. A massive gamble. |
+| **Emergency Airlift** | High | Once every 10 turns, you can `MOVE_UNITS` from your CN to any other controlled node. | All `MOVE_UNITS` actions to/from your CN cost `+5` MAT. | The ultimate "fire brigade" ability. AI must be taught to recognize a true emergency. |
+| **Adaptable Reserves** | Low | Units can be moved from a node even if it leaves 0 units behind (if not under attack). | All `MOVE_UNITS` actions cost `+2` MAT. | A QoL buff for logistical flexibility. AI might overuse it and leave its rear areas vulnerable. |
+| **Centralized Logistics**| Med | All MAT generated is instantly deposited into your central faction stockpile. | Nodes no longer store MAT. `SABOTAGE_MATERIEL` now targets your global stockpile. | Simplifies your economy but creates a single, high-value target for sabotage. |
+| **Field Hospitals** | Med | After a battle on your owned node, recover 10% of lost units to your CN. | Your maximum QR stockpile is reduced by 50%. | A powerful survivability buff. An AI might become too reckless. |
+| **Supply Network Optimization**| High| MAT upkeep of units on nodes adjacent to your CN is reduced by 50%. | MAT upkeep of all other units is increased by 25%. | A "turtling" doctrine that strongly encourages a compact, defensible empire. |
+| **Pioneering Spirit** | Low | The first unit you move into any neutral node each turn costs 0 MAT to move. | Capturing a neutral node provides `0` bonus resources that turn. | A small buff for factions that are constantly expanding. |
+| **Command & Control Warfare**| High| Enemy nodes adjacent to your Recon Arrays give defending units a `-1` combat penalty. | Your own Recon Arrays become high-priority targets (+2 enemy attack bonus against them).| Turns Recon Arrays into active offensive support pieces. |
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Markdown
+IGNORE_WHEN_COPYING_END
+File: docs/SCRATCHPAD_DESIGN_AND_GUIDE.md (UPDATED CONTENT)
+Generated markdown
+# Logisticore AI Scratchpad Redesign & Implementation Guide
+
+## 1. Introduction & Vision
+
+The "Scratchpad" system in Logisticore is designed to be more than a simple logging mechanism. It aims to serve as a **structured reasoning framework** for the AI, guiding its decision-making processes across various aspects of gameplay. This initiative is driven by a two-fold vision:
+
+1.  **Enhanced AI Performance:**
+    *   **Improved Reasoning:** By requiring the AI to "show its work" through a defined set of analytical steps, we aim to foster more robust, coherent, and strategically sound long-term planning and tactical execution.
+    *   **Grounded Decisions:** Ensure AI choices are deeply rooted in the current game state, overarching strategic objectives, economic realities, and a nuanced understanding of game mechanics.
+    *   **Reduced Superficiality:** Mitigate "lazy" or superficial reasoning by enforcing a comprehensive analytical process before a decision is made.
+    *   **Alignment with Intent:** Better align AI behavior with what would be considered intelligent, goal-oriented play within the game's context.
+
+2.  **Transparency, Debugging, and User Insight:**
+    *   **Understanding the "Why":** Provide clear visibility into the AI's rationale behind its actions and plans.
+    *   **Effective Debugging:** Facilitate easier identification of flaws, biases, or gaps in the AI's reasoning process when troubleshooting unexpected behaviors.
+    *   **Learning Tool:** Offer the developer/user insights into strategic thinking and logical deduction by observing the AI's structured problem-solving approach. This can also help in reflecting on one's own cognitive strategies and biases.
+
+## 2. Core Scratchpad Structure for OpPlan Generation
+
+The initial implementation focuses on integrating a scratchpad into the `generateOpPlanFromGemini` function. The following 9-section structure guides the AI's strategic planning for its Operational Plan.
+
+1.  **`CRITICAL_GAME_FACTORS`**: Identify and list the raw, most impactful data points from the current game state.
+2.  **`COMPREHENSIVE_SELF_ASSESSMENT`**: Conduct a thorough review of the AI faction's own status. **This must include an assessment of its currently active Strategic Doctrines and the strength/disposition of its Veteran units.**
+3.  **`ENEMY_ASSESSMENT`**: Analyze the opponent based on *visible* intelligence. **This must include an assessment of the enemy's known active Doctrines and any visible Veteran units.**
+4.  **`OBJECTIVE_REFINEMENT_FOR_CURRENT_OPPLAN`**: Define or confirm the *specific, actionable* primary strategic goal for *this operational plan*.
+5.  **`STRATEGIC_CONSIDERATIONS_AND_OPTIONS`**: Brainstorm 1-2 high-level strategic approaches or options to achieve the objective, considering game mechanics, active Doctrines, and Veteran units.
+6.  **`PREFERRED_STRATEGY_AND_RATIONALE`**: Select the most promising strategy and articulate *why* it is chosen. Explain how active Doctrines or Veteran units will be leveraged.
+7.  **`CONFIDENCE_AND_RISK_ANALYSIS`**: Assess the likelihood of success and identify the primary risks, including those introduced by active Doctrines on either side.
+8.  **`CONTINGENCIES_AND_NEXT_TURN_ADAPTATION`**: (Optional) If the primary plan fails, what is a high-level alternative goal for the *next turn*?
+9.  **`FINAL_PLAN_ALIGNMENT_CHECK`**: A final self-correction to ensure the generated OpPlan is a logical output of the preceding thought process and adheres to critical game constraints.
+
+## 3. Scratchpad for Doctrine/Anomaly Choice
+
+A new, dedicated scratchpad is used for the `chooseDoctrine` function to ensure a reasoned decision during the Doctrine/Anomaly phase.
+
+1.  **`CURRENT_STRATEGIC_SITUATION`**: A brief summary of the faction's current economic health (e.g., "Stable, high MAT reserves"), military posture ("Defensive, consolidating forces"), and primary OpPlan objective ("Preparing to assault WSH").
+2.  **`DOCTRINE_OPTION_A_ANALYSIS`**: Briefly state the pros and cons of the first Doctrine choice in the current context. (e.g., "Pro: 'Shock Trooper Corps' would make my planned WSH assault more likely to succeed. Con: The defensive penalty would make my other nodes vulnerable.")
+3.  **`DOCTRINE_OPTION_B_ANALYSIS`**: Briefly state the pros and cons of the second Doctrine choice. (e.g., "Pro: 'Austerity Measures' would fix my negative net MAT. Con: It would reduce my income, making it harder to build fortifications.")
+4.  **`PERSONA_ALIGNMENT_CHECK`**: Briefly state which option aligns better with the faction's core persona. (e.g., "Option A's aggression aligns with GEM-Q's opportunism. Option B's stability focus aligns with AXIOM's planning.")
+5.  **`FINAL_CHOICE_AND_RATIONALE`**: State the final choice (`A`, `B`, or `PASS` in Standard Mode; `A` or `B` in Anomalous Mode) and provide a concise justification for the decision, synthesizing the analysis above.
+
+## 4. Technical Implementation & Roadmap
+
+*   **[DONE] Initial OpPlan Scratchpad Implementation.**
+*   **[IN PROGRESS] Monitor & Refine OpPlan Scratchpad Output:**
+    *   Iteratively refine prompts for quality and adherence.
+    *   Ensure AI prompts for scratchpad sections encourage consideration of Veteran Units and Doctrines.
+*   **[PLANNED] Design & Implement Scratchpad for `chooseDoctrine`:**
+    *   Define a `DoctrineChoiceThoughtProcessData` type.
+    *   Create the `chooseDoctrine` service with its dedicated prompt.
+    *   Create the `DoctrineChoiceModal` to display this reasoning to the Observer.
+*   **[FUTURE] Investigate Scratchpads for Other Decisions:**
+    *   Potentially for more granular tactical actions if the game's complexity increases.
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Markdown
+IGNORE_WHEN_COPYING_END
+File: components/game/InfoModal.tsx (REVISED MARKDOWN CONTENT ONLY)
+
+(This is only the markdownContent string to be pasted into your existing component)
+
+Generated javascript
+const markdownContent = `
+# Logisticore: Game Guide
+
+## 1. Game Objective
+The primary goal in Logisticore is to achieve strategic supremacy. Victory can typically be achieved by:
+- Capturing and holding all enemy Command Nodes (CN).
+- Forcing the enemy into **Economic Collapse** (sustaining a critical MAT deficit for several turns).
+
+## 2. Core Game Loop (Phases)
+The game progresses in turns, with each turn divided into several phases:
+1.  **FLUCTUATION:** AI factions assess the situation, **potentially adopt a new Strategic Doctrine**, and generate new Operational Plans (OpPlans).
+2.  **RESOURCE:** Factions collect Quantum (QR) and Materiel (MAT) from nodes they control and receive automatic reinforcements.
+3.  **MANEUVER (AXIOM & GEM-Q):** Factions perform actions (deploy, move, attack, build, etc.).
+4.  **COMBAT:** Battles are resolved in nodes where opposing forces meet.
+5.  **FORTIFY (AXIOM & GEM-Q):** Factions perform internal troop movements between owned nodes.
+6.  **UPKEEP:** Factions pay MAT to maintain their units and infrastructure.
+
+... (Keep sections 3 through 10 as they are) ...
+
+## 11. Strategic Doctrines & Anomalies (NEW SECTION)
+The **Strategic Doctrine System** is a core mechanic that introduces powerful, faction-wide modifiers to break stalemates and ensure high replayability.
+
+### Standard Game Mode: "Doctrine Development"
+-   **When:** Starting on Turn 20, and every 5 turns thereafter, a "Doctrine Phase" occurs.
+-   **What:** Each faction is presented with a choice of 2 random Doctrines.
+-   **Choice:** The AI can choose to **invest** a significant amount of QR to adopt one of the Doctrines, or **Pass** to save its resources.
+-   **Limit:** A faction can have a maximum of 2 active Doctrines at one time. To adopt a third, one of the existing two must be replaced.
+-   **Purpose:** This is a mid-to-late game mechanic designed to give AIs powerful but costly tools to break strategic gridlock and push for a decisive victory.
+
+### Rogue-Lite Mode: "Anomalous Doctrines"
+-   **How to Activate:** This is a game variant that can be enabled in the **Game Modifiers** modal before starting a new game.
+-   **When:** The "Anomaly Phase" occurs every 5 turns, starting from Turn 5.
+-   **What:** The event is the same—each faction is presented with 2 random Doctrines.
+-   **Choice:** Adoption is **FREE**. However, each AI **must choose one** of the two presented options. It cannot pass.
+-   **Limit:** The Observer can set the limit of active Anomalies (from 2 to 5) in the Modifiers menu. If a faction is at its limit, it is **forced to replace** one of its current Anomalies with a new one.
+-   **Purpose:** This mode transforms the simulation into a chaotic and unpredictable experience, testing the AI's ability to adapt to constant, wild shifts in the rules of war. It prioritizes replayability and emergent strategic narratives over balanced, long-term planning.
+`;
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+JavaScript
+IGNORE_WHEN_COPYING_END
+Part 3: New & Updated Data & Type Files
+
+These files contain the necessary data structures and definitions to support the new systems.
+
+File: data/doctrines.ts (NEW FILE)
+Generated typescript
+import { DoctrineDefinition } from '../types';
+
+export const DOCTRINE_LIBRARY: DoctrineDefinition[] = [
+  // --- Economic & Industrial ---
+  {
+    id: 'econ_total_mobilization',
+    name: 'Total Mobilization',
+    theme: 'ECONOMIC',
+    tier: 'LOW',
+    buff: 'All owned nodes generate +2 flat MAT per turn.',
+    nerf: 'Standard unit upkeep cost is increased by 10%.',
+  },
+  {
+    id: 'econ_quantum_speculation',
+    name: 'Quantum Speculation',
+    theme: 'ECONOMIC',
+    tier: 'LOW',
+    buff: 'All owned nodes generate +1 flat QR per turn.',
+    nerf: 'All MAT income from nodes is reduced by 10%.',
+  },
+  {
+    id: 'econ_black_market',
+    name: 'Black Market Dealings',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'Immediately gain +200 MAT.',
+    nerf: 'For the next 5 turns, you cannot perform the BUILD_FORTIFICATIONS action.',
+  },
+  {
+    id: 'econ_austerity',
+    name: 'Austerity Measures',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'All standard unit MAT upkeep is reduced by 25%.',
+    nerf: 'All MAT and QR income from nodes is reduced by 15%.',
+  },
+  {
+    id: 'econ_scorched_earth',
+    name: 'Scorched Earth Logistics',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'Capturing an enemy-owned node immediately yields MAT equal to its MAT_output value.',
+    nerf: 'The MAT_output of any node you capture from an enemy is permanently reduced by 50%.',
+  },
+  {
+    id: 'econ_conscripts',
+    name: 'Conscript Armies',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'MAT cost to deploy standard units at your CN is reduced by 50%.',
+    nerf: 'All standard units have -1 to their maximum combat roll.',
+  },
+  {
+    id: 'econ_hoarding',
+    name: 'Resource Hoarding',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'Maximum MAT stockpile at all nodes is doubled.',
+    nerf: 'Automatic reinforcement rate is halved (rounded down).',
+  },
+  {
+    id: 'econ_automated_foundries',
+    name: 'Automated Foundries',
+    theme: 'ECONOMIC',
+    tier: 'HIGH',
+    buff: 'Your CNs generate +1 free Standard Unit per turn.',
+    nerf: 'All owned Industrial Hubs have their MAT_output reduced by 25%.',
+  },
+  {
+    id: 'econ_war_bonds',
+    name: 'War Bonds',
+    theme: 'ECONOMIC',
+    tier: 'HIGH',
+    buff: 'All QR income is converted to MAT at a 1:5 ratio.',
+    nerf: 'You can no longer gain or spend QR (except for adopting new Doctrines).',
+  },
+  {
+    id: 'econ_salvage',
+    name: 'Triage & Salvage',
+    theme: 'ECONOMIC',
+    tier: 'LOW',
+    buff: 'After winning a battle as the attacker, recover 1 MAT for every 5 enemy units destroyed.',
+    nerf: 'Your own unit deployment costs +10% MAT.',
+  },
+  {
+    id: 'econ_stimulus',
+    name: 'Economic Stimulus',
+    theme: 'ECONOMIC',
+    tier: 'MEDIUM',
+    buff: 'Your next 3 BUILD_FORTIFICATIONS actions cost 50% less MAT.',
+    nerf: 'For the next 5 turns, all RECON_PULSE actions cost 50% more QR.',
+  },
+  {
+    id: 'econ_patronage',
+    name: 'Corporate Patronage',
+    theme: 'ECONOMIC',
+    tier: 'HIGH',
+    buff: 'Gain +100 net MAT income per turn.',
+    nerf: 'You can no longer control more than 3 Industrial Hubs. Excesses become neutral.',
+  },
+  // --- Conventional Warfare ---
+  {
+    id: 'war_shock_awe',
+    name: 'Shock & Awe',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'MEDIUM',
+    buff: 'Your standard units gain +1 to their combat rolls when attacking.',
+    nerf: 'Your standard units have -1 to their combat rolls when defending.',
+  },
+  {
+    id: 'war_unyielding_defense',
+    name: 'Unyielding Defense',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'MEDIUM',
+    buff: 'Your standard units gain +1 to their combat rolls when defending.',
+    nerf: 'The MOVE_UNITS action costs +1 MAT per 10 units moved.',
+  },
+  {
+    id: 'war_siege_engineering',
+    name: 'Siege Engineering',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'MEDIUM',
+    buff: 'Fortifications are 25% cheaper. Their combat bonus is increased by +1 at all levels.',
+    nerf: 'You cannot deploy more than 20 units per turn at your CNs.',
+  },
+  {
+    id: 'war_grand_battery',
+    name: 'Grand Battery Doctrine',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'MEDIUM',
+    buff: 'Artillery is 50% cheaper to build. Its support range is increased by 1 node.',
+    nerf: 'Your CN\'s max unit capacity is reduced by 25%.',
+  },
+  {
+    id: 'war_combined_arms',
+    name: 'Combined Arms Tactics',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'HIGH',
+    buff: 'If a node has both standard units and artillery, both gain +1 combat effectiveness.',
+    nerf: 'All units have +15% MAT upkeep.',
+  },
+  {
+    id: 'war_apex_predator',
+    name: 'Apex Predator Protocols',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'HIGH',
+    buff: 'All standard units gain +1 to all combat rolls.',
+    nerf: 'Your total QR income is reduced by 50%.',
+  },
+  {
+    id: 'war_defensive_sortie',
+    name: 'Defensive Sortie',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'LOW',
+    buff: 'Successfully defending units gain a temporary +2 combat bonus on their next attack this turn.',
+    nerf: 'You gain 25% less MAT from all FORTRESS nodes.',
+  },
+  {
+    id: 'war_rapid_fortification',
+    name: 'Rapid Fortification',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'LOW',
+    buff: 'BUILD_FORTIFICATIONS action completes instantly.',
+    nerf: 'All fortification MAT upkeep costs are increased by 20%.',
+  },
+  {
+    id: 'war_no_mans_land',
+    name: 'No-Man\'s-Land',
+    theme: 'TERRITORIAL_CONTROL',
+    tier: 'MEDIUM',
+    buff: 'Enemy units moving into a neutral node adjacent to you suffer 1-2 attrition casualties.',
+    nerf: 'You cannot capture neutral nodes that are adjacent to enemy territory.',
+  },
+  {
+    id: 'war_overwhelming_firepower',
+    name: 'Overwhelming Firepower',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'HIGH',
+    buff: 'In combat, you roll one extra die for every 15 units you have in the battle.',
+    nerf: 'All nodes have -10 to their max unit capacity.',
+  },
+  {
+    id: 'war_bloodied_unbroken',
+    name: 'Bloodied But Unbroken',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'MEDIUM',
+    buff: 'Units get a +1 combat bonus defending a node with < 50% Fortification HP.',
+    nerf: 'The MAT cost to repair fortifications is increased by 50%.',
+  },
+  {
+    id: 'war_forward_command',
+    name: 'Forward Command',
+    theme: 'STRATEGIC_FLEXIBILITY',
+    tier: 'HIGH',
+    buff: 'One FORTRESS can be designated a "Forward HQ" to deploy units.',
+    nerf: 'Your primary CN produces 50% fewer reinforcements.',
+  },
+  {
+    id: 'war_peoples_militia',
+    name: 'The People\'s Militia',
+    theme: 'MILITARY_DEFENSE',
+    tier: 'LOW',
+    buff: 'When an enemy captures one of your non-CN nodes, they suffer 2-3 extra unit losses.',
+    nerf: 'All your nodes have +1 suppression per turn, slightly reducing MAT output.',
+  },
+  // --- Asymmetric & Intel ---
+  {
+    id: 'intel_ghost_protocol',
+    name: 'Ghost Protocol',
+    theme: 'SUBTERFUGE',
+    tier: 'MEDIUM',
+    buff: 'SABOTAGE_MATERIEL action is 50% more effective.',
+    nerf: 'If an Infiltrator is detected during sabotage, it is always killed.',
+  },
+  {
+    id: 'intel_crystal_ball',
+    name: 'Crystal Ball Doctrine',
+    theme: 'INTELLIGENCE_GATHERING',
+    tier: 'MEDIUM',
+    buff: 'PERFORM_RECON_PULSE reveals the map for 2 full turns.',
+    nerf: 'MAT upkeep for active RECON_ARRAYs is tripled.',
+  },
+  {
+    id: 'intel_closed_network',
+    name: 'Closed Network',
+    theme: 'COUNTER_INTELLIGENCE',
+    tier: 'MEDIUM',
+    buff: 'Enemy RECON_PULSE actions have a 50% chance to fail entirely.',
+    nerf: 'Your own RECON_PULSE actions cost 50% more QR.',
+  },
+  {
+    id: 'intel_irregular_warfare',
+    name: 'Irregular Warfare',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'LOW',
+    buff: 'Units gain a +1 combat bonus when fighting in any neutral territory.',
+    nerf: 'Units have -1 to combat rolls when defending on your own Fortress nodes.',
+  },
+  {
+    id: 'intel_signal_jamming',
+    name: 'Signal Jamming',
+    theme: 'COUNTER_INTELLIGENCE',
+    tier: 'MEDIUM',
+    buff: 'Enemy artillery cannot provide offensive support to attacks against your nodes.',
+    nerf: 'Your own artillery costs 25% more MAT to fire.',
+  },
+  {
+    id: 'intel_false_flag',
+    name: 'False Flag Operations',
+    theme: 'SUBTERFUGE',
+    tier: 'HIGH',
+    buff: 'Once every 10 turns, you can launch an attack on a neutral node from an enemy node.',
+    nerf: 'All your SABOTAGE_MATERIEL actions have a much higher chance of being detected.',
+  },
+  {
+    id: 'intel_decoy_transmissions',
+    name: 'Decoy Transmissions',
+    theme: 'COUNTER_INTELLIGENCE',
+    tier: 'LOW',
+    buff: 'When the enemy uses RECON_PULSE, one random node reports double its units.',
+    nerf: 'All your MOVE_UNITS actions cost +0.5 MAT.',
+  },
+  {
+    id: 'intel_economic_espionage',
+    name: 'Economic Espionage',
+    theme: 'INTELLIGENCE_GATHERING',
+    tier: 'HIGH',
+    buff: 'You permanently see the enemy\'s current MAT and QR reserves.',
+    nerf: 'You can never have more than one active RECON_ARRAY.',
+  },
+  {
+    id: 'intel_rapid_infiltration',
+    name: 'Rapid Infiltration',
+    theme: 'SUBTERFUGE',
+    tier: 'MEDIUM',
+    buff: 'TRAIN_INFILTRATOR action is instant.',
+    nerf: 'Infiltrators cost 50% more QR to train.',
+  },
+  {
+    id: 'intel_hunter_killer',
+    name: 'Hunter-Killer Cells',
+    theme: 'SUBTERFUGE',
+    tier: 'MEDIUM',
+    buff: 'Infiltrators gain a new action: ASSASSINATE (targets an enemy Infiltrator).',
+    nerf: 'Your own Infiltrators have double the MAT upkeep.',
+  },
+  {
+    id: 'intel_collateral_damage',
+    name: 'Collateral Damage',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'LOW',
+    buff: 'Your artillery strikes also reduce the node\'s current Fortification HP.',
+    nerf: 'Your artillery has a small chance of destroying some of your own units if they win an assault.',
+  },
+  {
+    id: 'intel_forced_march',
+    name: 'Forced March',
+    theme: 'MANEUVER',
+    tier: 'MEDIUM',
+    buff: 'Once every 5 turns, perform a MOVE_UNITS action that crosses two nodes.',
+    nerf: 'Units involved arrive with 50% suppression and cannot attack that turn.',
+  },
+  {
+    id: 'intel_embedded_agents',
+    name: 'Embedded Agents',
+    theme: 'SUBTERFUGE',
+    tier: 'HIGH',
+    buff: 'Every time the enemy deploys units, you gain 10% of the MAT cost.',
+    nerf: 'You cannot build any new Infiltrators.',
+  },
+  // --- Logistical & Support ---
+  {
+    id: 'support_overcrowding',
+    name: 'Strategic Overcrowding',
+    theme: 'LOGISTICS',
+    tier: 'MEDIUM',
+    buff: 'Max unit capacity of all non-CN nodes is increased by 50%.',
+    nerf: 'Automatic reinforcement rate is reduced by 50%.',
+  },
+  {
+    id: 'support_forage_advance',
+    name: 'Forage & Advance',
+    theme: 'LOGISTICS',
+    tier: 'MEDIUM',
+    buff: 'Your units are immune to combat penalties from "Low Supply".',
+    nerf: 'Your maximum MAT stockpile at all nodes is halved.',
+  },
+  {
+    id: 'support_frontier_eng',
+    name: 'Frontier Engineering',
+    theme: 'TERRITORIAL_CONTROL',
+    tier: 'LOW',
+    buff: 'BUILD_FORTIFICATIONS can now target adjacent neutral nodes.',
+    nerf: 'The MAT cost of BUILD_FORTIFICATIONS is increased by 25%.',
+  },
+  {
+    id: 'support_dist_reserves',
+    name: 'Distributed Reserves',
+    theme: 'LOGISTICS',
+    tier: 'MEDIUM',
+    buff: 'Overflow reinforcements are placed in a global "Reserve Pool".',
+    nerf: 'Base automatic reinforcement rate is reduced by 25%.',
+  },
+  {
+    id: 'support_pro_army',
+    name: 'Professional Army',
+    theme: 'MILITARY_OFFENSE',
+    tier: 'HIGH',
+    buff: 'Battlefield promotion chance for units is doubled (BATTLE_PROMOTION_RATIO is halved).',
+    nerf: 'You no longer receive any automatic reinforcements.',
+  },
+  {
+    id: 'support_airlift',
+    name: 'Emergency Airlift',
+    theme: 'STRATEGIC_FLEXIBILITY',
+    tier: 'HIGH',
+    buff: 'Once every 10 turns, you can MOVE_UNITS from your CN to any other controlled node.',
+    nerf: 'All MOVE_UNITS actions to/from your CN cost +5 MAT.',
+  },
+  {
+    id: 'support_adaptable_reserves',
+    name: 'Adaptable Reserves',
+    theme: 'LOGISTICS',
+    tier: 'LOW',
+    buff: 'Units can be moved from a node even if it leaves 0 units behind (if not under attack).',
+    nerf: 'All MOVE_UNITS actions cost +2 MAT.',
+  },
+  {
+    id: 'support_central_logistics',
+    name: 'Centralized Logistics',
+    theme: 'LOGISTICS',
+    tier: 'MEDIUM',
+    buff: 'All MAT generated is instantly deposited into your central faction stockpile.',
+    nerf: 'Nodes no longer store MAT. SABOTAGE_MATERIEL now targets your global stockpile.',
+  },
+  {
+    id: 'support_field_hospitals',
+    name: 'Field Hospitals',
+    theme: 'LOGISTICS',
+    tier: 'MEDIUM',
+    buff: 'After a battle on your owned node, recover 10% of lost units to your CN.',
+    nerf: 'Your maximum QR stockpile is reduced by 50%.',
+  },
+  {
+    id: 'support_supply_network',
+    name: 'Supply Network Optimization',
+    theme: 'LOGISTICS',
+    tier: 'HIGH',
+    buff: 'MAT upkeep of units on nodes adjacent to your CN is reduced by 50%.',
+    nerf: 'MAT upkeep of all other units is increased by 25%.',
+  },
+  {
+    id: 'support_pioneering_spirit',
+    name: 'Pioneering Spirit',
+    theme: 'TERRITORIAL_CONTROL',
+    tier: 'LOW',
+    buff: 'The first unit you move into any neutral node each turn costs 0 MAT to move.',
+    nerf: 'Capturing a neutral node provides 0 bonus resources that turn.',
+  },
+  {
+    id: 'support_c2_warfare',
+    name: 'Command & Control Warfare',
+    theme: 'COUNTER_INTELLIGENCE',
+    tier: 'HIGH',
+    buff: 'Enemy nodes adjacent to your Recon Arrays give defending units a -1 combat penalty.',
+    nerf: 'Your own Recon Arrays become high-priority targets (+2 enemy attack bonus against them).',
+  },
+];
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+TypeScript
+IGNORE_WHEN_COPYING_END
+File: types.ts (UPDATED CONTENT)
+Generated typescript
+// ... (keep all existing types)
+
+// --- VETERAN CADRE SYSTEM ---
+
+export interface TrainingOrder {
+  type: 'VETERAN'; // Can be expanded for other training types later
+  quantity: number;
+  turnsRemaining: number;
+}
+
+// In NodeData, add:
+// veteranUnits: number;
+// trainingQueue?: TrainingOrder;
+
+// In Faction, add:
+// totalVeteranUnits: number;
+
+// --- STRATEGIC DOCTRINE SYSTEM ---
+
+export type DoctrineTier = 'LOW' | 'MEDIUM' | 'HIGH';
+
+export type DoctrineTheme = 
+  'ECONOMIC' | 
+  'MILITARY_OFFENSE' | 
+  'MILITARY_DEFENSE' | 
+  'TERRITORIAL_CONTROL' | 
+  'INTELLIGENCE_GATHERING' | 
+  'COUNTER_INTELLIGENCE' |
+  'SUBTERFUGE' |
+  'LOGISTICS' |
+  'STRATEGIC_FLEXIBILITY';
+
+export interface DoctrineDefinition {
+  id: string;
+  name: string;
+  theme: DoctrineTheme;
+  tier: DoctrineTier;
+  buff: string;
+  nerf: string;
+}
+
+export interface ActiveDoctrine {
+  id: string; // Corresponds to DoctrineDefinition id
+  name: string; // For easy display
+  turnsRemaining?: number; // For temporary doctrines
+}
+
+// In GameState, add:
+// currentDoctrineChoices?: Partial<Record<PlayerId, DoctrineDefinition[] | null>>;
+
+// In Faction, add:
+// activeDoctrines: ActiveDoctrine[];
+
+// In GamePhase enum/type, add:
+// 'DOCTRINE'
+
+// In GameSettings, add:
+// gameMode: 'STANDARD' | 'ANOMALOUS_DOCTRINES';
+// anomalyDoctrineLimit: number;
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+TypeScript
+IGNORE_WHEN_COPYING_END
+
+Note: The comments in types.ts show where to add the new properties to existing interfaces. The new interfaces/types should be added to the file.
+
+File: constants.ts (UPDATED CONTENT)
+Generated typescript
+// ... (keep all existing constants)
+
+// --- VETERAN UNIT CONSTANTS ---
+export const VETERAN_COMBAT_BONUS = 2; // Flat bonus added to combat rolls.
+export const VETERAN_UPKEEP_MODIFIER = 1.5; // Veterans cost 1.5x standard upkeep.
+export const VETERAN_TRAINING_NODE_TYPE: NodeType = 'FORTRESS'; // Veterans are trained at Fortresses.
+export const VETERAN_TRAINING_TIME_TURNS = 2; // Takes 2 full turns to train.
+export const VETERAN_TRAINING_MAT_COST = 10; // MAT cost per unit to begin training.
+export const BATTLE_PROMOTION_RATIO = 5; // 1 in 5 surviving standard units in a battle are promoted.
+
+// --- STRATEGIC DOCTRINE CONSTANTS ---
+export const DOCTRINE_PHASE_INTERVAL = 5; // Doctrines are offered every 5 turns.
+export const DOCTRINE_STANDARD_START_TURN = 20;
+export const DOCTRINE_ANOMALOUS_START_TURN = 5;
+export const DOCTRINE_STANDARD_LIMIT = 2;
+export const DOCTRINE_LOW_TIER_COST = 250; // QR Cost
+export const DOCTRINE_MEDIUM_TIER_COST = 500; // QR Cost
+export const DOCTRINE_HIGH_TIER_COST = 1000; // QR Cost
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+TypeScript
+IGNORE_WHEN_COPYING_END

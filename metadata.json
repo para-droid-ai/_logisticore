@@ -1,0 +1,6 @@
+{
+  "name": "Logisticore: The Attrition Doctrine_standalone_v1",
+  "description": "A turn-based strategy game focusing on logistics and warfare, where two AI factions compete for territorial control. Features a dynamic map, detailed faction management, and a thematic command terminal UI.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

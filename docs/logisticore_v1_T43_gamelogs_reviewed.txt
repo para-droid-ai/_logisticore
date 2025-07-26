@@ -1,0 +1,1141 @@
+1:22:24 [T1,FLUC] LYRIA_SYSTEM: Lyria AI Initialized.
+1:27:03 [T1,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 1.
+1:27:14 [T1,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the East Supply Hub (ESH) to significantly increase MAT income.
+1:27:30 [T1,FLUC] AXIOM: OpPlan for AXIOM: Secure the visible neutral Industrial Hub (WSH) to significantly increase MAT income.
+1:27:31 [T1,RESO] SYSTEM: Starting RESOURCE phase for Turn 1.
+1:27:31 [T1,RESO] GEM-Q: GEM-Q gained 10 QR (from 1 connected nodes in largest network) and 15 MAT.
+1:27:31 [T1,RESO] AXIOM: AXIOM gained 10 QR (from 1 connected nodes in largest network) and 15 MAT.
+1:27:31 [T1,RESO] GEM-Q: GEM-Q automatically reinforced with 5 units across Command Nodes.
+1:27:31 [T1,RESO] AXIOM: AXIOM automatically reinforced with 5 units across Command Nodes.
+1:27:33 [T1,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:27:41 [T1,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing Operation Early Harvest task: Move units from CN-W to capture the undefended Industrial Hub at WSH. This aligns with the OpPlan's primary objective to secure a significant economic boost (20 MAT/turn) early in the game. WSH is visible, adjacent, and has 0 units, making this a low-risk, high-reward action.
+1:27:41 [T1,MANE] AXIOM: AXIOM staged 20 units from Western Staging to attack West Supply Hub.
+1:27:41 [T1,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:27:46 [T1,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing OpPlan 'Operation Early Harvest' by attacking the East Supply Hub (ESH) from CN-E with 15 units. ESH is a high-value economic target (20 MAT/turn) with low defense (1 unit), adjacent to CN-E, offering the best immediate economic return and aligning with the strategic goal of economic dominance.
+1:27:46 [T1,MANE] GEM-Q: GEM-Q staged 15 units from Eastern Staging to attack East Supply Hub.
+1:27:47 [T1,COMB] SYSTEM: Starting COMBAT phase for Turn 1.
+1:27:47 [T1,COMB] SYSTEM: Combat at West Supply Hub: AXIOM & allies (20 units) vs Neutral Garrison (0 units).
+1:27:47 [T1,COMB] AXIOM: AXIOM wins! West Supply Hub captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:27:47 [T1,COMB] SYSTEM: Combat at East Supply Hub: GEM-Q & allies (15 units) vs Neutral Garrison (1 units).
+1:27:47 [T1,COMB] GEM-Q: GEM-Q wins! East Supply Hub captured. Losses: Att-1, Def-1. (Arty: Att-0, Def-0)
+1:27:49 [T1,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:27:56 [T1,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. WSH, the primary objective captured in the previous phase, is currently at maximum unit capacity (20/20). No additional units can be moved into WSH from CN-W (the only other owned node with units) to reinforce it. Moving units from WSH to CN-W would weaken WSH's defense. Moving units from CN-W to any other owned node is not possible as only CN-W and WSH are owned, and WSH is full. Therefore, no strategic unit movement is possible in this Fortification phase to enhance the defensive posture of owned nodes. Holding position is the only valid action.
+1:27:56 [T1,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: WSH, the primary objective captured in the previous phase, is currently at maximum unit capacity (20/20). No additional units can be moved into WSH from CN-W (the only other owned node with units) to reinforce it. Moving units from WSH to CN-W would weaken WSH's defense. Moving units from CN-W to any other owned node is not possible as only CN-W and WSH are owned, and WSH is full. Therefore, no strategic unit movement is possible in this Fortification phase to enhance the defensive posture of owned nodes. Holding position is the only valid action.
+1:27:57 [T1,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:28:05 [T1,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the newly captured East Supply Hub (ESH) to its maximum capacity (20 units) by moving 6 units from the Command Node (CN-E). This action secures the valuable economic gain achieved in the previous phase, aligning with the OpPlan's primary objective of establishing economic dominance early. ESH is now a critical node adjacent to several neutral territories, requiring a strong garrison.
+1:28:05 [T1,FORT] GEM-Q: GEM-Q redeployed 6 units from Eastern Staging to East Supply Hub for fortification.
+1:28:05 [T1,UPKE] SYSTEM: Starting UPKEEP phase for Turn 1.
+1:28:05 [T1,UPKE] GEM-Q: GEM-Q paid 7.25 MAT for upkeep (Units, Forts, 0 Recon Arrays). MAT: 657.75.
+1:28:05 [T1,UPKE] AXIOM: AXIOM paid 7.50 MAT for upkeep (Units, Forts, 0 Recon Arrays). MAT: 657.50.
+1:28:07 [T2,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 2.
+1:28:24 [T2,FLUC] GEM-Q: OpPlan for GEM-Q: Secure and activate the Neutral Recon Array at FBV to enable a Recon Pulse and gain critical intelligence.
+1:28:38 [T2,FLUC] AXIOM: OpPlan for AXIOM: Secure the visible neutral RECON_ARRAY node FBD to enable intelligence gathering.
+1:28:39 [T2,RESO] SYSTEM: Starting RESOURCE phase for Turn 2.
+1:28:39 [T2,RESO] GEM-Q: GEM-Q gained 20 QR (from 2 connected nodes in largest network) and 35 MAT.
+1:28:39 [T2,RESO] AXIOM: AXIOM gained 20 QR (from 2 connected nodes in largest network) and 35 MAT.
+1:28:39 [T2,RESO] GEM-Q: GEM-Q automatically reinforced with 10 units across Command Nodes.
+1:28:39 [T2,RESO] AXIOM: AXIOM automatically reinforced with 10 units across Command Nodes.
+1:28:41 [T2,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:28:47 [T2,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing Operation See-Through as per OpPlan. Attacking neutral node FBD from CN-W with 10 units to secure the RECON_ARRAY and enable intelligence gathering. This action is feasible with current units at CN-W and aligns with the strategic priority of gaining visibility in the fog of war.
+1:28:47 [T2,MANE] AXIOM: AXIOM staged 10 units from Western Staging to attack RA-Don.
+1:28:49 [T2,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:28:54 [T2,MANE] GEM-Q: GEM-Q action: MOVE_UNITS. Executing the first task of Operation Blind Sight: Move units from ESH to capture the neutral Recon Array at FBV. This aligns with the OpPlan's objective to gain map intelligence by securing the recon array, and ESH has sufficient units for the attack.
+1:28:54 [T2,MANE] GEM-Q: GEM-Q moved 10 units from East Supply Hub to RA-Volga.
+1:28:55 [T2,COMB] SYSTEM: Starting COMBAT phase for Turn 2.
+1:28:55 [T2,COMB] SYSTEM: Combat at RA-Don: AXIOM & allies (10 units) vs Neutral Garrison (5 units).
+1:28:55 [T2,COMB] AXIOM: AXIOM wins! RA-Don captured. Losses: Att-3, Def-5. (Arty: Att-0, Def-0)
+1:28:55 [T2,COMB] SYSTEM: Combat at RA-Volga: GEM-Q & allies (10 units) vs Neutral Garrison (5 units).
+1:28:55 [T2,COMB] GEM-Q: GEM-Q wins! RA-Volga captured. Losses: Att-5, Def-5. (Arty: Att-0, Def-0)
+1:28:57 [T2,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:29:02 [T2,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Reinforce the newly captured RECON_ARRAY node FBD to full capacity (15 units) by moving 8 units from CN-W. This secures the valuable node and enhances its defensive posture, aligning with the objective of securing gains.
+1:29:02 [T2,FORT] AXIOM: AXIOM redeployed 8 units from Western Staging to RA-Don for fortification.
+1:29:03 [T2,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:29:11 [T2,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the newly captured RECON_ARRAY node (FBV) to secure it for the upcoming activation and pulse, drawing units from the adjacent Industrial Hub (ESH) while leaving a minimal garrison there. This aligns with the OpPlan's focus on FBV and the need to secure gains.
+1:29:11 [T2,FORT] GEM-Q: GEM-Q redeployed 8 units from East Supply Hub to RA-Volga for fortification.
+1:29:13 [T2,UPKE] SYSTEM: Starting UPKEEP phase for Turn 2.
+1:29:13 [T2,UPKE] GEM-Q: GEM-Q paid 8.50 MAT for upkeep (Units, Forts, 0 Recon Arrays). MAT: 684.25.
+1:29:13 [T2,UPKE] AXIOM: AXIOM paid 9.25 MAT for upkeep (Units, Forts, 0 Recon Arrays). MAT: 683.25.
+1:29:15 [T3,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 3.
+1:29:33 [T3,FLUC] GEM-Q: OpPlan for GEM-Q: Activate the Recon Array at FBV and secure the October Plant (OP) Industrial Hub.
+1:29:51 [T3,FLUC] AXIOM: OpPlan for AXIOM: Activate the Recon Array at FBD and redistribute units for improved defense of the Command Node.
+1:29:53 [T3,RESO] SYSTEM: Starting RESOURCE phase for Turn 3.
+1:29:53 [T3,RESO] GEM-Q: GEM-Q gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:29:53 [T3,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:29:53 [T3,RESO] GEM-Q: GEM-Q automatically reinforced with 15 units across Command Nodes.
+1:29:53 [T3,RESO] AXIOM: AXIOM automatically reinforced with 15 units across Command Nodes.
+1:29:55 [T3,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:30:00 [T3,MANE] AXIOM: AXIOM action: ACTIVATE_RECON_ARRAY. Executing the first task of Operation See-Through to establish reconnaissance capability. Activating the owned RECON_ARRAY at FBD is the priority to gain intelligence beyond the current Fog of War, as outlined in the OpPlan. Resources are sufficient for the activation cost.
+1:30:00 [T3,MANE] AXIOM: AXIOM activated Recon Array RA-Don. Recon Capability is now READY.
+1:30:01 [T3,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:30:10 [T3,MANE] GEM-Q: GEM-Q action: ACTIVATE_RECON_ARRAY. Prioritizing the activation of the Recon Array at FBV as per the OpPlan's primary objective to gain intelligence next turn. Resources are sufficient for the activation cost. This sets up future actions with better map visibility.
+1:30:10 [T3,MANE] GEM-Q: GEM-Q activated Recon Array RA-Volga. Recon Capability is now READY.
+1:30:11 [T3,COMB] SYSTEM: Starting COMBAT phase for Turn 3.
+1:30:13 [T3,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:30:18 [T3,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Moving units from the full WSH node to reinforce the Command Node at CN-W as per the OpPlan's defensive redistribution objective. This consolidates forces at the primary defensive point and utilizes available capacity at the target node.
+1:30:18 [T3,FORT] AXIOM: AXIOM redeployed 15 units from West Supply Hub to Western Staging for fortification.
+1:30:19 [T3,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:30:27 [T3,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforcing the lightly-garrisoned Industrial Hub (ESH) from the well-stocked Command Node (CN-E) improves the defensive posture of a key economic node, aligning with general fortification principles and securing existing gains, especially given the limited map intel.
+1:30:27 [T3,FORT] GEM-Q: GEM-Q redeployed 15 units from Eastern Staging to East Supply Hub for fortification.
+1:30:27 [T3,UPKE] SYSTEM: Starting UPKEEP phase for Turn 3.
+1:30:27 [T3,UPKE] GEM-Q: GEM-Q paid 22.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 647.00.
+1:30:27 [T3,UPKE] AXIOM: AXIOM paid 23.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 645.25.
+1:30:29 [T4,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 4.
+1:30:45 [T4,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the October Plant Industrial Hub to significantly increase MAT income.
+1:31:17 [T4,FLUC] AXIOM: OpPlan for AXIOM: Consolidate forces and fortify the primary Command Node (CN-W) while increasing overall unit strength, preparing for future operations.
+1:31:19 [T4,RESO] SYSTEM: Starting RESOURCE phase for Turn 4.
+1:31:19 [T4,RESO] GEM-Q: GEM-Q gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:31:19 [T4,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:31:19 [T4,RESO] GEM-Q: GEM-Q automatically reinforced with 15 units across Command Nodes.
+1:31:19 [T4,RESO] AXIOM: AXIOM automatically reinforced with 15 units across Command Nodes.
+1:31:21 [T4,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:31:37 [T4,MANE] AXIOM: AXIOM action: MOVE_UNITS. Executing the first task of Operation Citadel to consolidate units from WSH to the primary Command Node (CN-W). This aligns with the OpPlan's objective of strengthening the core force, accepting the calculated risk of leaving WSH vulnerable as per the plan's analysis.
+1:31:37 [T4,MANE] AXIOM: AXIOM moved 5 units from West Supply Hub to Western Staging.
+1:31:37 [T4,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:31:45 [T4,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing the primary objective of Operation October Harvest by attacking the neutral October Plant (OP) from ESH with 12 units. This aims to capture the high-value Industrial Hub to significantly increase MAT income, addressing the current low net MAT/turn and aligning with the strategic goal of economic expansion.
+1:31:45 [T4,MANE] GEM-Q: GEM-Q staged 12 units from East Supply Hub to attack October Plant.
+1:31:47 [T4,COMB] SYSTEM: Starting COMBAT phase for Turn 4.
+1:31:47 [T4,COMB] SYSTEM: Combat at October Plant: GEM-Q & allies (12 units) vs Neutral Garrison (5 units).
+1:31:47 [T4,COMB] GEM-Q: GEM-Q wins! October Plant captured. Losses: Att-4, Def-5. (Arty: Att-0, Def-0)
+1:31:49 [T4,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:31:54 [T4,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Execute the feasible MOVE_UNITS task from the OpPlan to consolidate forces at the primary Command Node (CN-W), enhancing its defensive posture and preparing for future operations. Moving 15 units from FBD to CN-W aligns with the plan to strengthen the core force.
+1:31:54 [T4,FORT] AXIOM: AXIOM redeployed 15 units from RA-Don to Western Staging for fortification.
+1:31:55 [T4,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:32:03 [T4,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforcing the newly captured, high-value October Plant (OP) from the main Command Node (CN-E) to secure the economic gain and improve its defensive posture. This aligns with the OpPlan objective of securing OP and uses available capacity at the target node.
+1:32:03 [T4,FORT] GEM-Q: GEM-Q redeployed 12 units from Eastern Staging to October Plant for fortification.
+1:32:03 [T4,UPKE] SYSTEM: Starting UPKEEP phase for Turn 4.
+1:32:03 [T4,UPKE] GEM-Q: GEM-Q paid 25.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 657.00.
+1:32:03 [T4,UPKE] AXIOM: AXIOM paid 26.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 653.50.
+1:32:05 [T5,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 5.
+1:32:22 [T5,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the Tractor Factory (TF) Industrial Hub to significantly increase MAT income.
+1:32:37 [T5,FLUC] AXIOM: OpPlan for AXIOM: Secure control of immediately adjacent unoccupied nodes WSH and FBD to consolidate local presence and potentially expand visibility.
+1:32:39 [T5,RESO] SYSTEM: Starting RESOURCE phase for Turn 5.
+1:32:39 [T5,RESO] GEM-Q: GEM-Q gained 40 QR (from 4 connected nodes in largest network) and 55 MAT.
+1:32:39 [T5,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:32:39 [T5,RESO] GEM-Q: GEM-Q automatically reinforced with 20 units across Command Nodes.
+1:32:39 [T5,RESO] AXIOM: AXIOM automatically reinforced with 8 units across Command Nodes.
+1:32:39 [T5,RESO] AXIOM: AXIOM reinforced West Supply Hub with 7 overflow units.
+1:32:41 [T5,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:32:53 [T5,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The OpPlan emphasizes consolidating local control and potential intel expansion. FBD is an owned and active Recon Array. Performing a Recon Pulse aligns with the intel expansion aspect of the OpPlan and provides full map visibility for better strategic planning in the next turn, which is more impactful than executing outdated unit movement tasks based on previous turn's state. Resources are sufficient for the pulse cost.
+1:32:53 [T5,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:32:55 [T5,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:33:01 [T5,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing the primary task of Operation Steel Harvest by moving the largest contingent (20 units) from OP to attack the target node TF, aiming to capture the Industrial Hub for economic gain.
+1:33:01 [T5,MANE] GEM-Q: GEM-Q staged 20 units from October Plant to attack Tractor Factory.
+1:33:03 [T5,COMB] SYSTEM: Starting COMBAT phase for Turn 5.
+1:33:03 [T5,COMB] SYSTEM: Combat at Tractor Factory: GEM-Q & allies (20 units) vs Neutral Garrison (5 units).
+1:33:03 [T5,COMB] GEM-Q: GEM-Q wins! Tractor Factory captured. Losses: Att-0, Def-5. (Arty: Att-0, Def-0)
+1:33:05 [T5,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:33:12 [T5,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Executing the primary objective of Operation Local Consolidation by securing the FBD Recon Array node. Moving 15 units from CN-W fully occupies FBD's capacity, establishing control and potentially activating the array for intel.
+1:33:12 [T5,FORT] AXIOM: AXIOM redeployed 15 units from Western Staging to RA-Don for fortification.
+1:33:13 [T5,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:33:22 [T5,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Secure the newly captured and currently undefended Industrial Hub (OP) by moving the garrison from the adjacent Recon Array (FBV). OP is a critical economic node and its defense is a higher priority than maintaining a garrison at FBV, especially since FBV is near the Command Node (CN-E) and another owned Industrial Hub (ESH).
+1:33:22 [T5,FORT] GEM-Q: GEM-Q redeployed 13 units from RA-Volga to October Plant for fortification.
+1:33:23 [T5,UPKE] SYSTEM: Starting UPKEEP phase for Turn 5.
+1:33:23 [T5,UPKE] GEM-Q: GEM-Q paid 30.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 682.00.
+1:33:23 [T5,UPKE] AXIOM: AXIOM paid 30.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 638.00.
+1:33:25 [T6,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 6.
+1:33:43 [T6,FLUC] GEM-Q: OpPlan for GEM-Q: Gain comprehensive map intelligence via Recon Pulse.
+1:34:03 [T6,FLUC] AXIOM: OpPlan for AXIOM: Capture the East Supply Hub (ESH) to significantly increase MAT income.
+1:34:05 [T6,RESO] SYSTEM: Starting RESOURCE phase for Turn 6.
+1:34:05 [T6,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 75 MAT.
+1:34:05 [T6,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:34:05 [T6,RESO] GEM-Q: GEM-Q automatically reinforced with 25 units across Command Nodes.
+1:34:05 [T6,RESO] AXIOM: AXIOM automatically reinforced with 15 units across Command Nodes.
+1:34:07 [T6,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:34:15 [T6,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The OpPlan is based on attacking ESH, but ESH is not visible due to the lack of an active recon pulse. Performing a recon pulse using the active FBD array will provide the necessary intelligence to locate ESH and other nodes, enabling the execution or adaptation of the OpPlan next turn. Resources are sufficient for the pulse cost.
+1:34:15 [T6,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:34:17 [T6,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:34:23 [T6,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The OpPlan's primary objective is to gain comprehensive map intelligence. My active RECON_ARRAY (FBV) is available and connected to a CN, and I have sufficient resources (QR and MAT) to perform the Recon Pulse action. This action directly fulfills the OpPlan's task and is the most strategic move to overcome the current Fog of War limitation and inform future decisions.
+1:34:23 [T6,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:34:23 [T6,COMB] SYSTEM: Starting COMBAT phase for Turn 6.
+1:34:25 [T6,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:34:32 [T6,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Reinforce the owned Industrial Hub WSH to its maximum capacity using units from the full Command Node CN-W. This secures a valuable economic asset and improves defensive posture on a key node, aligning with fortification phase objectives.
+1:34:32 [T6,FORT] AXIOM: AXIOM redeployed 13 units from Western Staging to West Supply Hub for fortification.
+1:34:33 [T6,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:34:39 [T6,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the lightly defended Industrial Hub (ESH) using units from the main command node (CN-E) to secure this valuable asset, as per the OpPlan's focus on securing existing assets after gaining intel. ESH was significantly under capacity (5/20 units).
+1:34:39 [T6,FORT] GEM-Q: GEM-Q redeployed 15 units from Eastern Staging to East Supply Hub for fortification.
+1:34:41 [T6,UPKE] SYSTEM: Starting UPKEEP phase for Turn 6.
+1:34:41 [T6,UPKE] GEM-Q: GEM-Q paid 36.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 700.75.
+1:34:41 [T6,UPKE] AXIOM: AXIOM paid 34.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 618.75.
+1:34:43 [T7,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 7.
+1:35:01 [T7,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the Southern Strongpoint (SS) to establish a southern defensive anchor and gain income.
+1:35:21 [T7,FLUC] AXIOM: OpPlan for AXIOM: Capture the neutral Southern Strongpoint (SS) to secure a strategic fortified node and increase MAT income.
+1:35:23 [T7,RESO] SYSTEM: Starting RESOURCE phase for Turn 7.
+1:35:23 [T7,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 75 MAT.
+1:35:23 [T7,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:35:23 [T7,RESO] GEM-Q: GEM-Q automatically reinforced with 23 units across Command Nodes.
+1:35:23 [T7,RESO] GEM-Q: GEM-Q reinforced RA-Volga with 2 overflow units.
+1:35:23 [T7,RESO] AXIOM: AXIOM automatically reinforced with 13 units across Command Nodes.
+1:35:23 [T7,RESO] AXIOM: AXIOM lost 2 reinforcement units due to no available capacity.
+1:35:25 [T7,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:35:34 [T7,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The current OpPlan relies on intel about the Southern Strongpoint (SS) defense from the previous turn's recon pulse. The pulse is currently off, making this intel potentially outdated. To safely execute the OpPlan's attack objective and make an informed decision, the first priority is to reactivate the recon pulse using the active FBD array to gain current map intelligence. This action is a necessary precursor to the planned attack on SS.
+1:35:34 [T7,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:35:35 [T7,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:35:44 [T7,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing the primary task of Operation Southern Anchor by moving the main attack force (40 units) from CN-E to initiate an attack on the Southern Strongpoint (SS), as per the OpPlan based on recent intel.
+1:35:44 [T7,MANE] GEM-Q: GEM-Q staged 40 units from Eastern Staging to attack Southern Strongpoint.
+1:35:45 [T7,COMB] SYSTEM: Starting COMBAT phase for Turn 7.
+1:35:45 [T7,COMB] SYSTEM: Combat at Southern Strongpoint: GEM-Q & allies (40 units) vs Neutral Garrison (10 units).
+1:35:45 [T7,COMB] GEM-Q: GEM-Q wins! Southern Strongpoint captured. Losses: Att-5, Def-10. (Arty: Att-0, Def-0)
+1:35:47 [T7,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:35:53 [T7,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes (CN-W, WSH, FBD) are currently at maximum unit capacity, preventing any unit movement between them during the Fortification phase. Holding current positions maintains defensive posture and allows for assessment of the enemy's successful capture of SS, which invalidates the original OpPlan objective for this phase.
+1:35:53 [T7,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes (CN-W, WSH, FBD) are currently at maximum unit capacity, preventing any unit movement between them during the Fortification phase. Holding current positions maintains defensive posture and allows for assessment of the enemy's successful capture of SS, which invalidates the original OpPlan objective for this phase.
+1:35:55 [T7,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:35:58 [T7,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the newly captured Southern Strongpoint (SS) to its maximum capacity (40 units) by moving 5 units from CN-E. This secures the strategic defensive anchor as per the OpPlan's objective and rationale.
+1:35:58 [T7,FORT] GEM-Q: GEM-Q redeployed 5 units from Eastern Staging to Southern Strongpoint for fortification.
+1:35:59 [T7,UPKE] SYSTEM: Starting UPKEEP phase for Turn 7.
+1:35:59 [T7,UPKE] GEM-Q: GEM-Q paid 51.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 724.50.
+1:35:59 [T7,UPKE] AXIOM: AXIOM paid 37.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 596.25.
+1:36:01 [T8,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 8.
+1:36:43 [T8,FLUC] GEM-Q: OpPlan for GEM-Q: Gain comprehensive map intelligence via Recon Pulse to inform immediate and future strategic decisions.
+1:37:03 [T8,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) to secure positive MAT income and prevent economic collapse.
+1:37:05 [T8,RESO] SYSTEM: Starting RESOURCE phase for Turn 8.
+1:37:05 [T8,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 85 MAT.
+1:37:05 [T8,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 35 MAT.
+1:37:05 [T8,RESO] GEM-Q: GEM-Q automatically reinforced with 30 units across Command Nodes.
+1:37:05 [T8,RESO] AXIOM: AXIOM lost 15 reinforcement units due to no available capacity.
+1:37:07 [T8,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:37:23 [T8,MANE] AXIOM: AXIOM action: ATTACK_NODE. The OpPlan's immediate attack on OP is impossible this turn due to adjacency and FoW limitations. To advance towards the objective and position units for a potential attack next turn, the AI will move units from FBD to capture the adjacent neutral node WG. This aligns with the OpPlan's intent to move forward and secures a minor income source.
+1:37:23 [T8,MANE] AXIOM: AXIOM staged 15 units from RA-Don to attack West Gate.
+1:37:23 [T8,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:37:27 [T8,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. Executing Operation Oracle Eye's primary task to gain full map intelligence via a Recon Pulse from the active FBV array. This is critical for informed strategic planning and aligns with the current OpPlan and available resources.
+1:37:27 [T8,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:37:27 [T8,COMB] SYSTEM: Starting COMBAT phase for Turn 8.
+1:37:27 [T8,COMB] SYSTEM: Combat at West Gate: AXIOM & allies (15 units) vs Neutral Garrison (0 units).
+1:37:27 [T8,COMB] AXIOM: AXIOM wins! West Gate captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:37:29 [T8,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:37:44 [T8,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. The current OpPlan requires units at FBD for the upcoming attack on OP. FBD is currently empty. Moving 15 units from the well-garrisoned CN-W fills FBD to its capacity, enabling the planned attack vector and increasing the total units available for the critical assault on OP, which is necessary to address the economic crisis.
+1:37:44 [T8,FORT] AXIOM: AXIOM redeployed 15 units from Western Staging to RA-Don for fortification.
+1:37:45 [T8,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:37:52 [T8,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Consolidating units at the Eastern Command Node (CN-E) from the adjacent Industrial Hub (TF) to reinforce the CN and utilize available capacity, based on the full map intel from the Recon Pulse. This frees up space at TF and strengthens the command node.
+1:37:52 [T8,FORT] GEM-Q: GEM-Q redeployed 15 units from Tractor Factory to Eastern Staging for fortification.
+1:37:53 [T8,UPKE] SYSTEM: Starting UPKEEP phase for Turn 8.
+1:37:53 [T8,UPKE] GEM-Q: GEM-Q paid 58.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 730.75.
+1:37:53 [T8,UPKE] AXIOM: AXIOM paid 37.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 593.75.
+1:37:55 [T9,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 9.
+1:38:14 [T9,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub at WSH to secure economic advantage and damage the enemy.
+1:38:30 [T9,FLUC] AXIOM: OpPlan for AXIOM: Gain comprehensive map intelligence via Recon Pulse to identify economic targets or enemy positions.
+1:38:31 [T9,RESO] SYSTEM: Starting RESOURCE phase for Turn 9.
+1:38:31 [T9,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 85 MAT.
+1:38:31 [T9,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:38:31 [T9,RESO] GEM-Q: GEM-Q reinforced Tractor Factory with 15 overflow units.
+1:38:31 [T9,RESO] GEM-Q: GEM-Q reinforced RA-Volga with 13 overflow units.
+1:38:31 [T9,RESO] GEM-Q: GEM-Q reinforced October Plant with 2 overflow units.
+1:38:31 [T9,RESO] AXIOM: AXIOM automatically reinforced with 15 units across Command Nodes.
+1:38:31 [T9,RESO] AXIOM: AXIOM reinforced West Gate with 5 overflow units.
+1:38:33 [T9,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:38:37 [T9,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Execute the current OpPlan (Operation Oracle) to gain full map visibility. Performing a Recon Pulse on the active RECON_ARRAY (FBD) is the critical first step to identify potential economic targets (Industrial Hubs) or enemy positions, which is necessary given the current low net MAT income and lack of intel. Resources are sufficient for the pulse cost.
+1:38:37 [T9,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:38:37 [T9,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:38:50 [T9,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan relies on full map intel to target WSH, but the pulse is not currently active. Performing a pulse from the active FBV array will provide the necessary intelligence to execute the OpPlan's objective next turn or make a more informed strategic decision based on the full map state. This is the most logical step to align the plan with the available intel capability.
+1:38:50 [T9,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:38:51 [T9,COMB] SYSTEM: Starting COMBAT phase for Turn 9.
+1:38:53 [T9,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:38:58 [T9,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. The MOVE_UNITS action requires moving units to an owned node with available capacity. Since no owned node has available capacity, no units can be moved. Therefore, the only valid action is HOLD_POSITION.
+1:38:58 [T9,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. The MOVE_UNITS action requires moving units to an owned node with available capacity. Since no owned node has available capacity, no units can be moved. Therefore, the only valid action is HOLD_POSITION.
+1:38:59 [T9,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:39:08 [T9,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All key owned nodes (CN-E, SS, TF, FBV, ESH) are currently at maximum unit capacity, preventing reinforcement. The only node with available capacity (OP) is not a critical defensive point or primary staging area for the planned attack. Moving units from full, critical nodes to fill the minor capacity gap at OP would weaken existing strongpoints without significant strategic benefit for fortification before the planned offensive. Holding position maintains current garrisons and preserves the attack force at CN-E.
+1:39:08 [T9,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All key owned nodes (CN-E, SS, TF, FBV, ESH) are currently at maximum unit capacity, preventing reinforcement. The only node with available capacity (OP) is not a critical defensive point or primary staging area for the planned attack. Moving units from full, critical nodes to fill the minor capacity gap at OP would weaken existing strongpoints without significant strategic benefit for fortification before the planned offensive. Holding position maintains current garrisons and preserves the attack force at CN-E.
+1:39:09 [T9,UPKE] SYSTEM: Starting UPKEEP phase for Turn 9.
+1:39:09 [T9,UPKE] GEM-Q: GEM-Q paid 66.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 729.50.
+1:39:09 [T9,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 571.25.
+1:39:11 [T10,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 10.
+1:39:32 [T10,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub at WSH to secure economic advantage and damage the enemy.
+1:40:06 [T10,FLUC] AXIOM: OpPlan for AXIOM: Secure positive MAT income by capturing an enemy Industrial Hub.
+1:40:07 [T10,RESO] SYSTEM: Starting RESOURCE phase for Turn 10.
+1:40:07 [T10,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 85 MAT.
+1:40:07 [T10,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:40:07 [T10,RESO] GEM-Q: GEM-Q reinforced October Plant with 5 overflow units.
+1:40:07 [T10,RESO] GEM-Q: GEM-Q lost 25 reinforcement units due to no available capacity.
+1:40:07 [T10,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+1:40:09 [T10,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:40:21 [T10,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The current map summary intel is based on standard Fog of War as the recon pulse is not active this turn. The OpPlan to capture OP relies on intel that may be stale. To effectively execute the plan to address the critical MAT deficit by capturing an enemy Industrial Hub, fresh intelligence is required. Performing a recon pulse will provide full map visibility, allowing for an informed decision on the best target based on current enemy unit dispositions, directly supporting the economic recovery objective.
+1:40:21 [T10,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:40:21 [T10,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:40:30 [T10,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing Operation Ironclad: Westward Push. The primary objective is to capture the enemy Industrial Hub at WSH. Based on the OpPlan, this action involves moving 30 units from the Southern Strongpoint (SS) to attack WSH. Resources are sufficient, and SS has the required units available. This action directly addresses the OpPlan's core task and objective for this turn.
+1:40:30 [T10,MANE] GEM-Q: GEM-Q staged 30 units from Southern Strongpoint to attack West Supply Hub.
+1:40:31 [T10,COMB] SYSTEM: Starting COMBAT phase for Turn 10.
+1:40:31 [T10,COMB] SYSTEM: Combat at West Supply Hub: GEM-Q & allies (30 units) vs AXIOM (20 units).
+1:40:31 [T10,COMB] GEM-Q: GEM-Q wins! West Supply Hub captured. Losses: Att-11, Def-20. (Arty: Att-0, Def-0)
+1:40:33 [T10,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:40:38 [T10,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All AXIOM-owned nodes (CN-W, FBD, WG) are currently at maximum unit capacity. This prevents any 'MOVE_UNITS' action as there is no available space to move units into. Therefore, the only valid action is 'HOLD_POSITION'. This also aligns with the critical economic state guidance to conserve MAT by avoiding movement unless absolutely necessary, which it is not in this state.
+1:40:38 [T10,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All AXIOM-owned nodes (CN-W, FBD, WG) are currently at maximum unit capacity. This prevents any 'MOVE_UNITS' action as there is no available space to move units into. Therefore, the only valid action is 'HOLD_POSITION'. This also aligns with the critical economic state guidance to conserve MAT by avoiding movement unless absolutely necessary, which it is not in this state.
+1:40:39 [T10,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:40:47 [T10,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Consolidate units from the full Command Node (CN-E) to reinforce the under-garrisoned Fortress node (SS). This improves southern defense and frees up capacity at the main staging node, aligning with the need to manage full nodes identified in the OpPlan analysis.
+1:40:47 [T10,FORT] GEM-Q: GEM-Q redeployed 30 units from Eastern Staging to Southern Strongpoint for fortification.
+1:40:49 [T10,UPKE] SYSTEM: Starting UPKEEP phase for Turn 10.
+1:40:49 [T10,UPKE] GEM-Q: GEM-Q paid 64.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 749.75.
+1:40:49 [T10,UPKE] AXIOM: AXIOM paid 37.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 553.75.
+1:40:51 [T11,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 11.
+1:41:09 [T11,FLUC] GEM-Q: OpPlan for GEM-Q: Gain comprehensive intelligence on enemy positions and strength using a Recon Pulse to inform future strategic decisions.
+1:41:24 [T11,FLUC] AXIOM: OpPlan for AXIOM: Capture WSH to secure positive MAT income and prevent unit disbandment.
+1:41:25 [T11,RESO] SYSTEM: Starting RESOURCE phase for Turn 11.
+1:41:25 [T11,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 105 MAT.
+1:41:25 [T11,RESO] AXIOM: AXIOM gained 30 QR (from 3 connected nodes in largest network) and 20 MAT.
+1:41:25 [T11,RESO] GEM-Q: GEM-Q automatically reinforced with 30 units across Command Nodes.
+1:41:25 [T11,RESO] GEM-Q: GEM-Q reinforced West Supply Hub with 1 overflow units.
+1:41:25 [T11,RESO] GEM-Q: GEM-Q lost 4 reinforcement units due to no available capacity.
+1:41:25 [T11,RESO] AXIOM: AXIOM lost 15 reinforcement units due to no available capacity.
+1:41:27 [T11,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:41:33 [T11,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing Operation Ironclad Assault as per OpPlan. The critical negative MAT income requires capturing an Industrial Hub this turn. Attacking WSH from CN-W with the main force is the most direct method to achieve this economic objective, as permitted by the critical economic state guidance.
+1:41:33 [T11,MANE] AXIOM: AXIOM staged 65 units from Western Staging to attack West Supply Hub.
+1:41:35 [T11,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:41:40 [T11,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current Operational Plan, 'Operation Oracle', prioritizes gaining comprehensive intelligence via a Recon Pulse. My active Recon Array, FBV, is available and connected to a Command Node. I have sufficient MAT and QR resources to perform the pulse (40 QR, 20 MAT). Executing the pulse aligns directly with the OpPlan's task and objective, addressing the current intelligence gap caused by Fog of War.
+1:41:40 [T11,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:41:41 [T11,COMB] SYSTEM: Starting COMBAT phase for Turn 11.
+1:41:41 [T11,COMB] SYSTEM: Combat at West Supply Hub: AXIOM & allies (65 units) vs GEM-Q (20 units).
+1:41:41 [T11,COMB] AXIOM: AXIOM wins! West Supply Hub captured. Losses: Att-6, Def-20. (Arty: Att-0, Def-0)
+1:41:43 [T11,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:41:48 [T11,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Successfully captured WSH, resulting in significant unit overstacking. Moving 39 excess units from WSH (59 total, max 20) to CN-W (10 total, max 75) to prevent disbandment and consolidate forces at the Command Node. This prioritizes preserving unit strength after the successful offensive.
+1:41:48 [T11,FORT] AXIOM: AXIOM redeployed 39 units from West Supply Hub to Western Staging for fortification.
+1:41:49 [T11,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:41:52 [T11,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity according to the map summary. Therefore, no units can be moved into any friendly node, making a MOVE_UNITS action impossible under the current constraints. Holding position is the only valid action.
+1:41:52 [T11,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity according to the map summary. Therefore, no units can be moved into any friendly node, making a MOVE_UNITS action impossible under the current constraints. Holding position is the only valid action.
+1:41:53 [T11,UPKE] SYSTEM: Starting UPKEEP phase for Turn 11.
+1:41:53 [T11,UPKE] GEM-Q: GEM-Q paid 67.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 767.25.
+1:41:53 [T11,UPKE] AXIOM: AXIOM paid 36.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 537.75.
+1:41:55 [T12,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 12.
+1:42:11 [T12,FLUC] GEM-Q: OpPlan for GEM-Q: Capture enemy Industrial Hub WSH to improve economy and damage enemy.
+1:42:31 [T12,FLUC] AXIOM: OpPlan for AXIOM: Maintain defensive posture and consolidate forces while awaiting new intelligence or opportunities.
+1:42:33 [T12,RESO] SYSTEM: Starting RESOURCE phase for Turn 12.
+1:42:33 [T12,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 85 MAT.
+1:42:33 [T12,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:42:33 [T12,RESO] GEM-Q: GEM-Q lost 30 reinforcement units due to no available capacity.
+1:42:33 [T12,RESO] AXIOM: AXIOM automatically reinforced with 20 units across Command Nodes.
+1:42:35 [T12,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:42:45 [T12,MANE] AXIOM: AXIOM action: BUILD_FORTIFICATIONS. Executing the primary task of Operation Stand Fast. Building fortifications at CN-W aligns with the defensive posture, improves survivability, and is affordable given current MAT reserves. This action conserves resources compared to unit deployment and is the most prudent move given the severe FoW and low net MAT, as outlined in the OpPlan analysis.
+1:42:45 [T12,MANE] AXIOM: AXIOM fortified Western Staging to level 2.
+1:42:45 [T12,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:42:58 [T12,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current Operational Plan targets the enemy Industrial Hub WSH. WSH is not currently visible due to standard Fog of War. Performing a recon pulse with the active Recon Array FBV will reveal the map state, including WSH, allowing for informed planning and execution of the OpPlan's attack tasks in the next turn.
+1:42:58 [T12,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:42:59 [T12,COMB] SYSTEM: Starting COMBAT phase for Turn 12.
+1:43:01 [T12,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:43:16 [T12,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidating 6 units from the full Industrial Hub (WSH) to the Command Node (CN-W) to fill its available capacity (69/75 to 75/75). This enhances the defensive posture at the critical Command Node, aligning with the OpPlan's objective to consolidate forces and maintain defense while awaiting new intelligence. WSH retains a garrison of 14 units.
+1:43:16 [T12,FORT] AXIOM: AXIOM redeployed 6 units from West Supply Hub to Western Staging for fortification.
+1:43:17 [T12,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:43:20 [T12,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any unit movements between them during the Fortification phase without exceeding capacity limits. Holding position is the only valid action.
+1:43:20 [T12,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any unit movements between them during the Fortification phase without exceeding capacity limits. Holding position is the only valid action.
+1:43:21 [T12,UPKE] SYSTEM: Starting UPKEEP phase for Turn 12.
+1:43:21 [T12,UPKE] GEM-Q: GEM-Q paid 67.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 764.75.
+1:43:21 [T12,UPKE] AXIOM: AXIOM paid 41.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 486.75.
+1:43:23 [T13,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 13.
+1:43:39 [T13,FLUC] GEM-Q: OpPlan for GEM-Q: Consolidate forces at SS and ESH to prepare for an assault on the enemy Industrial Hub WSH in the next turn, while freeing space in CN-E for reinforcements.
+1:44:07 [T13,FLUC] AXIOM: OpPlan for AXIOM: Achieve positive MAT income and prevent unit disbandment by significantly reducing unit upkeep.
+1:44:07 [T13,RESO] SYSTEM: Starting RESOURCE phase for Turn 13.
+1:44:07 [T13,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 85 MAT.
+1:44:07 [T13,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:44:07 [T13,RESO] GEM-Q: GEM-Q lost 30 reinforcement units due to no available capacity.
+1:44:07 [T13,RESO] AXIOM: AXIOM reinforced West Supply Hub with 6 overflow units.
+1:44:07 [T13,RESO] AXIOM: AXIOM lost 14 reinforcement units due to no available capacity.
+1:44:09 [T13,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:44:22 [T13,MANE] AXIOM: AXIOM action: HOLD_POSITION. Invalid action type received from AI.
+1:44:22 [T13,MANE] AXIOM: AXIOM action: HOLD_POSITION. Reason: Invalid action type received from AI.
+1:44:23 [T13,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:44:41 [T13,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. The OpPlan requires moving units from CN-E to SS, but SS is full (40/40 units), making a direct MOVE_UNITS to SS impossible. CN-E is full (75/75 units), and freeing space there is critical to receive reinforcements. Attacking the adjacent neutral node EMP with 20 units from CN-E is a viable action that frees space in CN-E (75 -> 55 units) and captures a node for income and strategic positioning towards the SS/WSH area (EMP is connected to CS, which is connected to SB, connected to SS). This action partially fulfills the OpPlan's goal of freeing CN-E space and positions units forward, adapting to the impossibility of the planned move to SS.
+1:44:41 [T13,MANE] GEM-Q: GEM-Q staged 20 units from Eastern Staging to attack East Motor Pool.
+1:44:43 [T13,COMB] SYSTEM: Starting COMBAT phase for Turn 13.
+1:44:43 [T13,COMB] SYSTEM: Combat at East Motor Pool: GEM-Q & allies (20 units) vs Neutral Garrison (0 units).
+1:44:43 [T13,COMB] GEM-Q: GEM-Q wins! East Motor Pool captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:44:45 [T13,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:44:49 [T13,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. The current economic state is critical with negative net MAT. The primary objective this turn is economic stabilization through unit disbandment (planned for the next phase). Given the critical economic state, the lack of immediate visible threats according to limited intel, and the fact that all owned nodes are currently at maximum capacity preventing effective unit repositioning via MOVE_UNITS without violating capacity rules, the most prudent action is to HOLD_POSITION. This conserves resources and avoids unnecessary movements while prioritizing the upcoming economic stabilization measures.
+1:44:49 [T13,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: The current economic state is critical with negative net MAT. The primary objective this turn is economic stabilization through unit disbandment (planned for the next phase). Given the critical economic state, the lack of immediate visible threats according to limited intel, and the fact that all owned nodes are currently at maximum capacity preventing effective unit repositioning via MOVE_UNITS without violating capacity rules, the most prudent action is to HOLD_POSITION. This conserves resources and avoids unnecessary movements while prioritizing the upcoming economic stabilization measures.
+1:44:51 [T13,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:45:07 [T13,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. OpPlan's intended moves to SS are impossible as SS is at max capacity (40/40). Adjacent nodes to CN-E are full, preventing movement out of CN-E to free space as per OpPlan. Consolidating units at the Command Node (CN-E) is a valid fortification goal. Moving 20 units from ESH (20/20) to CN-E (55/75) is possible, consolidating forces at the CN-E and freeing up ESH, aligning with general consolidation despite filling CN-E instead of freeing it.
+1:45:07 [T13,FORT] GEM-Q: GEM-Q redeployed 20 units from East Supply Hub to Eastern Staging for fortification.
+1:45:07 [T13,UPKE] SYSTEM: Starting UPKEEP phase for Turn 13.
+1:45:07 [T13,UPKE] GEM-Q: GEM-Q paid 67.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 782.25.
+1:45:07 [T13,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 484.25.
+1:45:09 [T14,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 14.
+1:45:35 [T14,FLUC] GEM-Q: OpPlan for GEM-Q: Consolidate 20 units at ESH by moving them from CN-E, thereby freeing 20 slots in CN-E for upcoming auto-reinforcements, while operating under standard Fog of War.
+1:46:01 [T14,FLUC] AXIOM: OpPlan for AXIOM: Achieve positive net MAT income by reducing unit upkeep.
+1:46:01 [T14,RESO] SYSTEM: Starting RESOURCE phase for Turn 14.
+1:46:01 [T14,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 90 MAT.
+1:46:01 [T14,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:46:01 [T14,RESO] GEM-Q: GEM-Q reinforced East Supply Hub with 20 overflow units.
+1:46:01 [T14,RESO] GEM-Q: GEM-Q lost 15 reinforcement units due to no available capacity.
+1:46:01 [T14,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+1:46:03 [T14,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:46:13 [T14,MANE] AXIOM: AXIOM action: ECONOMIC_FOCUS. Critical negative Net MAT (-2.5) and low reserves (524.25) necessitate immediate economic stabilization. The OpPlan's objective is to achieve positive net MAT income by reducing unit upkeep, specifically targeting WSH for unit reduction. As a direct 'DISBAND_UNITS' action is not available in the current action list, selecting ECONOMIC_FOCUS is the most appropriate action to signal the absolute priority of economic recovery and avoid any actions that would consume further MAT or QR, aligning with the OpPlan's core goal of preventing economic collapse this turn.
+1:46:13 [T14,MANE] AXIOM: AXIOM action: ECONOMIC_FOCUS. Reason: Critical negative Net MAT (-2.5) and low reserves (524.25) necessitate immediate economic stabilization. The OpPlan's objective is to achieve positive net MAT income by reducing unit upkeep, specifically targeting WSH for unit reduction. As a direct 'DISBAND_UNITS' action is not available in the current action list, selecting ECONOMIC_FOCUS is the most appropriate action to signal the absolute priority of economic recovery and avoid any actions that would consume further MAT or QR, aligning with the OpPlan's core goal of preventing economic collapse this turn.
+1:46:15 [T14,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:46:28 [T14,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The OpPlan's primary task to move units from CN-E to ESH is impossible as ESH is currently full (20/20), contradicting the OpPlan analysis. All other owned nodes are also full, preventing any unit movement from CN-E to free space for incoming reinforcements this turn. Since the core objective of freeing space cannot be achieved through movement this turn, the most strategic action is to gain full map visibility via a Recon Pulse from the active FBV array. This will provide critical intelligence to adapt the strategy for the next turn, especially after losing reinforcements due to full nodes.
+1:46:28 [T14,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:46:29 [T14,COMB] SYSTEM: Starting COMBAT phase for Turn 14.
+1:46:31 [T14,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:46:36 [T14,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes are currently at maximum capacity. The rules for MOVE_UNITS prohibit exceeding target node capacity, making any unit movement to an owned node impossible this phase. The critical economic state requires proceeding to the DISBAND phase to execute the planned unit reduction. HOLD_POSITION is the only valid action available that does not conflict with the critical need to address the negative MAT income in the subsequent phase.
+1:46:36 [T14,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes are currently at maximum capacity. The rules for MOVE_UNITS prohibit exceeding target node capacity, making any unit movement to an owned node impossible this phase. The critical economic state requires proceeding to the DISBAND phase to execute the planned unit reduction. HOLD_POSITION is the only valid action available that does not conflict with the critical need to address the negative MAT income in the subsequent phase.
+1:46:37 [T14,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:46:42 [T14,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. The operational plan intended to move units from CN-E to ESH to free space. However, according to the live map summary, ESH is currently at its maximum capacity (20/20). All other owned nodes (TF, OP, SS, FBV, EMP, CN-E) are also at maximum capacity. As units cannot be moved to full nodes, and movement is restricted to owned nodes during the Fortification phase, no valid MOVE_UNITS action is possible this turn. Therefore, the only available action is to HOLD_POSITION.
+1:46:42 [T14,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: The operational plan intended to move units from CN-E to ESH to free space. However, according to the live map summary, ESH is currently at its maximum capacity (20/20). All other owned nodes (TF, OP, SS, FBV, EMP, CN-E) are also at maximum capacity. As units cannot be moved to full nodes, and movement is restricted to owned nodes during the Fortification phase, no valid MOVE_UNITS action is possible this turn. Therefore, the only available action is to HOLD_POSITION.
+1:46:43 [T14,UPKE] SYSTEM: Starting UPKEEP phase for Turn 14.
+1:46:43 [T14,UPKE] GEM-Q: GEM-Q paid 72.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 779.75.
+1:46:43 [T14,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 481.75.
+1:46:45 [T15,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 15.
+1:47:04 [T15,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the Neutral Strongpoint NS to gain a strategic foothold and increase MAT income, while freeing up space at SS for auto-reinforcements.
+1:47:22 [T15,FLUC] AXIOM: OpPlan for AXIOM: Execute a Recon Pulse to gain full map intelligence, enabling informed strategic decisions for economic recovery or offensive action in subsequent turns.
+1:47:23 [T15,RESO] SYSTEM: Starting RESOURCE phase for Turn 15.
+1:47:23 [T15,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 90 MAT.
+1:47:23 [T15,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:47:23 [T15,RESO] GEM-Q: GEM-Q lost 35 reinforcement units due to no available capacity.
+1:47:23 [T15,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+1:47:25 [T15,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:47:30 [T15,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Executing the OpPlan 'Operation Fogbreaker' task to perform a Recon Pulse using the active RECON_ARRAY FBD. This action is critical to gaining full map intelligence, which is necessary to inform the strategy for addressing the negative net MAT income in subsequent turns, either through identifying a viable Industrial Hub target for capture or confirming the need for unit disbandment.
+1:47:30 [T15,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:47:31 [T15,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:47:37 [T15,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current operational plan targets node NS, which is not visible in the standard Fog of War map summary. To gain the necessary intelligence to execute the OpPlan or adapt it, I must activate the recon pulse using my active RECON_ARRAY at FBV. This aligns with the strategic analysis emphasizing leveraging intel.
+1:47:37 [T15,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:47:39 [T15,COMB] SYSTEM: Starting COMBAT phase for Turn 15.
+1:47:41 [T15,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:47:44 [T15,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. According to the rules, units cannot be moved to a node that would exceed its max capacity, and the target node must be owned by AXIOM. As no valid MOVE_UNITS action is possible under these constraints, the only permissible action is HOLD_POSITION. This also aligns with the current OpPlan's focus on intelligence gathering via the Recon Pulse rather than immediate unit repositioning.
+1:47:44 [T15,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. According to the rules, units cannot be moved to a node that would exceed its max capacity, and the target node must be owned by AXIOM. As no valid MOVE_UNITS action is possible under these constraints, the only permissible action is HOLD_POSITION. This also aligns with the current OpPlan's focus on intelligence gathering via the Recon Pulse rather than immediate unit repositioning.
+1:47:45 [T15,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:47:49 [T15,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity (TF, OP, FBV, EMP, ESH, CN-E, SS). This prevents any unit movement to owned destinations during the Fortification phase, as per the action guidelines regarding target node capacity. Holding position is the only valid action this turn.
+1:47:49 [T15,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity (TF, OP, FBV, EMP, ESH, CN-E, SS). This prevents any unit movement to owned destinations during the Fortification phase, as per the action guidelines regarding target node capacity. Holding position is the only valid action this turn.
+1:47:51 [T15,UPKE] SYSTEM: Starting UPKEEP phase for Turn 15.
+1:47:51 [T15,UPKE] GEM-Q: GEM-Q paid 72.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 777.25.
+1:47:51 [T15,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 459.25.
+1:47:53 [T16,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 16.
+1:48:12 [T16,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the Neutral Strongpoint (NS) to expand territory, increase MAT income, and free up unit capacity at SS.
+1:48:29 [T16,FLUC] AXIOM: OpPlan for AXIOM: Capture an enemy Industrial Hub to secure positive MAT income.
+1:48:31 [T16,RESO] SYSTEM: Starting RESOURCE phase for Turn 16.
+1:48:31 [T16,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 90 MAT.
+1:48:31 [T16,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:48:31 [T16,RESO] GEM-Q: GEM-Q lost 35 reinforcement units due to no available capacity.
+1:48:31 [T16,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+1:48:33 [T16,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:48:40 [T16,MANE] AXIOM: AXIOM action: ATTACK_NODE. Execute the OpPlan to capture the enemy Industrial Hub TF from CN-W with 40 units. This directly addresses the critical negative MAT income and low reserve by targeting a node expected to provide significant economic benefit upon capture, aligning with the highest priority economic recovery objective.
+1:48:40 [T16,MANE] AXIOM: AXIOM staged 40 units from Western Staging to attack Tractor Factory.
+1:48:41 [T16,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:48:51 [T16,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Execute OpPlan Northern Gambit task to capture NS. Attack from SS with 30 units to assault the neutral node, leveraging the unit concentration at SS and freeing up capacity there, as per the preferred strategy.
+1:48:51 [T16,MANE] GEM-Q: GEM-Q staged 30 units from Southern Strongpoint to attack Northern Strongpoint.
+1:48:53 [T16,COMB] SYSTEM: Starting COMBAT phase for Turn 16.
+1:48:53 [T16,COMB] SYSTEM: Combat at Northern Strongpoint: GEM-Q & allies (30 units) vs Neutral Garrison (10 units).
+1:48:53 [T16,COMB] GEM-Q: GEM-Q wins! Northern Strongpoint captured. Losses: Att-2, Def-10. (Arty: Att-0, Def-0)
+1:48:53 [T16,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (40 units) vs GEM-Q (20 units).
+1:48:53 [T16,COMB] AXIOM: AXIOM wins! Tractor Factory captured. Losses: Att-15, Def-20. (Arty: Att-0, Def-0)
+1:48:55 [T16,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:49:03 [T16,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Move excess units from the newly captured Industrial Hub (TF) back to the Command Node (CN-W) to prevent disbandment due to overstacking, reinforce the CN, and consolidate forces, aligning with the OpPlan's defensive considerations after the attack.
+1:49:03 [T16,FORT] AXIOM: AXIOM redeployed 5 units from Tractor Factory to Western Staging for fortification.
+1:49:03 [T16,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:49:08 [T16,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the newly captured Northern Strongpoint (NS) by moving units from the overstacked Command Node (CN-E) to fill NS capacity, securing the gain and alleviating the unit capacity bottleneck at CN-E.
+1:49:08 [T16,FORT] GEM-Q: GEM-Q redeployed 12 units from Eastern Staging to Northern Strongpoint for fortification.
+1:49:09 [T16,UPKE] SYSTEM: Starting UPKEEP phase for Turn 16.
+1:49:09 [T16,UPKE] GEM-Q: GEM-Q paid 77.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 790.25.
+1:49:09 [T16,UPKE] AXIOM: AXIOM paid 38.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 460.50.
+1:49:11 [T17,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 17.
+1:49:30 [T17,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the visible enemy Industrial Hub (TF) to improve economic stability.
+1:49:55 [T17,FLUC] AXIOM: OpPlan for AXIOM: Capture the visible enemy Industrial Hub 'OP' to significantly improve MAT income.
+1:49:55 [T17,RESO] SYSTEM: Starting RESOURCE phase for Turn 17.
+1:49:55 [T17,RESO] GEM-Q: GEM-Q gained 50 QR (from 5 connected nodes in largest network) and 80 MAT.
+1:49:55 [T17,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 60 MAT.
+1:49:55 [T17,RESO] GEM-Q: GEM-Q automatically reinforced with 12 units across Command Nodes.
+1:49:55 [T17,RESO] GEM-Q: GEM-Q reinforced Southern Strongpoint with 23 overflow units.
+1:49:55 [T17,RESO] AXIOM: AXIOM automatically reinforced with 25 units across Command Nodes.
+1:49:57 [T17,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:50:13 [T17,MANE] AXIOM: AXIOM action: ATTACK_NODE. The OpPlan's staging strategy via WSH is not feasible due to node connectivity and capacity constraints. However, the core objective is to capture the enemy Industrial Hub 'OP' this turn. TF is an owned node adjacent to OP with 20 units. Following the rule requiring source units > unitsToMove for ATTACK_NODE, I must commit 19 units, leaving 1 behind. Executing an attack from TF to OP aligns with the OpPlan's primary goal of securing economic advantage through territorial gain, attempting to achieve the objective immediately despite the inherent risk.
+1:50:13 [T17,MANE] AXIOM: AXIOM staged 19 units from Tractor Factory to attack October Plant.
+1:50:15 [T17,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:50:26 [T17,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. My net MAT is negative, which is a critical economic issue. The OpPlan correctly identifies securing the visible enemy Industrial Hub (TF) as the primary objective to address this. The map summary shows TF has only 1 enemy unit, making it highly vulnerable. Attacking from NS with 10 units is sufficient to capture TF, requires fewer units than originally planned (conserving forces at NS), and directly addresses the critical economic need by securing an income-generating node.
+1:50:26 [T17,MANE] GEM-Q: GEM-Q staged 10 units from Northern Strongpoint to attack Tractor Factory.
+1:50:27 [T17,COMB] SYSTEM: Starting COMBAT phase for Turn 17.
+1:50:27 [T17,COMB] SYSTEM: Combat at Tractor Factory: GEM-Q & allies (10 units) vs AXIOM (1 units).
+1:50:27 [T17,COMB] GEM-Q: GEM-Q wins! Tractor Factory captured. Losses: Att-4, Def-1. (Arty: Att-0, Def-0)
+1:50:27 [T17,COMB] SYSTEM: Combat at October Plant: AXIOM & allies (19 units) vs GEM-Q (20 units).
+1:50:27 [T17,COMB] GEM-Q: GEM-Q holds October Plant! Losses: Att-19, Def-3. (Arty: Att-0, Def-0)
+1:50:29 [T17,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:50:39 [T17,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidate units from the full Industrial Hub WSH back to the Command Node CN-W, which has available capacity. This frees up space at a forward node and reinforces the central hub, improving overall defensive posture during the Fortification phase.
+1:50:39 [T17,FORT] AXIOM: AXIOM redeployed 10 units from West Supply Hub to Western Staging for fortification.
+1:50:41 [T17,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:50:50 [T17,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the newly captured Industrial Hub (TF) by moving units from the Command Node (CN-E) to fill its garrison capacity (6 + 14 = 20), securing this valuable economic asset and aligning with the OpPlan's focus on economic stability.
+1:50:50 [T17,FORT] GEM-Q: GEM-Q redeployed 14 units from Eastern Staging to Tractor Factory for fortification.
+1:50:51 [T17,UPKE] SYSTEM: Starting UPKEEP phase for Turn 17.
+1:50:51 [T17,UPKE] GEM-Q: GEM-Q paid 84.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 786.25.
+1:50:51 [T17,UPKE] AXIOM: AXIOM paid 40.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 480.50.
+1:50:53 [T18,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 18.
+1:51:06 [T18,FLUC] GEM-Q: OpPlan for GEM-Q: Enhance the defensibility of key nodes to prepare for potential future enemy actions.
+1:51:23 [T18,FLUC] AXIOM: OpPlan for AXIOM: Gain comprehensive intelligence on the current map state to identify viable economic targets, strategic locations, and enemy troop movements, enabling a focused plan for Turn 19.
+1:51:25 [T18,RESO] SYSTEM: Starting RESOURCE phase for Turn 18.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:51:25 [T18,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q automatically reinforced with 14 units across Command Nodes.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q reinforced Northern Strongpoint with 10 overflow units.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q reinforced Southern Strongpoint with 7 overflow units.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q reinforced October Plant with 3 overflow units.
+1:51:25 [T18,RESO] GEM-Q: GEM-Q lost 6 reinforcement units due to no available capacity.
+1:51:25 [T18,RESO] AXIOM: AXIOM reinforced West Supply Hub with 10 overflow units.
+1:51:25 [T18,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+1:51:27 [T18,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:51:33 [T18,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Executing the OpPlan objective to gain comprehensive intelligence. A Recon Pulse is necessary to lift the Fog of War, identify enemy positions, strategic nodes, and potential economic targets, which is critical for formulating an effective plan for Turn 19. The cost is well within current resource levels and FBD is an active, owned recon array capable of performing the pulse.
+1:51:33 [T18,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:51:35 [T18,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:51:41 [T18,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. Executing the OpPlan 'Operation Ironclad Defense' by fortifying the Command Node CN-E to enhance its defensibility. Sufficient MAT is available for this action, which aligns with the current strategic objective of defensive consolidation.
+1:51:41 [T18,MANE] GEM-Q: GEM-Q fortified Eastern Staging to level 2.
+1:51:41 [T18,COMB] SYSTEM: Starting COMBAT phase for Turn 18.
+1:51:43 [T18,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:51:46 [T18,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. This prevents any unit movement between owned nodes as there is no available space at potential destinations. Therefore, holding position is the only valid action for the Fortification Phase this turn.
+1:51:46 [T18,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes (CN-W, WSH, FBD, WG) are currently at maximum unit capacity. This prevents any unit movement between owned nodes as there is no available space at potential destinations. Therefore, holding position is the only valid action for the Fortification Phase this turn.
+1:51:47 [T18,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:51:50 [T18,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity (NS: 40/40, TF: 20/20, OP: 20/20, SS: 40/40, FBV: 15/15, EMP: 20/20, ESH: 20/20, CN-E: 75/75). Therefore, no units can be moved to reinforce or consolidate forces within owned territory as per the rules. Moving units to neutral nodes is not permitted in the Fortification phase. Holding position is the only valid action.
+1:51:50 [T18,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity (NS: 40/40, TF: 20/20, OP: 20/20, SS: 40/40, FBV: 15/15, EMP: 20/20, ESH: 20/20, CN-E: 75/75). Therefore, no units can be moved to reinforce or consolidate forces within owned territory as per the rules. Moving units to neutral nodes is not permitted in the Fortification phase. Holding position is the only valid action.
+1:51:51 [T18,UPKE] SYSTEM: Starting UPKEEP phase for Turn 18.
+1:51:51 [T18,UPKE] GEM-Q: GEM-Q paid 92.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 743.75.
+1:51:51 [T18,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 458.00.
+1:51:53 [T19,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 19.
+1:52:11 [T19,FLUC] GEM-Q: OpPlan for GEM-Q: Consolidate defensive strength on key nodes.
+1:52:33 [T19,FLUC] AXIOM: OpPlan for AXIOM: Capture an enemy Industrial Hub to secure positive MAT income.
+1:52:33 [T19,RESO] SYSTEM: Starting RESOURCE phase for Turn 19.
+1:52:33 [T19,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:52:33 [T19,RESO] AXIOM: AXIOM gained 40 QR (from 4 connected nodes in largest network) and 40 MAT.
+1:52:33 [T19,RESO] GEM-Q: GEM-Q lost 40 reinforcement units due to no available capacity.
+1:52:33 [T19,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+1:52:35 [T19,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:52:55 [T19,MANE] AXIOM: AXIOM action: MOVE_UNITS. The faction is in a critical economic state with negative MAT income. The OpPlan prioritizes capturing an enemy Industrial Hub (TF) this turn to reverse this. Due to unit movement constraints, a direct attack on TF this turn is not possible with forces from CN-W or WG. The most effective action to enable an attack on TF next turn is to move the 20 units currently at WG to an adjacent node (NB) that is directly adjacent to the target TF. This positions the force for an immediate assault on Turn 20, aligning with the OpPlan's core objective of capturing TF as quickly as possible to address the economic crisis.
+1:52:55 [T19,MANE] AXIOM: AXIOM moved 20 units from West Gate to North Bridge.
+1:52:57 [T19,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:53:02 [T19,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. Executing the primary task of the current OpPlan, 'Operation Ironwall', by fortifying the main Command Node (CN-E) to enhance its survivability. This aligns with the objective of consolidating defensive strength and utilizes existing MAT reserves effectively given the high FoW and unknown enemy location.
+1:53:02 [T19,MANE] GEM-Q: GEM-Q fortified Eastern Staging to level 3.
+1:53:03 [T19,COMB] SYSTEM: Starting COMBAT phase for Turn 19.
+1:53:03 [T19,COMB] SYSTEM: Combat at North Bridge: AXIOM & allies (20 units) vs Neutral Garrison (0 units).
+1:53:03 [T19,COMB] AXIOM: AXIOM wins! North Bridge captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:53:05 [T19,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:53:12 [T19,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Repositioning units from the main force at CN-W to WG, a node on the path towards the target Industrial Hub (TF), utilizing available capacity at WG and preparing for the offensive in the next phase as per Operation Lifeline. This move aligns with the OpPlan's task to move forces towards the objective.
+1:53:12 [T19,FORT] AXIOM: AXIOM redeployed 20 units from Western Staging to West Gate for fortification.
+1:53:13 [T19,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:53:16 [T19,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity. It is not possible to move units to reinforce or consolidate forces on owned nodes as per the action guidelines. Therefore, units will hold their current defensive positions, aligning with the objective of defensive consolidation.
+1:53:16 [T19,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity. It is not possible to move units to reinforce or consolidate forces on owned nodes as per the action guidelines. Therefore, units will hold their current defensive positions, aligning with the objective of defensive consolidation.
+1:53:17 [T19,UPKE] SYSTEM: Starting UPKEEP phase for Turn 19.
+1:53:17 [T19,UPKE] GEM-Q: GEM-Q paid 92.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 701.25.
+1:53:17 [T19,UPKE] AXIOM: AXIOM paid 42.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 455.50.
+1:53:19 [T20,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 20.
+1:53:56 [T20,FLUC] GEM-Q: OpPlan for GEM-Q: Enhance the defensive strength of key controlled nodes using available MAT reserves.
+1:54:23 [T20,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure positive MAT income.
+1:54:25 [T20,RESO] SYSTEM: Starting RESOURCE phase for Turn 20.
+1:54:25 [T20,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:54:25 [T20,RESO] AXIOM: AXIOM gained 50 QR (from 5 connected nodes in largest network) and 40 MAT.
+1:54:25 [T20,RESO] GEM-Q: GEM-Q lost 40 reinforcement units due to no available capacity.
+1:54:25 [T20,RESO] AXIOM: AXIOM automatically reinforced with 20 units across Command Nodes.
+1:54:25 [T20,RESO] AXIOM: AXIOM lost 5 reinforcement units due to no available capacity.
+1:54:27 [T20,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:54:47 [T20,MANE] AXIOM: AXIOM action: MOVE_UNITS. The OpPlan prioritizes capturing TF to fix the negative MAT income. My forward nodes are full, preventing consolidation onto them. A direct attack from NB (20 units vs 20 at TF) is too risky given the economic state. Moving units from NB (a forward node) to GH (a neutral node adjacent to TF) is the best way to begin consolidating forces near the target area for a more decisive attack next turn, aligning with the consolidation task while mitigating the risk of a premature, under-strength assault.
+1:54:47 [T20,MANE] AXIOM: AXIOM moved 20 units from North Bridge to Gorodishche Heights.
+1:54:49 [T20,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:54:55 [T20,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. Executing the first task of Operation Citadel Upgrade by building fortification level 4 on the Command Node (CN-E) to enhance its defensive strength, utilizing available MAT reserves while visible nodes are at capacity and Fog of War limits other strategic options.
+1:54:55 [T20,MANE] GEM-Q: GEM-Q fortified Eastern Staging to level 4.
+1:54:57 [T20,COMB] SYSTEM: Starting COMBAT phase for Turn 20.
+1:54:57 [T20,COMB] SYSTEM: Combat at Gorodishche Heights: AXIOM & allies (20 units) vs Neutral Garrison (0 units).
+1:54:57 [T20,COMB] AXIOM: AXIOM wins! Gorodishche Heights captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:54:59 [T20,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:55:14 [T20,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All currently occupied AXIOM nodes are at maximum garrison capacity, providing the strongest possible defense with current unit distribution. The only empty AXIOM node (NB) is a forward position adjacent to enemy units; reinforcing it would require drawing units from currently full nodes designated as sources for the upcoming offensive, potentially weakening the existing defensive line without securing a recent gain. Given the critical economic state and limited intel, maintaining the current defensive posture by holding position is the most prudent action to conserve forces and prepare for the next phase's planned offensive.
+1:55:14 [T20,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All currently occupied AXIOM nodes are at maximum garrison capacity, providing the strongest possible defense with current unit distribution. The only empty AXIOM node (NB) is a forward position adjacent to enemy units; reinforcing it would require drawing units from currently full nodes designated as sources for the upcoming offensive, potentially weakening the existing defensive line without securing a recent gain. Given the critical economic state and limited intel, maintaining the current defensive posture by holding position is the most prudent action to conserve forces and prepare for the next phase's planned offensive.
+1:55:15 [T20,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:55:20 [T20,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All visible controlled nodes (CN-E, NS, SS, TF, OP, FBV, EMP, ESH) are currently at maximum unit capacity according to the map summary. This prevents any unit movement between these nodes or from these nodes to other visible controlled nodes. Without intel on the capacity of unseen controlled nodes, a MOVE_UNITS action is not feasible or verifiable under the current rules and map state. Therefore, the only valid action for the Fortification phase is to HOLD_POSITION, conserving resources and maintaining current defensive postures while awaiting further developments or intel.
+1:55:20 [T20,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All visible controlled nodes (CN-E, NS, SS, TF, OP, FBV, EMP, ESH) are currently at maximum unit capacity according to the map summary. This prevents any unit movement between these nodes or from these nodes to other visible controlled nodes. Without intel on the capacity of unseen controlled nodes, a MOVE_UNITS action is not feasible or verifiable under the current rules and map state. Therefore, the only valid action for the Fortification phase is to HOLD_POSITION, conserving resources and maintaining current defensive postures while awaiting further developments or intel.
+1:55:21 [T20,UPKE] SYSTEM: Starting UPKEEP phase for Turn 20.
+1:55:21 [T20,UPKE] GEM-Q: GEM-Q paid 92.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 658.75.
+1:55:21 [T20,UPKE] AXIOM: AXIOM paid 47.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 448.00.
+1:55:23 [T21,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 21.
+1:55:38 [T21,FLUC] GEM-Q: OpPlan for GEM-Q: Gain comprehensive map intelligence via Recon Pulse to identify strategic opportunities.
+1:56:01 [T21,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) Industrial Hub to secure positive MAT income.
+1:56:01 [T21,RESO] SYSTEM: Starting RESOURCE phase for Turn 21.
+1:56:01 [T21,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:56:01 [T21,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+1:56:01 [T21,RESO] GEM-Q: GEM-Q lost 40 reinforcement units due to no available capacity.
+1:56:01 [T21,RESO] AXIOM: AXIOM reinforced North Bridge with 20 overflow units.
+1:56:01 [T21,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+1:56:03 [T21,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:56:16 [T21,MANE] AXIOM: AXIOM action: ATTACK_NODE. Critical negative MAT income necessitates capturing an Industrial Hub this turn as per the OpPlan. The OpPlan targets TF. Owned nodes NB and GH are adjacent to TF and have units available. Friendly nodes near the front are at max capacity, preventing consolidation before attacking. Attacking TF from NB with available units is the most direct action to execute the OpPlan's objective and address the economic crisis, despite the risk of attacking with equal numbers.
+1:56:16 [T21,MANE] AXIOM: AXIOM staged 20 units from North Bridge to attack Tractor Factory.
+1:56:17 [T21,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:56:20 [T21,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan is 'Operation See All' with the objective to gain comprehensive map intelligence via a Recon Pulse. I have an active Recon Array at FBV, and the cost (40 QR, 20 MAT) is affordable given current resources. Performing the pulse will provide critical information needed to identify strategic opportunities, enemy positions, and potential economic targets, which is essential for informed decision-making in subsequent turns.
+1:56:20 [T21,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:56:21 [T21,COMB] SYSTEM: Starting COMBAT phase for Turn 21.
+1:56:21 [T21,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (20 units) vs GEM-Q (20 units).
+1:56:21 [T21,COMB] GEM-Q: GEM-Q holds Tractor Factory! Losses: Att-20, Def-11. (Arty: Att-0, Def-0)
+1:56:23 [T21,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:56:35 [T21,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidate units from the forward node GH to reinforce the key chokepoint NB. This improves defensive posture near enemy nodes TF and NS and prepares NB as a potential staging point for future operations, while respecting node capacity and the critical economic state by consolidating forces defensively.
+1:56:35 [T21,FORT] AXIOM: AXIOM redeployed 20 units from Gorodishche Heights to North Bridge for fortification.
+1:56:37 [T21,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:56:46 [T21,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Consolidate units from the full standard node EMP to the non-full Industrial Hub TF to reinforce a valuable economic asset and potentially make space for reinforcements.
+1:56:46 [T21,FORT] GEM-Q: GEM-Q redeployed 11 units from East Motor Pool to Tractor Factory for fortification.
+1:56:47 [T21,UPKE] SYSTEM: Starting UPKEEP phase for Turn 21.
+1:56:47 [T21,UPKE] GEM-Q: GEM-Q paid 89.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 649.00.
+1:56:47 [T21,UPKE] AXIOM: AXIOM paid 47.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 445.50.
+1:56:49 [T22,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 22.
+1:57:08 [T22,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub WSH to significantly boost MAT income and weaken the enemy economy.
+1:57:34 [T22,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) Industrial Hub to secure positive MAT income and avert unit disbandment.
+1:57:35 [T22,RESO] SYSTEM: Starting RESOURCE phase for Turn 22.
+1:57:35 [T22,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:57:35 [T22,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+1:57:35 [T22,RESO] GEM-Q: GEM-Q reinforced East Motor Pool with 11 overflow units.
+1:57:35 [T22,RESO] GEM-Q: GEM-Q lost 29 reinforcement units due to no available capacity.
+1:57:35 [T22,RESO] AXIOM: AXIOM reinforced Gorodishche Heights with 20 overflow units.
+1:57:35 [T22,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+1:57:37 [T22,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:57:57 [T22,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The critical negative MAT income necessitates capturing an Industrial Hub (IH) quickly, as per Operation Iron Harvest. The planned direct assault from CN-W on TF is not feasible this turn due to lack of adjacency. Attacking from forward nodes (NB, GH) is prevented by unit movement rules requiring leaving at least one unit behind, making a decisive attack with the available forward forces impossible. To effectively plan for capturing an IH next turn and address the critical economic state, I require comprehensive map intelligence. Performing a recon pulse from the active FBD array is the most strategic action this turn to gain the necessary intel on enemy positions, neutral nodes (including potential IHs), and viable attack routes, enabling a better-informed and potentially successful economic recovery operation next turn.
+1:57:57 [T22,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+1:57:57 [T22,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:58:07 [T22,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan relies on outdated intelligence regarding the enemy Industrial Hub WSH. A recon pulse is necessary to obtain current map data, especially on WSH and surrounding nodes, to validate or adjust the OpPlan and make informed decisions for the next turn. This action leverages an existing active recon array (FBV) and is affordable.
+1:58:07 [T22,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+1:58:09 [T22,COMB] SYSTEM: Starting COMBAT phase for Turn 22.
+1:58:11 [T22,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:58:20 [T22,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes containing units are currently at maximum capacity. This prevents any MOVE_UNITS action to another friendly node, as the destination node would exceed its unit limit. Therefore, the only valid action for this Fortification phase is HOLD_POSITION. This delays the initial movement step of Operation Iron Harvest towards TF, but no alternative movement is possible under current capacity constraints.
+1:58:20 [T22,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes containing units are currently at maximum capacity. This prevents any MOVE_UNITS action to another friendly node, as the destination node would exceed its unit limit. Therefore, the only valid action for this Fortification phase is HOLD_POSITION. This delays the initial movement step of Operation Iron Harvest towards TF, but no alternative movement is possible under current capacity constraints.
+1:58:21 [T22,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+1:58:28 [T22,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any MOVE_UNITS actions to valid destinations. Holding position maintains current unit distribution prior to the upcoming Maneuver phase.
+1:58:28 [T22,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any MOVE_UNITS actions to valid destinations. Holding position maintains current unit distribution prior to the upcoming Maneuver phase.
+1:58:29 [T22,UPKE] SYSTEM: Starting UPKEEP phase for Turn 22.
+1:58:29 [T22,UPKE] GEM-Q: GEM-Q paid 92.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 636.50.
+1:58:29 [T22,UPKE] AXIOM: AXIOM paid 52.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 418.00.
+1:58:31 [T23,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 23.
+1:58:49 [T23,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub WSH to significantly boost MAT income and weaken the enemy economy.
+1:59:10 [T23,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) Industrial Hub to secure positive MAT income and avert unit disbandment.
+1:59:11 [T23,RESO] SYSTEM: Starting RESOURCE phase for Turn 23.
+1:59:11 [T23,RESO] GEM-Q: GEM-Q gained 60 QR (from 6 connected nodes in largest network) and 100 MAT.
+1:59:11 [T23,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+1:59:11 [T23,RESO] GEM-Q: GEM-Q lost 40 reinforcement units due to no available capacity.
+1:59:11 [T23,RESO] AXIOM: AXIOM lost 30 reinforcement units due to no available capacity.
+1:59:13 [T23,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+1:59:25 [T23,MANE] AXIOM: AXIOM action: MOVE_UNITS. The critical negative MAT income requires capturing the Tractor Factory (TF) as per the OpPlan. The OpPlan's intended move of 60 units from CN-W towards TF cannot be executed in a single step or into adjacent nodes (FBD, WSH) due to node capacity limits. Moving 20 units to WMP is the maximum possible first step from CN-W towards TF via a viable path (CN-W -> WMP -> WG -> NB -> TF), initiating the movement towards the objective despite the OpPlan's flawed unit count assumption for the first step.
+1:59:25 [T23,MANE] AXIOM: AXIOM moved 20 units from Western Staging to West Motor Pool.
+1:59:27 [T23,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+1:59:42 [T23,MANE] GEM-Q: GEM-Q action: MOVE_UNITS. My owned nodes, including staging nodes for the WSH assault (ESH, EMP, FBV, CN-E), are currently at maximum capacity. This prevents the direct execution of the OpPlan's staging tasks (e.g., moving units into ESH). To unblock my forces and begin maneuvering towards the OpPlan objective (WSH), I must move units out of these full nodes. Moving 20 units from ESH to the adjacent neutral node EG frees up space at ESH and positions these units on a viable path towards WSH via GH and NB, leveraging the active recon pulse intel. This action adapts the OpPlan's staging phase to the current map state constraints.
+1:59:42 [T23,MANE] GEM-Q: GEM-Q moved 20 units from East Supply Hub to East Gate.
+1:59:43 [T23,COMB] SYSTEM: Starting COMBAT phase for Turn 23.
+1:59:43 [T23,COMB] SYSTEM: Combat at West Motor Pool: AXIOM & allies (20 units) vs Neutral Garrison (0 units).
+1:59:43 [T23,COMB] AXIOM: AXIOM wins! West Motor Pool captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:59:43 [T23,COMB] SYSTEM: Combat at East Gate: GEM-Q & allies (20 units) vs Neutral Garrison (0 units).
+1:59:43 [T23,COMB] GEM-Q: GEM-Q wins! East Gate captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+1:59:45 [T23,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+1:59:57 [T23,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidating units from the West Motor Pool (WMP) to the Western Staging Command Node (CN-W). WMP is a relatively safe node surrounded by AXIOM or empty neutral territory. Moving its 20 units to CN-W fills the Command Node to its maximum capacity (75/75), enhancing the defensive posture of the main staging area and consolidating forces in preparation for potential future actions, aligning with the Fortification phase objective.
+1:59:57 [T23,FORT] AXIOM: AXIOM redeployed 20 units from West Motor Pool to Western Staging for fortification.
+1:59:59 [T23,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:00:06 [T23,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Consolidating units from the full Command Node (CN-E) to the empty Industrial Hub (ESH). ESH is a valuable economic node and a designated staging point in the current OpPlan, requiring garrison and preparation for future offensive actions. This move utilizes available capacity and aligns with both defensive (securing IH) and offensive (staging) goals.
+2:00:06 [T23,FORT] GEM-Q: GEM-Q redeployed 20 units from Eastern Staging to East Supply Hub for fortification.
+2:00:07 [T23,UPKE] SYSTEM: Starting UPKEEP phase for Turn 23.
+2:00:07 [T23,UPKE] GEM-Q: GEM-Q paid 92.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 644.00.
+2:00:07 [T23,UPKE] AXIOM: AXIOM paid 52.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 410.50.
+2:00:09 [T24,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 24.
+2:00:32 [T24,FLUC] GEM-Q: OpPlan for GEM-Q: Gain full map intelligence using a Recon Pulse to inform future strategic decisions.
+2:00:48 [T24,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) Industrial Hub to secure vital MAT income and prevent unit disbandment.
+2:00:49 [T24,RESO] SYSTEM: Starting RESOURCE phase for Turn 24.
+2:00:49 [T24,RESO] GEM-Q: GEM-Q gained 70 QR (from 7 connected nodes in largest network) and 105 MAT.
+2:00:49 [T24,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 50 MAT.
+2:00:49 [T24,RESO] GEM-Q: GEM-Q automatically reinforced with 20 units across Command Nodes.
+2:00:49 [T24,RESO] GEM-Q: GEM-Q lost 25 reinforcement units due to no available capacity.
+2:00:49 [T24,RESO] AXIOM: AXIOM reinforced West Motor Pool with 20 overflow units.
+2:00:49 [T24,RESO] AXIOM: AXIOM lost 15 reinforcement units due to no available capacity.
+2:00:51 [T24,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:01:10 [T24,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The current economic state is critical (-7.5 Net MAT), requiring capture of an income node as per the OpPlan. However, the specific attack tasks in the OpPlan are currently impossible due to incorrect node adjacency assumptions (WMP to TF) and full capacity at all owned nodes preventing unit consolidation or reinforcement. To develop a viable plan to capture TF or another income source, full map intelligence is required. Performing a Recon Pulse from the active FBD array will provide this crucial information, allowing for a revised, informed action next turn to address the economic crisis effectively.
+2:01:10 [T24,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:01:11 [T24,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:01:15 [T24,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan's primary objective is to gain full map intelligence to overcome the Fog of War and enable informed strategic planning for future turns. Performing a Recon Pulse is the designated task to achieve this. I have an active Recon Array (FBV) and sufficient resources (MAT 749, QR 855) to cover the pulse cost (20 MAT, 40 QR). This action directly addresses the most significant current limitation (lack of intel) and aligns perfectly with the OpPlan's strategy and analysis.
+2:01:15 [T24,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:01:15 [T24,COMB] SYSTEM: Starting COMBAT phase for Turn 24.
+2:01:17 [T24,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:01:22 [T24,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any valid MOVE_UNITS action that adheres to node capacity constraints. Holding position is the only permissible action this phase.
+2:01:22 [T24,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any valid MOVE_UNITS action that adheres to node capacity constraints. Holding position is the only permissible action this phase.
+2:01:23 [T24,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:01:26 [T24,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any valid unit movement for fortification. Holding position maintains current strong garrisons while the Recon Pulse gathers intelligence.
+2:01:26 [T24,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any valid unit movement for fortification. Holding position maintains current strong garrisons while the Recon Pulse gathers intelligence.
+2:01:27 [T24,UPKE] SYSTEM: Starting UPKEEP phase for Turn 24.
+2:01:27 [T24,UPKE] GEM-Q: GEM-Q paid 97.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 631.50.
+2:01:27 [T24,UPKE] AXIOM: AXIOM paid 57.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 383.00.
+2:01:29 [T25,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 25.
+2:01:47 [T25,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub WSH to bolster economy and expand territory.
+2:02:02 [T25,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure vital MAT income and resolve critical economic deficit.
+2:02:03 [T25,RESO] SYSTEM: Starting RESOURCE phase for Turn 25.
+2:02:03 [T25,RESO] GEM-Q: GEM-Q gained 70 QR (from 7 connected nodes in largest network) and 105 MAT.
+2:02:03 [T25,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 50 MAT.
+2:02:03 [T25,RESO] GEM-Q: GEM-Q lost 45 reinforcement units due to no available capacity.
+2:02:03 [T25,RESO] AXIOM: AXIOM lost 35 reinforcement units due to no available capacity.
+2:02:05 [T25,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:02:14 [T25,MANE] AXIOM: AXIOM action: MOVE_UNITS. Executing the first step of Operation Iron Harvest to consolidate forces at WG. Moving the largest contingent from CN-W (75 units available) to WG (target consolidation point) is the most impactful initial action to prepare for the assault on TF, which is critical for reversing the negative MAT income as per the OpPlan's primary objective.
+2:02:14 [T25,MANE] AXIOM: AXIOM failed to move to West Gate: Target node at max capacity. Holding.
+2:02:15 [T25,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:02:25 [T25,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. The OpPlan's primary target WSH is currently unseen due to the inactive recon pulse. Adapting to the visible map state, I will attack the adjacent enemy node GH from NS. This action aligns with the OpPlan's core objective of pushing west and utilizing units, leverages the visible enemy presence at GH, and uses units from a full node (NS) to make space for potential reinforcements.
+2:02:25 [T25,MANE] GEM-Q: GEM-Q staged 39 units from Northern Strongpoint to attack Gorodishche Heights.
+2:02:25 [T25,COMB] SYSTEM: Starting COMBAT phase for Turn 25.
+2:02:25 [T25,COMB] SYSTEM: Combat at Gorodishche Heights: GEM-Q & allies (39 units) vs AXIOM (20 units).
+2:02:25 [T25,COMB] GEM-Q: GEM-Q wins! Gorodishche Heights captured. Losses: Att-10, Def-20. (Arty: Att-0, Def-0)
+2:02:27 [T25,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:02:34 [T25,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity according to the map summary, preventing any unit movement into them during the Fortification phase. Units must hold their current positions.
+2:02:34 [T25,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity according to the map summary, preventing any unit movement into them during the Fortification phase. Units must hold their current positions.
+2:02:35 [T25,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:02:41 [T25,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Move units from the overstacked GH node to the under-garrisoned NS strongpoint. This resolves the overstack, reinforces a key defensive position near the enemy border (NB), and positions units closer to potential staging areas for the planned Western Push towards WSH.
+2:02:41 [T25,FORT] GEM-Q: GEM-Q redeployed 9 units from Gorodishche Heights to Northern Strongpoint for fortification.
+2:02:43 [T25,UPKE] SYSTEM: Starting UPKEEP phase for Turn 25.
+2:02:43 [T25,UPKE] GEM-Q: GEM-Q paid 95.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 641.50.
+2:02:43 [T25,UPKE] AXIOM: AXIOM paid 52.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 380.50.
+2:02:45 [T26,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 26.
+2:03:01 [T26,FLUC] GEM-Q: OpPlan for GEM-Q: Gain full map intelligence via Recon Pulse and strengthen key defensive nodes to prepare for future operations.
+2:03:23 [T26,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure positive net MAT income.
+2:03:23 [T26,RESO] SYSTEM: Starting RESOURCE phase for Turn 26.
+2:03:23 [T26,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:03:23 [T26,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+2:03:23 [T26,RESO] GEM-Q: GEM-Q reinforced Northern Strongpoint with 30 overflow units.
+2:03:23 [T26,RESO] GEM-Q: GEM-Q lost 20 reinforcement units due to no available capacity.
+2:03:23 [T26,RESO] AXIOM: AXIOM lost 30 reinforcement units due to no available capacity.
+2:03:25 [T26,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:03:38 [T26,MANE] AXIOM: AXIOM action: ATTACK_NODE. Critical negative MAT income necessitates immediate action to secure a new MAT source. The OpPlan's objective is to capture the Tractor Factory (TF), which provides 20 MAT/turn. While the OpPlan's specific movement tasks are infeasible due to node capacities and unit counts, the objective remains paramount. Attacking TF directly from the adjacent node NB with all available units (20) is the most direct action this turn to achieve the OpPlan's objective and address the economic crisis, despite the risk of a 1:1 engagement. Delaying the attack will lead to unit disbandment due to insufficient MAT.
+2:03:38 [T26,MANE] AXIOM: AXIOM staged 20 units from North Bridge to attack Tractor Factory.
+2:03:39 [T26,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:03:44 [T26,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. Based on OpPlan 'Operation Oracle Shield', the primary objective is to gain full map intelligence. Performing a Recon Pulse using the active FBV array is the direct action to achieve this. Resources are sufficient for the pulse cost. This action provides crucial intel for subsequent turns and aligns with the OpPlan's initial task.
+2:03:44 [T26,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:03:45 [T26,COMB] SYSTEM: Starting COMBAT phase for Turn 26.
+2:03:45 [T26,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (20 units) vs GEM-Q (20 units).
+2:03:45 [T26,COMB] GEM-Q: GEM-Q holds Tractor Factory! Losses: Att-20, Def-10. (Arty: Att-0, Def-0)
+2:03:47 [T26,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:03:55 [T26,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Move units from WG to NB to stage forces closer to the Tractor Factory (TF). NB is the only owned node with available capacity, and positioning units there supports the critical OpPlan objective of capturing TF to resolve the economic crisis.
+2:03:55 [T26,FORT] AXIOM: AXIOM redeployed 20 units from West Gate to North Bridge for fortification.
+2:03:57 [T26,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:04:02 [T26,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All GEM-Q owned nodes are currently at maximum unit capacity, preventing the movement of units to reinforce under-garrisoned positions. Holding current positions maintains the strong defensive posture across all owned territory, aligning with the OpPlan's objective of defensive consolidation.
+2:04:02 [T26,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All GEM-Q owned nodes are currently at maximum unit capacity, preventing the movement of units to reinforce under-garrisoned positions. Holding current positions maintains the strong defensive posture across all owned territory, aligning with the OpPlan's objective of defensive consolidation.
+2:04:03 [T26,UPKE] SYSTEM: Starting UPKEEP phase for Turn 26.
+2:04:03 [T26,UPKE] GEM-Q: GEM-Q paid 100.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 631.50.
+2:04:03 [T26,UPKE] AXIOM: AXIOM paid 47.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 378.00.
+2:04:05 [T27,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 27.
+2:04:21 [T27,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub WSH to secure economic advantage.
+2:04:42 [T27,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure positive MAT income.
+2:04:43 [T27,RESO] SYSTEM: Starting RESOURCE phase for Turn 27.
+2:04:43 [T27,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:04:43 [T27,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+2:04:43 [T27,RESO] GEM-Q: GEM-Q reinforced Tractor Factory with 10 overflow units.
+2:04:43 [T27,RESO] GEM-Q: GEM-Q lost 40 reinforcement units due to no available capacity.
+2:04:43 [T27,RESO] AXIOM: AXIOM reinforced West Gate with 20 overflow units.
+2:04:43 [T27,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+2:04:45 [T27,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:05:01 [T27,MANE] AXIOM: AXIOM action: ATTACK_NODE. Execute the OpPlan's primary objective to capture the Tractor Factory (TF) to address the critical negative MAT income. Attack TF from the adjacent node NB using all available units at NB, as a direct assault is the preferred strategy and the OpPlan's intended action, even if the specific source node mentioned (CN-W) is currently blocked due to full intermediate nodes. This action is feasible, aligns with strategic priorities, and has no immediate MAT cost.
+2:05:01 [T27,MANE] AXIOM: AXIOM staged 20 units from North Bridge to attack Tractor Factory.
+2:05:03 [T27,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:05:09 [T27,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The Operational Plan for Operation Westwind is explicitly based on leveraging full map intel from an active Recon Pulse to target the enemy Industrial Hub WSH. The current game state indicates the pulse is not active, but FBV is an owned, activated Recon Array. Performing a Recon Pulse with FBV is the necessary first step to fulfill the OpPlan's core premise and gather the required intelligence for subsequent actions, despite the low net MAT.
+2:05:09 [T27,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:05:11 [T27,COMB] SYSTEM: Starting COMBAT phase for Turn 27.
+2:05:11 [T27,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (20 units) vs GEM-Q (20 units).
+2:05:11 [T27,COMB] GEM-Q: GEM-Q holds Tractor Factory! Losses: Att-20, Def-14. (Arty: Att-0, Def-0)
+2:05:13 [T27,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:05:23 [T27,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Reinforce the empty forward node NB, which is connected to enemy territory (NS, TF, GH), by moving units from the central hub WG. This improves forward defense posture at a critical chokepoint and consolidates forces, while retaining a garrison at WG. This is the only viable MOVE_UNITS action given current node capacities and ownership.
+2:05:23 [T27,FORT] AXIOM: AXIOM redeployed 10 units from West Gate to North Bridge for fortification.
+2:05:25 [T27,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:05:45 [T27,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforcing the under-garrisoned Industrial Hub at TF by moving units from the adjacent, full node at GH. This consolidates forces in a forward position, strengthening a key node near potential attack routes towards the enemy WSH Industrial Hub, in preparation for the planned offensive.
+2:05:45 [T27,FORT] GEM-Q: GEM-Q redeployed 14 units from Gorodishche Heights to Tractor Factory for fortification.
+2:05:45 [T27,UPKE] SYSTEM: Starting UPKEEP phase for Turn 27.
+2:05:45 [T27,UPKE] GEM-Q: GEM-Q paid 99.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 622.50.
+2:05:45 [T27,UPKE] AXIOM: AXIOM paid 47.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 375.50.
+2:05:47 [T28,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 28.
+2:06:05 [T28,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub WSH to significantly increase net MAT income.
+2:06:20 [T28,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure positive MAT income and resolve the critical economic warning.
+2:06:21 [T28,RESO] SYSTEM: Starting RESOURCE phase for Turn 28.
+2:06:21 [T28,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:06:21 [T28,RESO] AXIOM: AXIOM gained 60 QR (from 6 connected nodes in largest network) and 45 MAT.
+2:06:21 [T28,RESO] GEM-Q: GEM-Q reinforced Gorodishche Heights with 14 overflow units.
+2:06:21 [T28,RESO] GEM-Q: GEM-Q lost 36 reinforcement units due to no available capacity.
+2:06:21 [T28,RESO] AXIOM: AXIOM reinforced West Gate with 10 overflow units.
+2:06:21 [T28,RESO] AXIOM: AXIOM reinforced North Bridge with 10 overflow units.
+2:06:21 [T28,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+2:06:23 [T28,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:06:27 [T28,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing Operation Iron Harvest's primary task to attack the Tractor Factory (TF) from CN-W with 60 units. This direct assault is necessary to capture an Industrial Hub and resolve the critical negative MAT income as per the OpPlan's analysis, which identifies inaction as guaranteed failure.
+2:06:27 [T28,MANE] AXIOM: AXIOM staged 60 units from Western Staging to attack Tractor Factory.
+2:06:27 [T28,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:06:36 [T28,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current operational plan to attack WSH relies on specific intelligence about the target node's defenses. The map summary indicates no active recon pulse, meaning this intelligence is likely outdated or based on previous turns. To make an informed decision about executing the WSH assault, it is necessary to obtain current intelligence. Performing a recon pulse with the active FBV array is the most logical first step to update the map state and validate or adjust the OpPlan based on current conditions. This action is affordable and directly supports the OpPlan's need for accurate intel.
+2:06:36 [T28,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:06:37 [T28,COMB] SYSTEM: Starting COMBAT phase for Turn 28.
+2:06:37 [T28,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (60 units) vs GEM-Q (20 units).
+2:06:37 [T28,COMB] AXIOM: AXIOM wins! Tractor Factory captured. Losses: Att-18, Def-20. (Arty: Att-0, Def-0)
+2:06:39 [T28,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:06:46 [T28,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Newly captured node TF is significantly over capacity (42/20). Moving excess units (22) to the Command Node (CN-W) to prevent overstacking penalties at TF and consolidate forces at a secure rear node with available capacity.
+2:06:46 [T28,FORT] AXIOM: AXIOM redeployed 22 units from Tractor Factory to Western Staging for fortification.
+2:06:47 [T28,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:06:52 [T28,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity. The MOVE_UNITS action requires available capacity at the target node. Since no owned nodes have available capacity, no units can be moved during this Fortification phase. Therefore, HOLD_POSITION is the only valid action.
+2:06:52 [T28,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity. The MOVE_UNITS action requires available capacity at the target node. Since no owned nodes have available capacity, no units can be moved during this Fortification phase. Therefore, HOLD_POSITION is the only valid action.
+2:06:53 [T28,UPKE] SYSTEM: Starting UPKEEP phase for Turn 28.
+2:06:53 [T28,UPKE] GEM-Q: GEM-Q paid 97.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 615.00.
+2:06:53 [T28,UPKE] AXIOM: AXIOM paid 48.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 372.50.
+2:06:55 [T29,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 29.
+2:07:20 [T29,FLUC] GEM-Q: OpPlan for GEM-Q: Secure positive MAT income by capturing the West Supply Hub (WSH).
+2:07:43 [T29,FLUC] AXIOM: OpPlan for AXIOM: Gather comprehensive intelligence via Recon Pulse and consolidate unit reserves while improving defense at a key forward node.
+2:07:45 [T29,RESO] SYSTEM: Starting RESOURCE phase for Turn 29.
+2:07:45 [T29,RESO] GEM-Q: GEM-Q gained 80 QR (from 8 connected nodes in largest network) and 90 MAT.
+2:07:45 [T29,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 65 MAT.
+2:07:45 [T29,RESO] GEM-Q: GEM-Q lost 45 reinforcement units due to no available capacity.
+2:07:45 [T29,RESO] AXIOM: AXIOM automatically reinforced with 35 units across Command Nodes.
+2:07:47 [T29,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:07:52 [T29,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Executing the primary task of Operation Oracle to gain comprehensive map intelligence via a Recon Pulse. This is critical given the current Fog of War and unit disparity relative to the enemy. Resources are sufficient (437.5 MAT, 925 QR vs 20 MAT, 40 QR cost), and FBD is an active, owned Recon Array.
+2:07:52 [T29,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:07:53 [T29,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:08:02 [T29,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Current Net MAT is critically negative (-7.5). The OpPlan's primary objective is to secure positive MAT income by capturing an Industrial Hub (WSH or TF). The OpPlan task specified moving units from OP to WSH, but OP is not connected to WSH. TF is an enemy IH adjacent to GH. Attacking TF from GH aligns with the OpPlan's core objective of capturing an IH to fix the economy. GH has 20 units, TF has 20 units. Due to the game rule requiring source units > unitsToMove for attacks/moves, I must send 19 units from GH, making it a 19v20 attack. This is the most direct feasible action to address the critical economic state and align with the OpPlan's intent to capture an enemy IH.
+2:08:02 [T29,MANE] GEM-Q: GEM-Q staged 19 units from Gorodishche Heights to attack Tractor Factory.
+2:08:03 [T29,COMB] SYSTEM: Starting COMBAT phase for Turn 29.
+2:08:03 [T29,COMB] SYSTEM: Combat at Tractor Factory: GEM-Q & allies (19 units) vs AXIOM (20 units).
+2:08:03 [T29,COMB] AXIOM: AXIOM holds Tractor Factory! Losses: Att-19, Def-9. (Arty: Att-0, Def-0)
+2:08:05 [T29,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:08:11 [T29,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Executing OpPlan task to consolidate units into CN-W. Moving 3 units from WSH to fill available capacity at CN-W (75 max - 72 current = 3 capacity). This contributes to creating a mobile reserve as per the strategic analysis and prepares for potential auto-reinforcements.
+2:08:11 [T29,FORT] AXIOM: AXIOM redeployed 3 units from West Supply Hub to Western Staging for fortification.
+2:08:11 [T29,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:08:19 [T29,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforce the critically understaffed node GH (1 unit) which is adjacent to enemy nodes TF and NB, improving defensive posture on the front line. Moving 10 units from the maxed-out Industrial Hub OP (20 units) consolidates forces near the enemy IH (TF) and leaves 10 units at OP for garrison, while GH gains needed defense.
+2:08:19 [T29,FORT] GEM-Q: GEM-Q redeployed 10 units from October Plant to Gorodishche Heights for fortification.
+2:08:21 [T29,UPKE] SYSTEM: Starting UPKEEP phase for Turn 29.
+2:08:21 [T29,UPKE] GEM-Q: GEM-Q paid 92.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 612.25.
+2:08:21 [T29,UPKE] AXIOM: AXIOM paid 54.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 363.00.
+2:08:23 [T30,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 30.
+2:08:36 [T30,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub TF to secure positive MAT income and prevent unit disbandment.
+2:09:00 [T30,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) Industrial Hub to secure vital MAT income.
+2:09:01 [T30,RESO] SYSTEM: Starting RESOURCE phase for Turn 30.
+2:09:01 [T30,RESO] GEM-Q: GEM-Q gained 80 QR (from 8 connected nodes in largest network) and 90 MAT.
+2:09:01 [T30,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 65 MAT.
+2:09:01 [T30,RESO] GEM-Q: GEM-Q reinforced October Plant with 10 overflow units.
+2:09:01 [T30,RESO] GEM-Q: GEM-Q reinforced Gorodishche Heights with 9 overflow units.
+2:09:01 [T30,RESO] GEM-Q: GEM-Q lost 26 reinforcement units due to no available capacity.
+2:09:01 [T30,RESO] AXIOM: AXIOM reinforced Tractor Factory with 9 overflow units.
+2:09:01 [T30,RESO] AXIOM: AXIOM reinforced West Supply Hub with 3 overflow units.
+2:09:01 [T30,RESO] AXIOM: AXIOM lost 23 reinforcement units due to no available capacity.
+2:09:03 [T30,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:09:16 [T30,MANE] AXIOM: AXIOM action: MOVE_UNITS. The OpPlan prioritizes capturing the October Plant (OP) for economic gain. Direct attacks from WMP/WG to OP are not feasible due to non-adjacent nodes. The most strategic approach is to first secure the adjacent neutral node MK, which serves as a staging point for a stronger attack on OP next turn. Moving units from WG, a full node, to MK is a low-risk action that captures a key position and aligns with the OpPlan's objective.
+2:09:16 [T30,MANE] AXIOM: AXIOM moved 20 units from West Gate to Mamayev Kurgan.
+2:09:17 [T30,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:09:24 [T30,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Execute the primary attack specified in the OpPlan against the enemy Industrial Hub (TF) from CN-E using 70 units. This is the most direct action to address the critical negative MAT income by capturing a vital economic node, aligning with the OpPlan's objective and the economic state guidance. Using ATTACK_NODE as the target is enemy-owned.
+2:09:24 [T30,MANE] GEM-Q: GEM-Q staged 70 units from Eastern Staging to attack Tractor Factory.
+2:09:25 [T30,COMB] SYSTEM: Starting COMBAT phase for Turn 30.
+2:09:25 [T30,COMB] SYSTEM: Combat at Mamayev Kurgan: AXIOM & allies (20 units) vs Neutral Garrison (5 units).
+2:09:25 [T30,COMB] AXIOM: AXIOM wins! Mamayev Kurgan captured. Losses: Att-3, Def-5. (Arty: Att-0, Def-0)
+2:09:25 [T30,COMB] SYSTEM: Combat at Tractor Factory: GEM-Q & allies (70 units) vs AXIOM (20 units).
+2:09:25 [T30,COMB] GEM-Q: GEM-Q wins! Tractor Factory captured. Losses: Att-22, Def-20. (Arty: Att-0, Def-0)
+2:09:27 [T30,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:09:35 [T30,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. The West Gate (WG) node is a critical chokepoint connecting multiple nodes and is currently empty. Moving units from the adjacent, full FBD node to WG garrisons this vital position, improving defensive posture and securing access points.
+2:09:35 [T30,FORT] AXIOM: AXIOM redeployed 15 units from RA-Don to West Gate for fortification.
+2:09:35 [T30,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:09:44 [T30,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. The node TF is currently overstacked with 48 units against a max capacity of 20. Moving the excess 28 units to the Command Node CN-E, which has significant capacity (5/75) and a high fortification level (Fort 4), serves to resolve the overstacking issue at the valuable captured Industrial Hub (TF) and consolidate forces at a key defensive and staging node. This aligns with securing gains and consolidating forces during the fortification phase.
+2:09:44 [T30,FORT] GEM-Q: GEM-Q redeployed 28 units from Tractor Factory to Eastern Staging for fortification.
+2:09:45 [T30,UPKE] SYSTEM: Starting UPKEEP phase for Turn 30.
+2:09:45 [T30,UPKE] GEM-Q: GEM-Q paid 92.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 610.25.
+2:09:45 [T30,UPKE] AXIOM: AXIOM paid 51.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 376.25.
+2:09:47 [T31,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 31.
+2:10:11 [T31,FLUC] GEM-Q: OpPlan for GEM-Q: Consolidate forces and strengthen key defensive positions while operating under Fog of War.
+2:10:33 [T31,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) Industrial Hub to increase MAT income.
+2:10:35 [T31,RESO] SYSTEM: Starting RESOURCE phase for Turn 31.
+2:10:35 [T31,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:10:35 [T31,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 55 MAT.
+2:10:35 [T31,RESO] GEM-Q: GEM-Q automatically reinforced with 42 units across Command Nodes.
+2:10:35 [T31,RESO] GEM-Q: GEM-Q lost 8 reinforcement units due to no available capacity.
+2:10:35 [T31,RESO] AXIOM: AXIOM reinforced RA-Don with 15 overflow units.
+2:10:35 [T31,RESO] AXIOM: AXIOM reinforced West Gate with 5 overflow units.
+2:10:35 [T31,RESO] AXIOM: AXIOM reinforced Mamayev Kurgan with 3 overflow units.
+2:10:35 [T31,RESO] AXIOM: AXIOM lost 12 reinforcement units due to no available capacity.
+2:10:37 [T31,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:10:38 [T31,MANE] AXIOM: AXIOM action: MOVE_UNITS. The OpPlan prioritizes capturing the October Plant (OP) to address critical low net MAT income. The first task is to move units from CN-W to NB to stage for the attack on OP. CN-W has 75 units, sufficient for the move. NB is a valid adjacent node to CN-W and is on the path to OP.
+2:10:38 [T31,MANE] AXIOM: AXIOM failed to move to North Bridge: Target node at max capacity. Holding.
+2:10:39 [T31,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:10:45 [T31,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. The OpPlan calls for consolidating forces and strengthening key defensive positions. Consolidation at CN-E is blocked as it is at max capacity. Fortifying key nodes is the remaining viable task from the OpPlan. Building fortifications at the NS Fortress aligns with strengthening a key defensive position under Fog of War, and resources are sufficient.
+2:10:45 [T31,MANE] GEM-Q: GEM-Q fortified Northern Strongpoint to level 3.
+2:10:45 [T31,COMB] SYSTEM: Starting COMBAT phase for Turn 31.
+2:10:47 [T31,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:10:53 [T31,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes visible in the map summary are currently at maximum unit capacity. The Fortification phase only allows movement between owned nodes. As no owned node has available capacity to receive units, a MOVE_UNITS action is not possible. Holding position is the only valid action this phase, preserving forces for the planned attack in the next phase.
+2:10:53 [T31,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes visible in the map summary are currently at maximum unit capacity. The Fortification phase only allows movement between owned nodes. As no owned node has available capacity to receive units, a MOVE_UNITS action is not possible. Holding position is the only valid action this phase, preserving forces for the planned attack in the next phase.
+2:10:53 [T31,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:10:57 [T31,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All GEM-Q owned nodes with units are currently at maximum capacity according to the mapSummary. Therefore, no MOVE_UNITS action is possible as moving units from any source node would exceed the capacity of any potential destination node. HOLD_POSITION is the only valid action this turn.
+2:10:57 [T31,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All GEM-Q owned nodes with units are currently at maximum capacity according to the mapSummary. Therefore, no MOVE_UNITS action is possible as moving units from any source node would exceed the capacity of any potential destination node. HOLD_POSITION is the only valid action this turn.
+2:10:57 [T31,UPKE] SYSTEM: Starting UPKEEP phase for Turn 31.
+2:10:57 [T31,UPKE] GEM-Q: GEM-Q paid 107.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 562.75.
+2:10:57 [T31,UPKE] AXIOM: AXIOM paid 57.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 373.75.
+2:10:59 [T32,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 32.
+2:11:14 [T32,FLUC] GEM-Q: OpPlan for GEM-Q: Gain comprehensive intelligence via Recon Pulse and strengthen a key defensive node.
+2:11:28 [T32,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) Industrial Hub to restore positive MAT income and avert unit disbandment.
+2:11:29 [T32,RESO] SYSTEM: Starting RESOURCE phase for Turn 32.
+2:11:29 [T32,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:11:29 [T32,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 55 MAT.
+2:11:29 [T32,RESO] GEM-Q: GEM-Q lost 50 reinforcement units due to no available capacity.
+2:11:29 [T32,RESO] AXIOM: AXIOM lost 35 reinforcement units due to no available capacity.
+2:11:31 [T32,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:12:00 [T32,MANE] AXIOM: AXIOM action: MOVE_UNITS. The critical economic state requires capturing the October Plant (OP) Industrial Hub as per the OpPlan. This requires moving a significant force from CN-W to a staging node adjacent to OP (like CS). The fastest path from CN-W to CS is 3 moves (e.g., CN-W -> WMP -> BA -> CS). All nodes adjacent to CN-W are currently full, preventing direct movement from CN-W this turn. Moving units from WMP to the empty adjacent node BA frees up capacity at WMP, enabling the first step of the CN-W -> WMP -> BA -> CS movement sequence in subsequent turns. This action is the necessary prerequisite to begin moving the main force towards the objective.
+2:12:00 [T32,MANE] AXIOM: AXIOM moved 20 units from West Motor Pool to Beketovka Approach.
+2:12:01 [T32,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:12:11 [T32,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. Executing the primary task of Operation See-Through to gain comprehensive intelligence via Recon Pulse. This addresses the critical Fog of War limitation and provides essential map data for informed planning in subsequent turns, aligning with the OpPlan's main objective.
+2:12:11 [T32,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:12:11 [T32,COMB] SYSTEM: Starting COMBAT phase for Turn 32.
+2:12:11 [T32,COMB] SYSTEM: Combat at Beketovka Approach: AXIOM & allies (20 units) vs Neutral Garrison (0 units).
+2:12:11 [T32,COMB] AXIOM: AXIOM wins! Beketovka Approach captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+2:12:13 [T32,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:12:18 [T32,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Moving 20 units from the main Command Node (CN-W) to the forward staging node (WMP). This positions forces closer to the front line nodes (WG, NB, MK) adjacent to the target (OP) for the planned attack in the next phase, while respecting WMP's capacity and consolidating forces forward.
+2:12:18 [T32,FORT] AXIOM: AXIOM redeployed 20 units from Western Staging to West Motor Pool for fortification.
+2:12:19 [T32,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:12:23 [T32,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity according to the map summary. This prevents any units from being moved to reinforce or reposition within owned territory without exceeding capacity. Therefore, the only valid action is to hold current positions.
+2:12:23 [T32,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity according to the map summary. This prevents any units from being moved to reinforce or reposition within owned territory without exceeding capacity. Therefore, the only valid action is to hold current positions.
+2:12:25 [T32,UPKE] SYSTEM: Starting UPKEEP phase for Turn 32.
+2:12:25 [T32,UPKE] GEM-Q: GEM-Q paid 107.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 545.25.
+2:12:25 [T32,UPKE] AXIOM: AXIOM paid 57.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 371.25.
+2:12:27 [T33,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 33.
+2:12:42 [T33,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub at WSH to improve MAT income.
+2:12:59 [T33,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) Industrial Hub to restore positive MAT income.
+2:12:59 [T33,RESO] SYSTEM: Starting RESOURCE phase for Turn 33.
+2:12:59 [T33,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:12:59 [T33,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:12:59 [T33,RESO] GEM-Q: GEM-Q lost 50 reinforcement units due to no available capacity.
+2:12:59 [T33,RESO] AXIOM: AXIOM automatically reinforced with 20 units across Command Nodes.
+2:12:59 [T33,RESO] AXIOM: AXIOM lost 20 reinforcement units due to no available capacity.
+2:13:01 [T33,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:13:11 [T33,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing the primary offensive task from the OpPlan to capture the October Plant (OP) and restore positive MAT income. Attacking with 30 units from the main staging area (CN-W) directly addresses the critical negative economic state by targeting an enemy Industrial Hub.
+2:13:11 [T33,MANE] AXIOM: AXIOM staged 30 units from Western Staging to attack October Plant.
+2:13:13 [T33,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:13:23 [T33,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan is based on the assumption of active reconnaissance providing full map intel. However, the game state indicates the recon pulse is not currently active, and WSH is not visible in the standard map summary. To execute or adjust the OpPlan effectively and avoid moving units into unseen territory based on potentially outdated information, performing a recon pulse is the most logical and necessary first step. This action uses the active FBV array to gain current map intel, aligning with the OpPlan's strategic intent to leverage information for the WSH assault.
+2:13:23 [T33,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:13:23 [T33,COMB] SYSTEM: Starting COMBAT phase for Turn 33.
+2:13:23 [T33,COMB] SYSTEM: Combat at October Plant: AXIOM & allies (30 units) vs GEM-Q (20 units).
+2:13:23 [T33,COMB] GEM-Q: GEM-Q holds October Plant! Losses: Att-30, Def-17. (Arty: Att-0, Def-0)
+2:13:25 [T33,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:13:38 [T33,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidating forces at the Command Node (CN-W) to create a larger reserve, given the critical negative MAT income. Moving units from WMP, a full standard node, reinforces the central hub and slightly frees up space while adhering to node capacity limits.
+2:13:38 [T33,FORT] AXIOM: AXIOM redeployed 10 units from West Motor Pool to Western Staging for fortification.
+2:13:39 [T33,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:13:45 [T33,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Consolidate units from the full Command Node (CN-E) to fill the capacity of the under-garrisoned Industrial Hub (OP), improving its defensive posture before the next phase.
+2:13:45 [T33,FORT] GEM-Q: GEM-Q redeployed 17 units from Eastern Staging to October Plant for fortification.
+2:13:45 [T33,UPKE] SYSTEM: Starting UPKEEP phase for Turn 33.
+2:13:45 [T33,UPKE] GEM-Q: GEM-Q paid 103.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 532.00.
+2:13:45 [T33,UPKE] AXIOM: AXIOM paid 55.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 376.25.
+2:13:47 [T34,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 34.
+2:14:06 [T34,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub at WSH to significantly improve MAT income.
+2:14:25 [T34,FLUC] AXIOM: OpPlan for AXIOM: Gain comprehensive map intelligence via Recon Pulse to inform future economic and military operations.
+2:14:25 [T34,RESO] SYSTEM: Starting RESOURCE phase for Turn 34.
+2:14:25 [T34,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:14:25 [T34,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:14:25 [T34,RESO] GEM-Q: GEM-Q automatically reinforced with 17 units across Command Nodes.
+2:14:25 [T34,RESO] GEM-Q: GEM-Q lost 33 reinforcement units due to no available capacity.
+2:14:25 [T34,RESO] AXIOM: AXIOM automatically reinforced with 20 units across Command Nodes.
+2:14:25 [T34,RESO] AXIOM: AXIOM reinforced West Motor Pool with 10 overflow units.
+2:14:25 [T34,RESO] AXIOM: AXIOM lost 10 reinforcement units due to no available capacity.
+2:14:27 [T34,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:14:33 [T34,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Execute the current OpPlan 'Operation Insight' by performing a Recon Pulse. Gaining comprehensive map intelligence is critical for informed strategic planning, especially to identify viable economic targets and assess risks before committing forces, given the current Fog of War, unit disadvantage, and low net MAT. Resources are sufficient for the pulse cost, and FBD is the designated active Recon Array.
+2:14:33 [T34,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:14:33 [T34,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:14:43 [T34,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. The current OpPlan to assault WSH is based on intel from a previous turn (likely a pulse) which is now outdated as the recon pulse is inactive. To avoid a blind attack and ensure the assault is conducted based on current enemy strength at WSH, I must first gain updated intelligence. Performing a recon pulse from my active RECON_ARRAY at FBV is the necessary step to acquire this intel and prepare for an informed assault on WSH next turn, aligning with the OpPlan's objective and strategic rationale of leveraging intel.
+2:14:43 [T34,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:14:43 [T34,COMB] SYSTEM: Starting COMBAT phase for Turn 34.
+2:14:45 [T34,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:14:49 [T34,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any unit movement between them or to other owned nodes. The Fortification phase restricts movement to owned nodes only. Therefore, no valid MOVE_UNITS action is possible. Holding position is the only available action this turn.
+2:14:49 [T34,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any unit movement between them or to other owned nodes. The Fortification phase restricts movement to owned nodes only. Therefore, no valid MOVE_UNITS action is possible. Holding position is the only available action this turn.
+2:14:49 [T34,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:14:53 [T34,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity, preventing any unit movement during the fortification phase. Holding position is the only viable action.
+2:14:53 [T34,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity, preventing any unit movement during the fortification phase. Holding position is the only viable action.
+2:14:53 [T34,UPKE] SYSTEM: Starting UPKEEP phase for Turn 34.
+2:14:53 [T34,UPKE] GEM-Q: GEM-Q paid 107.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 514.50.
+2:14:53 [T34,UPKE] AXIOM: AXIOM paid 62.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 353.75.
+2:14:55 [T35,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 35.
+2:15:11 [T35,FLUC] GEM-Q: OpPlan for GEM-Q: Secure the WSH Industrial Hub to significantly increase MAT income and improve economic stability.
+2:15:27 [T35,FLUC] AXIOM: OpPlan for AXIOM: Capture the enemy Industrial Hub 'TF' to secure positive MAT income and alleviate the critical economic warning.
+2:15:29 [T35,RESO] SYSTEM: Starting RESOURCE phase for Turn 35.
+2:15:29 [T35,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:15:29 [T35,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:15:29 [T35,RESO] GEM-Q: GEM-Q lost 50 reinforcement units due to no available capacity.
+2:15:29 [T35,RESO] AXIOM: AXIOM lost 40 reinforcement units due to no available capacity.
+2:15:31 [T35,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:15:55 [T35,MANE] AXIOM: AXIOM action: ATTACK_NODE. The faction is under a critical economic warning with negative MAT income. The OpPlan's primary objective is to capture the enemy Industrial Hub 'TF' to secure positive MAT flow. A direct assault is the preferred strategy despite the risk. Initiating the attack on TF from an adjacent owned node (NB) with available units is the most direct action to implement the OpPlan and address the economic crisis this turn. Node NB has 20 units, and the enemy TF has 20 units with Fort 0, making a direct attack possible with the units currently positioned at NB.
+2:15:55 [T35,MANE] AXIOM: AXIOM staged 20 units from North Bridge to attack Tractor Factory.
+2:15:57 [T35,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:16:05 [T35,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing the OpPlan's primary objective to capture WSH. Moving 40 units from SS is part of the coordinated assault leveraging the active recon pulse to address the critical low net MAT income.
+2:16:05 [T35,MANE] GEM-Q: GEM-Q staged 40 units from Southern Strongpoint to attack West Supply Hub.
+2:16:07 [T35,COMB] SYSTEM: Starting COMBAT phase for Turn 35.
+2:16:07 [T35,COMB] SYSTEM: Combat at West Supply Hub: GEM-Q & allies (40 units) vs AXIOM (20 units).
+2:16:07 [T35,COMB] GEM-Q: GEM-Q wins! West Supply Hub captured. Losses: Att-25, Def-20. (Arty: Att-0, Def-0)
+2:16:07 [T35,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (20 units) vs GEM-Q (20 units).
+2:16:07 [T35,COMB] GEM-Q: GEM-Q holds Tractor Factory! Losses: Att-20, Def-6. (Arty: Att-0, Def-0)
+2:16:09 [T35,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:16:22 [T35,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidating units from full node WG (20/20) to empty staging node NB (0/20), which is adjacent to the OpPlan objective TF. This action reinforces a critical chokepoint and prepares NB as a staging area for future operations, aligning with OpPlan tasks and Fortification phase goals. While the economic state is critical, this MOVE_UNITS action has no direct MAT cost and is necessary to execute the planned consolidation towards TF.
+2:16:22 [T35,FORT] AXIOM: AXIOM redeployed 20 units from West Gate to North Bridge for fortification.
+2:16:23 [T35,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:16:39 [T35,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforcing the under-garrisoned border node TF from the full, non-border node EG to improve defensive posture against potential AXIOM advances from NB or MK. Cannot reinforce WSH directly due to fortification phase movement restrictions requiring the destination node to be owned and directly connected to the source via an owned connection.
+2:16:39 [T35,FORT] GEM-Q: GEM-Q redeployed 6 units from East Gate to Tractor Factory for fortification.
+2:16:39 [T35,UPKE] SYSTEM: Starting UPKEEP phase for Turn 35.
+2:16:39 [T35,UPKE] GEM-Q: GEM-Q paid 99.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 524.75.
+2:16:39 [T35,UPKE] AXIOM: AXIOM paid 52.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 361.25.
+2:16:41 [T36,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 36.
+2:16:56 [T36,FLUC] GEM-Q: OpPlan for GEM-Q: Gain full map intelligence to identify strategic targets and enemy positions.
+2:17:14 [T36,FLUC] AXIOM: OpPlan for AXIOM: Capture the enemy Industrial Hub WSH to secure positive MAT income.
+2:17:15 [T36,RESO] SYSTEM: Starting RESOURCE phase for Turn 36.
+2:17:15 [T36,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 130 MAT.
+2:17:15 [T36,RESO] AXIOM: AXIOM gained 70 QR (from 7 connected nodes in largest network) and 40 MAT.
+2:17:15 [T36,RESO] GEM-Q: GEM-Q reinforced Southern Strongpoint with 40 overflow units.
+2:17:15 [T36,RESO] GEM-Q: GEM-Q reinforced East Gate with 6 overflow units.
+2:17:15 [T36,RESO] GEM-Q: GEM-Q reinforced West Supply Hub with 5 overflow units.
+2:17:15 [T36,RESO] GEM-Q: GEM-Q lost 4 reinforcement units due to no available capacity.
+2:17:15 [T36,RESO] AXIOM: AXIOM reinforced West Gate with 20 overflow units.
+2:17:15 [T36,RESO] AXIOM: AXIOM lost 15 reinforcement units due to no available capacity.
+2:17:17 [T36,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:17:26 [T36,MANE] AXIOM: AXIOM action: ATTACK_NODE. The critical economic state requires immediate action to capture an Industrial Hub for positive MAT income. The original OpPlan's staging point (FBD) is at maximum capacity, making the planned unit movement impossible. Adapting the plan, a direct assault on the target node WSH from CN-W is the most viable alternative to achieve the OpPlan's objective and address the economic crisis without incurring MAT costs for the attack itself. Utilizing all available units at CN-W maximizes the chance of success against the lightly defended WSH.
+2:17:26 [T36,MANE] AXIOM: AXIOM staged 75 units from Western Staging to attack West Supply Hub.
+2:17:27 [T36,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:17:30 [T36,MANE] GEM-Q: GEM-Q action: PERFORM_RECON_PULSE. Executing the current OpPlan 'Operation Blind Sight' to gain full map intelligence by performing a Recon Pulse using the active FBV Recon Array. Resources are sufficient for the action cost.
+2:17:30 [T36,MANE] GEM-Q: GEM-Q performed a Recon Pulse from RA-Volga. Full map intel acquired for this turn.
+2:17:31 [T36,COMB] SYSTEM: Starting COMBAT phase for Turn 36.
+2:17:31 [T36,COMB] SYSTEM: Combat at West Supply Hub: AXIOM & allies (75 units) vs GEM-Q (20 units).
+2:17:31 [T36,COMB] AXIOM: AXIOM wins! West Supply Hub captured. Losses: Att-8, Def-20. (Arty: Att-0, Def-0)
+2:17:33 [T36,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:17:38 [T36,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Move overstacked units from the newly captured WSH (67 units, max 20) to the empty CN-W (0 units, max 75) to clear the overstack and consolidate forces in a safe rear node. This addresses the immediate post-combat state at WSH.
+2:17:38 [T36,FORT] AXIOM: AXIOM redeployed 47 units from West Supply Hub to Western Staging for fortification.
+2:17:39 [T36,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:17:44 [T36,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes are currently at maximum unit capacity according to the map summary. This prevents any unit movement between nodes during the fortification phase, as no destination node has available capacity. Holding position is the only valid action given the current unit distribution and node states. The active Recon Pulse provides full map intel, and the next turn will focus on strategic planning based on this new information.
+2:17:44 [T36,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes are currently at maximum unit capacity according to the map summary. This prevents any unit movement between nodes during the fortification phase, as no destination node has available capacity. Holding position is the only valid action given the current unit distribution and node states. The active Recon Pulse provides full map intel, and the next turn will focus on strategic planning based on this new information.
+2:17:45 [T36,UPKE] SYSTEM: Starting UPKEEP phase for Turn 36.
+2:17:45 [T36,UPKE] GEM-Q: GEM-Q paid 107.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 527.25.
+2:17:45 [T36,UPKE] AXIOM: AXIOM paid 55.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 345.75.
+2:17:47 [T37,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 37.
+2:18:03 [T37,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub at WSH to improve economic stability and leverage current full map intelligence.
+2:18:30 [T37,FLUC] AXIOM: OpPlan for AXIOM: Capture enemy Industrial Hubs TF and OP to secure vital MAT income.
+2:18:31 [T37,RESO] SYSTEM: Starting RESOURCE phase for Turn 37.
+2:18:31 [T37,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:18:31 [T37,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:18:31 [T37,RESO] GEM-Q: GEM-Q lost 50 reinforcement units due to no available capacity.
+2:18:31 [T37,RESO] AXIOM: AXIOM automatically reinforced with 28 units across Command Nodes.
+2:18:31 [T37,RESO] AXIOM: AXIOM lost 12 reinforcement units due to no available capacity.
+2:18:33 [T37,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:18:51 [T37,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The current OpPlan tasks are impossible to execute due to node capacity limitations at staging points (WSH, WMP, NB, MK). The OpPlan acknowledges the risk of Fog of War obscuring enemy strength at targets TF and OP. Performing a Recon Pulse using the active FBD array will provide full map intelligence, revealing actual enemy unit counts and dispositions. This will allow for a revised, feasible, and better-informed plan next turn to capture the critical economic nodes TF and OP, aligning with the OpPlan's core objective while mitigating the risk of failed attacks based on incomplete intel.
+2:18:51 [T37,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:18:53 [T37,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:19:02 [T37,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Executing the first step of Operation Iron Harvest by attacking the enemy Industrial Hub at WSH from ESH with 15 units. This leverages the current full map intelligence and aligns with the objective to improve economic stability by capturing the enemy IH.
+2:19:02 [T37,MANE] GEM-Q: GEM-Q staged 15 units from East Supply Hub to attack West Supply Hub.
+2:19:03 [T37,COMB] SYSTEM: Starting COMBAT phase for Turn 37.
+2:19:03 [T37,COMB] SYSTEM: Combat at West Supply Hub: GEM-Q & allies (15 units) vs AXIOM (20 units).
+2:19:03 [T37,COMB] AXIOM: AXIOM holds West Supply Hub! Losses: Att-15, Def-6. (Arty: Att-0, Def-0)
+2:19:05 [T37,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:19:14 [T37,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidate units from the main staging node (CN-W) to fill available capacity at the owned Industrial Hub (WSH). This reinforces WSH and positions units forward, aligning with the need to secure owned assets and prepare for potential future movements.
+2:19:14 [T37,FORT] AXIOM: AXIOM redeployed 6 units from Western Staging to West Supply Hub for fortification.
+2:19:15 [T37,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:19:21 [T37,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Reinforcing the under-garrisoned Industrial Hub at ESH from the adjacent, full node EG to improve its defensive posture and secure this valuable economic asset during the fortification phase.
+2:19:21 [T37,FORT] GEM-Q: GEM-Q redeployed 15 units from East Gate to East Supply Hub for fortification.
+2:19:21 [T37,UPKE] SYSTEM: Starting UPKEEP phase for Turn 37.
+2:19:21 [T37,UPKE] GEM-Q: GEM-Q paid 103.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 533.50.
+2:19:21 [T37,UPKE] AXIOM: AXIOM paid 61.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 324.75.
+2:19:23 [T38,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 38.
+2:19:44 [T38,FLUC] GEM-Q: OpPlan for GEM-Q: Enhance defensive posture by fortifying key nodes and consolidating units, while maintaining economic stability, in preparation for future offensive operations or defense.
+2:20:11 [T38,FLUC] AXIOM: OpPlan for AXIOM: Capture the Industrial Hub Node TF to secure vital MAT income and stabilize the economy.
+2:20:11 [T38,RESO] SYSTEM: Starting RESOURCE phase for Turn 38.
+2:20:11 [T38,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:20:11 [T38,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:20:11 [T38,RESO] GEM-Q: GEM-Q reinforced East Gate with 15 overflow units.
+2:20:11 [T38,RESO] GEM-Q: GEM-Q lost 35 reinforcement units due to no available capacity.
+2:20:11 [T38,RESO] AXIOM: AXIOM automatically reinforced with 6 units across Command Nodes.
+2:20:11 [T38,RESO] AXIOM: AXIOM lost 34 reinforcement units due to no available capacity.
+2:20:13 [T38,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:20:28 [T38,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing the primary objective of the OpPlan (Operation Ironclad: Economic Recovery) by launching a direct attack on the enemy Industrial Hub TF from an adjacent node (NB) specified in the OpPlan tasks. Moving the maximum allowed units (19) from NB (20 units) while adhering to movement rules. This action directly addresses the critical economic state by attempting to secure a vital MAT income source, as prioritized by the OpPlan analysis.
+2:20:28 [T38,MANE] AXIOM: AXIOM staged 19 units from North Bridge to attack Tractor Factory.
+2:20:29 [T38,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:20:36 [T38,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. Executing OpPlan task to enhance defensive posture. Building fortifications at SS, a key southern fortress node currently at Fort level 2, aligns with the objective of strengthening defenses using available MAT reserves. The planned unit move to SS is not possible this turn as the node is at maximum capacity.
+2:20:36 [T38,MANE] GEM-Q: GEM-Q fortified Southern Strongpoint to level 3.
+2:20:37 [T38,COMB] SYSTEM: Starting COMBAT phase for Turn 38.
+2:20:37 [T38,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (19 units) vs GEM-Q (20 units).
+2:20:37 [T38,COMB] GEM-Q: GEM-Q holds Tractor Factory! Losses: Att-19, Def-13. (Arty: Att-0, Def-0)
+2:20:39 [T38,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:20:48 [T38,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. The OpPlan targets the enemy node TF for capture in the upcoming Combat phase. This fortification move repositions units from a nearby friendly node (WG) to an adjacent friendly node (NB) that has available capacity, staging forces closer to the target TF in preparation for the planned assault. This aligns with the OpPlan's objective of concentrating forces for the attack while respecting fortification phase rules (moving between friendly nodes).
+2:20:48 [T38,FORT] AXIOM: AXIOM redeployed 19 units from West Gate to North Bridge for fortification.
+2:20:49 [T38,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:20:53 [T38,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. All owned nodes capable of receiving units are currently at maximum capacity. The planned unit movement from TF to SS is impossible as SS is full. With no available capacity at strategic nodes or other owned nodes, and no visible threats requiring immediate repositioning, holding current positions is the most prudent action given the lack of intel and full nodes.
+2:20:53 [T38,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: All owned nodes capable of receiving units are currently at maximum capacity. The planned unit movement from TF to SS is impossible as SS is full. With no available capacity at strategic nodes or other owned nodes, and no visible threats requiring immediate repositioning, holding current positions is the most prudent action given the lack of intel and full nodes.
+2:20:55 [T38,UPKE] SYSTEM: Starting UPKEEP phase for Turn 38.
+2:20:55 [T38,UPKE] GEM-Q: GEM-Q paid 109.25 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 484.25.
+2:20:55 [T38,UPKE] AXIOM: AXIOM paid 57.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 327.00.
+2:20:57 [T39,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 39.
+2:21:15 [T39,FLUC] GEM-Q: OpPlan for GEM-Q: Enhance defensive posture by reinforcing vulnerable visible nodes and slightly improving fortifications on key nodes, while maintaining economic stability.
+2:21:32 [T39,FLUC] AXIOM: OpPlan for AXIOM: Gain comprehensive map intelligence via Recon Pulse to identify optimal targets and inform strategic planning for subsequent turns.
+2:21:33 [T39,RESO] SYSTEM: Starting RESOURCE phase for Turn 39.
+2:21:33 [T39,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:21:33 [T39,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:21:33 [T39,RESO] GEM-Q: GEM-Q reinforced Tractor Factory with 13 overflow units.
+2:21:33 [T39,RESO] GEM-Q: GEM-Q lost 37 reinforcement units due to no available capacity.
+2:21:33 [T39,RESO] AXIOM: AXIOM reinforced West Gate with 19 overflow units.
+2:21:33 [T39,RESO] AXIOM: AXIOM lost 21 reinforcement units due to no available capacity.
+2:21:35 [T39,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:21:38 [T39,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. Execute the primary task of Operation Oracle to gain full map intelligence by activating the Recon Pulse from the active RECON_ARRAY node FBD. This aligns with the strategic objective of identifying optimal targets (like Industrial Hubs) for future economic recovery and military action, as detailed in the OpPlan. The cost is affordable given current resources and the importance of obtaining comprehensive intel.
+2:21:38 [T39,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:21:39 [T39,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:21:46 [T39,MANE] GEM-Q: GEM-Q action: BUILD_FORTIFICATIONS. The primary OpPlan task to reinforce TF is impossible as TF is currently at max capacity (20/20 units). The secondary OpPlan task is to build fortifications at CN-E. This action is feasible, aligns with the defensive objective of the OpPlan, and the cost (50 MAT) is manageable given current reserves, supporting the goal of maintaining economic stability despite the negative net income. This is the only remaining feasible task from the current OpPlan.
+2:21:46 [T39,MANE] GEM-Q: GEM-Q fortified Eastern Staging to level 5.
+2:21:47 [T39,COMB] SYSTEM: Starting COMBAT phase for Turn 39.
+2:21:49 [T39,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:22:00 [T39,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. Analysis of the current map state shows all owned nodes (CN-W, WSH, WMP, FBD, WG, BA, NB, MK) are at their maximum unit capacity. The rules for MOVE_UNITS require the target node to be owned and have available capacity. As no owned node has available capacity, it is not possible to move units between owned nodes this turn. Moving units into neutral nodes is not permitted in the Fortification phase as the target must be owned. Therefore, the only valid action is HOLD_POSITION.
+2:22:00 [T39,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: Analysis of the current map state shows all owned nodes (CN-W, WSH, WMP, FBD, WG, BA, NB, MK) are at their maximum unit capacity. The rules for MOVE_UNITS require the target node to be owned and have available capacity. As no owned node has available capacity, it is not possible to move units between owned nodes this turn. Moving units into neutral nodes is not permitted in the Fortification phase as the target must be owned. Therefore, the only valid action is HOLD_POSITION.
+2:22:01 [T39,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:22:07 [T39,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. Based on the provided mapSummary, all visible owned nodes are currently at maximum unit capacity. The rules for MOVE_UNITS state that the target node's capacity cannot be exceeded. Since no visible owned node has available capacity, a MOVE_UNITS action to a visible destination is impossible. Therefore, the only valid action for this phase is HOLD_POSITION.
+2:22:07 [T39,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: Based on the provided mapSummary, all visible owned nodes are currently at maximum unit capacity. The rules for MOVE_UNITS state that the target node's capacity cannot be exceeded. Since no visible owned node has available capacity, a MOVE_UNITS action to a visible destination is impossible. Therefore, the only valid action for this phase is HOLD_POSITION.
+2:22:07 [T39,UPKE] SYSTEM: Starting UPKEEP phase for Turn 39.
+2:22:07 [T39,UPKE] GEM-Q: GEM-Q paid 112.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 431.75.
+2:22:07 [T39,UPKE] AXIOM: AXIOM paid 62.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 304.50.
+2:22:09 [T40,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 40.
+2:22:27 [T40,FLUC] GEM-Q: OpPlan for GEM-Q: Stabilize net MAT income to zero or positive by reducing unit upkeep, preventing automatic disbandment and preserving MAT reserves.
+2:22:47 [T40,FLUC] AXIOM: OpPlan for AXIOM: Capture the enemy-held Tractor Factory (TF) Industrial Hub to establish positive MAT income and avert unit disbandment.
+2:22:47 [T40,RESO] SYSTEM: Starting RESOURCE phase for Turn 40.
+2:22:47 [T40,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:22:47 [T40,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:22:47 [T40,RESO] GEM-Q: GEM-Q lost 50 reinforcement units due to no available capacity.
+2:22:47 [T40,RESO] AXIOM: AXIOM lost 40 reinforcement units due to no available capacity.
+2:22:49 [T40,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:22:55 [T40,MANE] AXIOM: AXIOM action: ATTACK_NODE. Executing Operation Economic Lifeline as per the OpPlan. The critical negative MAT income necessitates capturing an Industrial Hub this turn to prevent unit disbandment. Attacking the lightly defended Tractor Factory (TF) from the Command Node (CN-W) with all available units (75) is the most direct method to achieve this objective, leveraging the current unit concentration and full map intel.
+2:22:55 [T40,MANE] AXIOM: AXIOM staged 75 units from Western Staging to attack Tractor Factory.
+2:22:55 [T40,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:23:01 [T40,MANE] GEM-Q: GEM-Q action: ECONOMIC_FOCUS. The faction is in a critical economic state with negative net MAT (-2.5). The OpPlan's primary objective is economic stabilization by reducing upkeep. As 'DISBAND_UNITS' is not an available action type, selecting 'ECONOMIC_FOCUS' is the most appropriate action to attempt to stabilize the economy and align with the OpPlan's core goal, directly addressing the critical economic warning.
+2:23:01 [T40,MANE] GEM-Q: GEM-Q action: ECONOMIC_FOCUS. Reason: The faction is in a critical economic state with negative net MAT (-2.5). The OpPlan's primary objective is economic stabilization by reducing upkeep. As 'DISBAND_UNITS' is not an available action type, selecting 'ECONOMIC_FOCUS' is the most appropriate action to attempt to stabilize the economy and align with the OpPlan's core goal, directly addressing the critical economic warning.
+2:23:03 [T40,COMB] SYSTEM: Starting COMBAT phase for Turn 40.
+2:23:03 [T40,COMB] SYSTEM: Combat at Tractor Factory: AXIOM & allies (75 units) vs GEM-Q (20 units).
+2:23:03 [T40,COMB] AXIOM: AXIOM wins! Tractor Factory captured. Losses: Att-12, Def-20. (Arty: Att-0, Def-0)
+2:23:05 [T40,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:23:10 [T40,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Secure the newly captured Industrial Hub (TF) by moving excess units (63 current - 20 max = 43) to the Command Node (CN-W) which has available capacity. This prevents overstacking penalties at TF while leaving a sufficient garrison and consolidating forces.
+2:23:10 [T40,FORT] AXIOM: AXIOM redeployed 43 units from Tractor Factory to Western Staging for fortification.
+2:23:11 [T40,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:23:14 [T40,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. Due to the critical economic state with negative net MAT and the guidance to conserve resources, coupled with the fact that all visible owned nodes are currently at maximum unit capacity, preventing any valid MOVE_UNITS action according to the capacity rules, the most prudent action for this Fortification phase is to HOLD_POSITION. This conserves resources and avoids attempting impossible unit movements.
+2:23:14 [T40,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: Due to the critical economic state with negative net MAT and the guidance to conserve resources, coupled with the fact that all visible owned nodes are currently at maximum unit capacity, preventing any valid MOVE_UNITS action according to the capacity rules, the most prudent action for this Fortification phase is to HOLD_POSITION. This conserves resources and avoids attempting impossible unit movements.
+2:23:15 [T40,UPKE] SYSTEM: Starting UPKEEP phase for Turn 40.
+2:23:15 [T40,UPKE] GEM-Q: GEM-Q paid 107.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 434.25.
+2:23:15 [T40,UPKE] AXIOM: AXIOM paid 59.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 305.00.
+2:23:17 [T41,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 41.
+2:23:37 [T41,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the enemy Industrial Hub 'TF' to secure positive net MAT income and avert unit disbandment.
+2:24:03 [T41,FLUC] AXIOM: OpPlan for AXIOM: Capture the October Plant (OP) Industrial Hub to significantly increase MAT income.
+2:24:05 [T41,RESO] SYSTEM: Starting RESOURCE phase for Turn 41.
+2:24:05 [T41,RESO] GEM-Q: GEM-Q gained 80 QR (from 8 connected nodes in largest network) and 90 MAT.
+2:24:05 [T41,RESO] AXIOM: AXIOM gained 90 QR (from 9 connected nodes in largest network) and 80 MAT.
+2:24:05 [T41,RESO] GEM-Q: GEM-Q lost 45 reinforcement units due to no available capacity.
+2:24:05 [T41,RESO] AXIOM: AXIOM automatically reinforced with 32 units across Command Nodes.
+2:24:05 [T41,RESO] AXIOM: AXIOM lost 13 reinforcement units due to no available capacity.
+2:24:07 [T41,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:24:16 [T41,MANE] AXIOM: AXIOM action: PERFORM_RECON_PULSE. The current OpPlan to capture OP is blocked as the staging node TF is at maximum unit capacity and cannot receive reinforcements. To formulate a new, feasible plan for capturing an Industrial Hub or identifying alternative objectives, better intelligence is required. Performing a Recon Pulse from the active RECON_ARRAY at FBD will provide full map visibility, mitigating the risks associated with Fog of War and enabling a more informed strategic decision next turn. This directly addresses the critical FoW limitation noted in the OpPlan analysis.
+2:24:16 [T41,MANE] AXIOM: AXIOM performed a Recon Pulse from RA-Don. Full map intel acquired for this turn.
+2:24:17 [T41,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:24:23 [T41,MANE] GEM-Q: GEM-Q action: MOVE_UNITS. Executing the primary task of Operation Tractor Pull to move units from CN-E towards the enemy Industrial Hub TF. This action directly addresses the critical negative MAT income by staging for an attack on a vital economic target, as permitted by the economic guidance.
+2:24:23 [T41,MANE] GEM-Q: GEM-Q moved 40 units from Eastern Staging to Tractor Factory.
+2:24:23 [T41,COMB] SYSTEM: Starting COMBAT phase for Turn 41.
+2:24:23 [T41,COMB] SYSTEM: Combat at Tractor Factory: GEM-Q & allies (40 units) vs AXIOM (20 units).
+2:24:23 [T41,COMB] GEM-Q: GEM-Q wins! Tractor Factory captured. Losses: Att-19, Def-20. (Arty: Att-0, Def-0)
+2:24:25 [T41,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:24:33 [T41,FORT] AXIOM: AXIOM fortification action: HOLD_POSITION. All currently owned nodes are at maximum unit capacity according to the map summary, preventing any unit movement for fortification or consolidation during this phase. Existing garrisons are at full strength on forward nodes.
+2:24:33 [T41,FORT] AXIOM: AXIOM action: HOLD_POSITION. Reason: All currently owned nodes are at maximum unit capacity according to the map summary, preventing any unit movement for fortification or consolidation during this phase. Existing garrisons are at full strength on forward nodes.
+2:24:33 [T41,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:24:45 [T41,FORT] GEM-Q: GEM-Q fortification action: HOLD_POSITION. Newly captured Industrial Hubs (TF, OP) and adjacent forward nodes (GH, EG) are at or over maximum unit capacity, preventing reinforcement via MOVE_UNITS from nodes with available units (like CN-E) or consolidation from adjacent full nodes. Moving units away from these critical positions would be detrimental. Holding position maintains current defenses on these key nodes.
+2:24:45 [T41,FORT] GEM-Q: GEM-Q action: HOLD_POSITION. Reason: Newly captured Industrial Hubs (TF, OP) and adjacent forward nodes (GH, EG) are at or over maximum unit capacity, preventing reinforcement via MOVE_UNITS from nodes with available units (like CN-E) or consolidation from adjacent full nodes. Moving units away from these critical positions would be detrimental. Holding position maintains current defenses on these key nodes.
+2:24:45 [T41,UPKE] SYSTEM: Starting UPKEEP phase for Turn 41.
+2:24:45 [T41,UPKE] GEM-Q: GEM-Q paid 102.75 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 421.50.
+2:24:45 [T41,UPKE] AXIOM: AXIOM paid 62.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 302.50.
+2:24:47 [T42,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 42.
+2:25:07 [T42,FLUC] GEM-Q: OpPlan for GEM-Q: Consolidate forces, manage unit capacity for incoming reinforcements, and strengthen key defensive positions.
+2:25:29 [T42,FLUC] AXIOM: OpPlan for AXIOM: Capture an enemy Industrial Hub to secure positive MAT income.
+2:25:29 [T42,RESO] SYSTEM: Starting RESOURCE phase for Turn 42.
+2:25:29 [T42,RESO] GEM-Q: GEM-Q gained 90 QR (from 9 connected nodes in largest network) and 110 MAT.
+2:25:29 [T42,RESO] AXIOM: AXIOM gained 80 QR (from 8 connected nodes in largest network) and 60 MAT.
+2:25:29 [T42,RESO] GEM-Q: GEM-Q automatically reinforced with 40 units across Command Nodes.
+2:25:29 [T42,RESO] GEM-Q: GEM-Q lost 10 reinforcement units due to no available capacity.
+2:25:29 [T42,RESO] AXIOM: AXIOM lost 40 reinforcement units due to no available capacity.
+2:25:31 [T42,MANE] AXIOM: Starting MANEUVER phase for AXIOM.
+2:25:37 [T42,MANE] AXIOM: AXIOM action: ATTACK_NODE. Critical economic state requires capturing an Industrial Hub. Executing the first task of Operation Economic Lifeline to attack the October Plant (OP) from CN-W is the most direct action to secure positive MAT income and address the crisis this turn, aligning with the OpPlan and having no immediate MAT cost.
+2:25:37 [T42,MANE] AXIOM: AXIOM staged 20 units from Western Staging to attack October Plant.
+2:25:39 [T42,MANE] GEM-Q: Starting MANEUVER phase for GEM-Q.
+2:26:04 [T42,MANE] GEM-Q: GEM-Q action: ATTACK_NODE. Prioritizing the OpPlan objective to manage unit capacity and consolidate forces. Node NS is a full Fortress node. Moving 20 units from NS to attack/capture the adjacent neutral node KA frees up 20 unit capacity at NS, preparing it for incoming reinforcements, and expands territory. This aligns with the plan's core goals given that moving units to the full CN-E is not possible this turn.
+2:26:04 [T42,MANE] GEM-Q: GEM-Q staged 20 units from Northern Strongpoint to attack Kotluban Approach.
+2:26:05 [T42,COMB] SYSTEM: Starting COMBAT phase for Turn 42.
+2:26:05 [T42,COMB] SYSTEM: Combat at Kotluban Approach: GEM-Q & allies (20 units) vs Neutral Garrison (0 units).
+2:26:05 [T42,COMB] GEM-Q: GEM-Q wins! Kotluban Approach captured. Losses: Att-0, Def-0. (Arty: Att-0, Def-0)
+2:26:05 [T42,COMB] SYSTEM: Combat at October Plant: AXIOM & allies (20 units) vs GEM-Q (20 units).
+2:26:05 [T42,COMB] GEM-Q: GEM-Q holds October Plant! Losses: Att-20, Def-7. (Arty: Att-0, Def-0)
+2:26:07 [T42,FORT] AXIOM: Starting FORTIFICATION phase for AXIOM.
+2:26:20 [T42,FORT] AXIOM: AXIOM fortification action: MOVE_UNITS. Consolidate units from the full, internal FBD node to the Command Node (CN-W) which has capacity. This frees up space on FBD and strengthens the CN without exposing a border node or the WSH Industrial Hub to immediate risk from adjacent enemy nodes during the Fortification phase. This supports the overall plan by surviving this phase and slightly improving unit distribution.
+2:26:20 [T42,FORT] AXIOM: AXIOM redeployed 15 units from RA-Don to Western Staging for fortification.
+2:26:21 [T42,FORT] GEM-Q: Starting FORTIFICATION phase for GEM-Q.
+2:26:28 [T42,FORT] GEM-Q: GEM-Q fortification action: MOVE_UNITS. Moving units from the overstacked node TF to NS, which has available capacity (20/40). This action addresses the critical need to manage unit capacity across owned nodes to absorb incoming reinforcements efficiently, as highlighted in the OpPlan and strategic analysis. NS is a Fortress node, consolidating units here enhances defense.
+2:26:28 [T42,FORT] GEM-Q: GEM-Q redeployed 20 units from Tractor Factory to Northern Strongpoint for fortification.
+2:26:29 [T42,UPKE] SYSTEM: Starting UPKEEP phase for Turn 42.
+2:26:29 [T42,UPKE] GEM-Q: GEM-Q paid 111.00 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 420.50.
+2:26:29 [T42,UPKE] AXIOM: AXIOM paid 57.50 MAT for upkeep (Units, Forts, 1 Recon Arrays). MAT: 305.00.
+2:26:31 [T43,FLUC] SYSTEM: Starting FLUCTUATION phase for Turn 43.
+2:26:48 [T43,FLUC] GEM-Q: OpPlan for GEM-Q: Capture the West Supply Hub (WSH) to improve economic standing and disrupt enemy MAT income.
+2:27:06 [T43,FLUC] SYSTEM: Game state saved.
+2:27:08 [T43,FLUC] AXIOM: OpPlan for AXIOM: Capture the Tractor Factory (TF) node to secure its 20 MAT income and improve economic stability.
