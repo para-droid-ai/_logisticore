@@ -1,3 +1,6 @@
+## LOGISTICORE (readme.md WIP)
+### AI vs AI Wargaming Simulation
+- Experience two scratchpad powered Agents balance their war machine. Inspired by Risk, 4x Gaming, and Alpha Centauri
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
