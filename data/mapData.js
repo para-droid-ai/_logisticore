@@ -185,27 +185,18 @@ const TARTARUS_ANOMALY_DEFINITION = {
     nodes: TARTARUS_ANOMALY_NODES, connections: TARTARUS_ANOMALY_CONNECTIONS,
 };
 function getMapData(mapType, isFogOfWarActive) {
+    const MAP_DEFINITIONS = {
+        [types_1.MapType.VOLGOGRAD_CAULDRON]: VOLGOGRAD_CAULDRON_DEFINITION,
+        [types_1.MapType.SERAPHIM_GRID]: SERAPHIM_GRID_DEFINITION,
+        [types_1.MapType.TWIN_PEAKS]: TWIN_PEAKS_DEFINITION,
+        [types_1.MapType.CLASSIC_LATTICE]: CLASSIC_LATTICE_DEFINITION,
+        [types_1.MapType.TARTARUS_ANOMALY]: TARTARUS_ANOMALY_DEFINITION,
+    };
     // console.log('[LOG] getMapData called. isFogOfWarActive parameter:', isFogOfWarActive, 'MapType:', mapType);
-    let mapDef;
-    switch (mapType) {
-        case types_1.MapType.VOLGOGRAD_CAULDRON:
-            mapDef = VOLGOGRAD_CAULDRON_DEFINITION;
-            break;
-        case types_1.MapType.SERAPHIM_GRID:
-            mapDef = SERAPHIM_GRID_DEFINITION;
-            break;
-        case types_1.MapType.TWIN_PEAKS:
-            mapDef = TWIN_PEAKS_DEFINITION;
-            break;
-        case types_1.MapType.CLASSIC_LATTICE:
-            mapDef = CLASSIC_LATTICE_DEFINITION;
-            break;
-        case types_1.MapType.TARTARUS_ANOMALY:
-            mapDef = TARTARUS_ANOMALY_DEFINITION;
-            break;
-        default:
-            console.warn(`Unknown map type: ${mapType}, defaulting to Volgograd Cauldron.`);
-            mapDef = VOLGOGRAD_CAULDRON_DEFINITION;
+    let mapDef = MAP_DEFINITIONS[mapType];
+    if (!mapDef) {
+        console.warn(`Unknown map type: ${mapType}, defaulting to Volgograd Cauldron.`);
+        mapDef = VOLGOGRAD_CAULDRON_DEFINITION;
     }
     const transformedNodes = {};
     const allConnections = {};
