@@ -23,17 +23,17 @@ import { isNodeVisibleForAI, isNodeConnectedToFactionCN } from "../game/utils";
 import { getMapData } from '../../data/mapData';
 
 const API_KEY = process.env.API_KEY;
-const DEFAULT_TEXT_MODEL = 'gemini-2.5-flash-preview-04-17';
+const DEFAULT_TEXT_MODEL = 'gemini-2.5-flash';
 const ALLOWED_TEXT_MODELS = [
-    DEFAULT_TEXT_MODEL,
     'gemini-2.5-flash',
-    'gemini-2.5-flash-lite-preview-06-17',
+    'gemini-2.5-flash-lite',
     'gemini-2.5-pro',
     'gemini-2.0-flash',
+    'gemma-3n-e2b-it',
     'gemma-3n-e4b-it',
-    'gemma-3-27b-it',
     'gemma-3-4b-it',
-    'gemma-3-12b-it'
+    'gemma-3-12b-it',
+    'gemma-3-27b-it'
 ];
 
 function minimalSanitizeAIJsonResponse(rawJsonText: string): string {
@@ -293,13 +293,15 @@ export const generateOpPlanFromGemini = async (
   humanDirective: CommLogEntry | null = null,
   isAggressiveSanitizationEnabled: boolean = true,
   isStructuredOutputEnabled: boolean = false,
-  isGemmaModel: boolean = false
+  isGemmaModel: boolean = false,
+  apiKey?: string
 ): Promise<OpPlan | null> => {
-  if (!API_KEY) {
+  const keyToUse = apiKey || API_KEY;
+  if (!keyToUse) {
     console.error("API_KEY not set for Gemini API.");
     return null;
   }
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  const ai = new GoogleGenerativeAI(keyToUse);
   const selectedModel = ALLOWED_TEXT_MODELS.includes(modelName) ? modelName : DEFAULT_TEXT_MODEL;
 
   const simplifiedGameState = getSimplifiedGameStateForAI(currentGameState, factionId);
@@ -570,13 +572,15 @@ export const generateStrategicCommunique = async (
   factionId: PlayerId,
   modelName: string = DEFAULT_TEXT_MODEL,
   opponentLastMessage: CommLogEntry | null = null,
-  humanDirective: string | null = null 
+  humanDirective: string | null = null,
+  apiKey?: string
 ): Promise<string | null> => {
-  if (!API_KEY) {
+  const keyToUse = apiKey || API_KEY;
+  if (!keyToUse) {
     console.error("API_KEY not set for Gemini API (Strategic Communique).");
     return null;
   }
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  const ai = new GoogleGenerativeAI(keyToUse);
   const selectedModel = ALLOWED_TEXT_MODELS.includes(modelName) ? modelName : DEFAULT_TEXT_MODEL;
 
   const faction = currentGameState.factions[factionId];
@@ -625,13 +629,15 @@ export const getAIActionFromGemini = async (
     modelName: string = DEFAULT_TEXT_MODEL,
     isAggressiveSanitizationEnabled: boolean = true,
     isStructuredOutputEnabled: boolean = false,
-    isGemmaModel: boolean = false
+    isGemmaModel: boolean = false,
+    apiKey?: string
 ): Promise<AIAction | null> => {
-    if (!API_KEY) {
+    const keyToUse = apiKey || API_KEY;
+    if (!keyToUse) {
         console.error("API_KEY not set for Gemini API.");
         return null;
     }
-    const ai = new GoogleGenAI({ apiKey: API_KEY });
+    const ai = new GoogleGenerativeAI(keyToUse);
     const selectedModel = ALLOWED_TEXT_MODELS.includes(modelName) ? modelName : DEFAULT_TEXT_MODEL;
 
     const simplifiedGameState = getSimplifiedGameStateForAI(currentGameState, factionId);
@@ -812,13 +818,15 @@ export const getAIFortifyActionFromGemini = async (
     modelName: string = DEFAULT_TEXT_MODEL,
     isAggressiveSanitizationEnabled: boolean = true,
     isStructuredOutputEnabled: boolean = false,
-    isGemmaModel: boolean = false
+    isGemmaModel: boolean = false,
+    apiKey?: string
 ): Promise<AIAction | null> => {
-    if (!API_KEY) {
+    const keyToUse = apiKey || API_KEY;
+    if (!keyToUse) {
         console.error("API_KEY not set for Gemini API for Fortify.");
         return null;
     }
-    const ai = new GoogleGenAI({ apiKey: API_KEY });
+    const ai = new GoogleGenerativeAI(keyToUse);
     const selectedModel = ALLOWED_TEXT_MODELS.includes(modelName) ? modelName : DEFAULT_TEXT_MODEL;
 
     const simplifiedGameState = getSimplifiedGameStateForAI(currentGameState, factionId);
@@ -947,13 +955,15 @@ export const chooseDoctrineFromGemini = async (
     modelName: string = DEFAULT_TEXT_MODEL,
     isAggressiveSanitizationEnabled: boolean = true,
     isStructuredOutputEnabled: boolean = false,
-    isGemmaModel: boolean = false
+    isGemmaModel: boolean = false,
+    apiKey?: string
 ): Promise<string | null> => {
-    if (!API_KEY) {
+    const keyToUse = apiKey || API_KEY;
+    if (!keyToUse) {
         console.error("API_KEY not set for Gemini API for Doctrine selection.");
         return null;
     }
-    const ai = new GoogleGenAI({ apiKey: API_KEY });
+    const ai = new GoogleGenerativeAI(keyToUse);
     const selectedModel = ALLOWED_TEXT_MODELS.includes(modelName) ? modelName : DEFAULT_TEXT_MODEL;
 
     const simplifiedGameState = getSimplifiedGameStateForAI(currentGameState, factionId);

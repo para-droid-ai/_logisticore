@@ -38,7 +38,8 @@ export const handleFluctuationPhase = async (gameState: GameState, gameSettings:
             opponentLastSCSMessage, relevantHumanDirectiveForOpPlan, 
             gameSettings.isAggressiveSanitizationEnabled,
             gameSettings.isStructuredOutputEnabled,
-            isGemmaModelActive
+            isGemmaModelActive,
+            gameSettings.apiKey
         );
         
         if (plan) {
@@ -65,7 +66,7 @@ export const handleFluctuationPhase = async (gameState: GameState, gameSettings:
     const axiomGameStateSnapshot = newGameState;
     const axiomOpponentLastMsg = getOpponentLastMessage(AI2_ID, axiomGameStateSnapshot.commLog);
     const axiomHumanDirective = getLatestHumanDirectiveFor(AI2_ID, axiomGameStateSnapshot.commLog);
-    const axiomCommuniqueText = await generateStrategicCommunique(axiomGameStateSnapshot, AI2_ID, gameSettings.selectedGenAIModel, axiomOpponentLastMsg, axiomHumanDirective?.message || null);
+    const axiomCommuniqueText = await generateStrategicCommunique(axiomGameStateSnapshot, AI2_ID, gameSettings.selectedGenAIModel, axiomOpponentLastMsg, axiomHumanDirective?.message || null, gameSettings.apiKey);
     if (axiomCommuniqueText) {
         const axiomCommEntry: CommLogEntry = {
             id: `scs-${Date.now()}-axiom-${Math.random()}`, turn: axiomGameStateSnapshot.turn, timestamp: new Date().toLocaleTimeString(),
@@ -79,7 +80,7 @@ export const handleFluctuationPhase = async (gameState: GameState, gameSettings:
     const gemqGameStateSnapshot = {...newGameState, commLog: [...newGameState.commLog, ...newCommLogEntries]};
     const gemqOpponentLastMsg = getOpponentLastMessage(AI1_ID, gemqGameStateSnapshot.commLog);
     const gemqHumanDirective = getLatestHumanDirectiveFor(AI1_ID, gemqGameStateSnapshot.commLog);
-    const gemqCommuniqueText = await generateStrategicCommunique(gemqGameStateSnapshot, AI1_ID, gameSettings.selectedGenAIModel, gemqOpponentLastMsg, gemqHumanDirective?.message || null);
+    const gemqCommuniqueText = await generateStrategicCommunique(gemqGameStateSnapshot, AI1_ID, gameSettings.selectedGenAIModel, gemqOpponentLastMsg, gemqHumanDirective?.message || null, gameSettings.apiKey);
 
     if (gemqCommuniqueText) {
         const gemqCommEntry: CommLogEntry = {
@@ -123,7 +124,8 @@ export const handleManeuverPhase = async (factionId: PlayerId, gameState: GameSt
         gameSettings.selectedGenAIModel, 
         gameSettings.isAggressiveSanitizationEnabled,
         gameSettings.isStructuredOutputEnabled,
-        isGemmaModelActive
+        isGemmaModelActive,
+        gameSettings.apiKey
     );
 
     if (aiAction) {
@@ -873,7 +875,8 @@ export const handleDoctrinePhase = async (gameState: GameState, addLogEntry: any
             gameSettings.selectedGenAIModel,
             gameSettings.isAggressiveSanitizationEnabled,
             gameSettings.isStructuredOutputEnabled,
-            isGemmaModelActive
+            isGemmaModelActive,
+            gameSettings.apiKey
         );
 
         if (chosenDoctrineId) {

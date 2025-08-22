@@ -227,6 +227,7 @@ export interface GameSettings {
     selectedGenAIModel: string;
     isAggressiveSanitizationEnabled: boolean;
     isStructuredOutputEnabled: boolean; // New setting for toggling structured JSON output
+    apiKey?: string;
 }
 
 export interface SystemLogEntry {
