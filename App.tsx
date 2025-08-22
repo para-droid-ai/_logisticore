@@ -82,12 +82,38 @@ const MusicNoteIconSM: React.FC<{className?: string}> = ({className}) => (
 
 const App: React.FC = () => {
   const [selectedMapTypeForNewGame, setSelectedMapTypeForNewGame] = useState<MapType>(MapType.VOLGOGRAD_CAULDRON);
-  const [gameSettings, setGameSettings] = useState<GameSettings>(() => ({ // Initialize with a function to read from localStorage or default
-    isFoWEnabledForNewGame: true,
-    selectedGenAIModel: 'gemini-2.5-flash-preview-04-17',
-    isAggressiveSanitizationEnabled: false, 
-    isStructuredOutputEnabled: true,    
-  }));
+  const [gameSettings, setGameSettings] = useState<GameSettings>(() => {
+    const savedSettings = localStorage.getItem('gameSettings');
+    const defaults: GameSettings = {
+      isFoWEnabledForNewGame: true,
+      selectedGenAIModel: 'gemini-2.5-flash',
+      isAggressiveSanitizationEnabled: false,
+      isStructuredOutputEnabled: true,
+      apiKey: '',
+    };
+    if (savedSettings) {
+      return { ...defaults, ...JSON.parse(savedSettings) };
+    }
+    return defaults;
+  });
+
+  const [apiKeyInput, setApiKeyInput] = useState(gameSettings.apiKey || '');
+
+  useEffect(() => {
+    localStorage.setItem('gameSettings', JSON.stringify(gameSettings));
+  }, [gameSettings]);
+
+  const handleSaveApiKey = () => {
+    setGameSettings(prev => ({ ...prev, apiKey: apiKeyInput }));
+    alert('API Key saved!');
+  };
+
+  const handleClearApiKey = () => {
+    setApiKeyInput('');
+    setGameSettings(prev => ({ ...prev, apiKey: '' }));
+    alert('API Key cleared!');
+  };
+
   const [gameState, setGameState] = useState<GameState | null>(null);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
@@ -615,10 +641,15 @@ const App: React.FC = () => {
               value={gameSettings.selectedGenAIModel}
               onChange={(e) => setGameSettings(prev => ({ ...prev, selectedGenAIModel: e.target.value }))}
             >
-              <option value="gemini-1.5-flash-latest">Gemini 1.5 Flash (Latest)</option>
-              <option value="gemini-1.5-pro-latest">Gemini 1.5 Pro (Latest)</option>
-              <option value="gemini-pro">Gemini Pro (Legacy)</option>
-              <option value="gemma-7b-it">Gemma 7B IT (Local)</option>
+              <option value="gemini-2.5-flash">gemini-2.5-flash (default)</option>
+              <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite</option>
+              <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+              <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+              <option value="gemma-3n-e2b-it">gemma-3n-e2b-it</option>
+              <option value="gemma-3n-e4b-it">gemma-3n-e4b-it</option>
+              <option value="gemma-3-4b-it">gemma-3-4b-it</option>
+              <option value="gemma-3-12b-it">gemma-3-12b-it</option>
+              <option value="gemma-3-27b-it">gemma-3-27b-it</option>
             </select>
           </div>
           <div className="mb-4 flex items-center">
@@ -647,6 +678,26 @@ const App: React.FC = () => {
           </div>
           <div className="flex items-center justify-between mt-4">
             <Button onClick={handleNewSetup} className="bg-blue-600 hover:bg-blue-700">Apply Settings & New Game</Button>
+          </div>
+          <div className="border-t border-gray-600 my-4 pt-4">
+            <h3 className="text-lg font-bold mb-2">Custom API Key</h3>
+            <div className="mb-4">
+              <label className="block text-sm font-bold mb-2" htmlFor="apiKey">
+                Gemini API Key (optional):
+              </label>
+              <input
+                type="password"
+                id="apiKey"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 border-gray-600"
+                placeholder="Enter your API key to override default"
+                value={apiKeyInput}
+                onChange={(e) => setApiKeyInput(e.target.value)}
+              />
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button onClick={handleSaveApiKey} className="bg-green-600 hover:bg-green-700">Save Key</Button>
+              <Button onClick={handleClearApiKey} className="bg-red-600 hover:bg-red-700">Clear Key</Button>
+            </div>
           </div>
           <div className="mt-6">
             <h3 className="text-lg font-bold mb-2">Lyria Music Engine Settings</h3>
